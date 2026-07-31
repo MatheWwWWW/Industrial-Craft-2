@@ -1,0 +1,13 @@
+{
+	"replace": false,
+	"values": [
+		"ic2:lead_ore",
+		"ic2:tin_ore",
+		"ic2:deepslate_lead_ore",
+		"ic2:deepslate_tin_ore",
+		"ic2:raw_lead_block",
+		"ic2:raw_tin_block",
+		"ic2:reinforced_stone",
+		"ic2:iron_fence"
+	]
+}

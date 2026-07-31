@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["XYX", "YCY", "XYX"],
+  "key": {
+    "X": { "item": "ic2:iridium_stone" },
+    "Y": { "item": "ic2:reinforced_glass" },
+    "C": { "item": "ic2:induction_furnace" }
+  },
+  "result": { "item": "ic2:plasmafier" }
+}

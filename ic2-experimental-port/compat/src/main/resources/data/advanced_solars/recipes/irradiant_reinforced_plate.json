@@ -1,0 +1,12 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["rsr", "lRl", "rdr"],
+  "key": {
+    "r": { "tag": "forge:dusts/redstone" },
+    "s": { "item": "advanced_solars:sunnarium_part" },
+    "l": { "tag": "forge:dyes/blue" },
+    "R": { "item": "advanced_solars:reinforced_iridium_iron_plate" },
+    "d": { "tag": "forge:gems/diamond" }
+  },
+  "result": { "item": "advanced_solars:irradiant_reinforced_plate" }
+}

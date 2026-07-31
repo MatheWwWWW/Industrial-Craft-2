@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "side": "advanced_solars:block/hybrid_solar_panel/side",
+    "top": "advanced_solars:block/hybrid_solar_panel/top",
+    "bottom": "advanced_solars:block/hybrid_solar_panel/bottom"
+  }
+}

@@ -1,0 +1,30 @@
+Summary for ic2-experimental-port\quarantine\ic2-classic-only\industrialcraft-2-2.8.222-ex112.jar
+Decompiled with CFR 0.152
+
+
+ic2.core.GuiIC2
+----------------------------
+
+drawSprite(double double double double net.minecraft.client.renderer.texture.TextureAtlasSprite int double boolean boolean )
+  Unable to fully structure code
+
+
+ic2.core.energy.EnergyNetLocal
+----------------------------
+
+addTileToGrids(ic2.core.energy.Tile )
+  Could not resolve type clashes
+
+
+ic2.core.energy.grid.ChangeHandler
+----------------------------
+
+addTileToGrids(ic2.core.energy.grid.EnergyNetLocal ic2.core.energy.grid.Tile )
+  Could not resolve type clashes
+
+
+ic2.core.item.tool.EntityMiningLaser
+----------------------------
+
+func_70071_h_()
+  Unable to fully structure code

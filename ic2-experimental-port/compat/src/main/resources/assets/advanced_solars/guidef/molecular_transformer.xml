@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gui width="176" height="166">
+    <image x="0" y="0" width="176" height="166" basesize="256" u="0" v="0"
+           src="advanced_solars:textures/gui/molecular_transformer.png"/>
+    <text y="6" align="center">%name%</text>
+    <slot name="input" x="26" y="9"/>
+    <slot name="output" x="26" y="59"/>
+    <energygauge x="72" y="32" style="bar"/>
+    <text x="52" y="56">{%base.getStoredEU()%} / {%base.getMaxEU()%} EU</text>
+    <playerInventory x="7" y="83"/>
+</gui>

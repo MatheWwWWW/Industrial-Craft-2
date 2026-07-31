@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": [" X ", "CVC"],
+  "key": {
+    "X": { "item": "ic2:glass_fibre_cable" },
+    "C": { "item": "ic2:bronze_double_insulated_cable_item" },
+    "V": { "item": "ic2:complex_circuit" }
+  },
+  "result": { "item": "ic2:efficiency_upgrade", "count": 2 }
+}

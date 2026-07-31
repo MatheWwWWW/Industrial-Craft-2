@@ -1,0 +1,23 @@
+Summary for ic2-experimental-port\upstream\industrialcraft-2-2.9.162+ex119-1.19.2-forge.jar
+Decompiled with CFR 0.152
+
+
+ic2.core.Ic2Gui
+----------------------------
+
+drawSprite(com.mojang.blaze3d.vertex.PoseStack double double double double net.minecraft.client.renderer.texture.TextureAtlasSprite int double boolean boolean )
+  Unable to fully structure code
+
+
+ic2.core.energy.EnergyNetLocal
+----------------------------
+
+addTileToGrids(ic2.core.energy.Tile )
+  Could not resolve type clashes
+
+
+ic2.core.item.tool.ItemDebug
+----------------------------
+
+dumpObjectFields(java.lang.Object ic2.core.item.tool.ItemDebug$Output )
+  Could not resolve type clashes

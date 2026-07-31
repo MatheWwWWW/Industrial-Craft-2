@@ -1,0 +1,11 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["LIL", "LQL", "LSL"],
+  "key": {
+    "L": { "item": "ic2:glowtronic_crystal" },
+    "I": { "item": "ic2:iridium" },
+    "Q": { "item": "ic2:quantum_pack" },
+    "S": { "item": "gravisuit:super_conductor" }
+  },
+  "result": { "item": "gravisuit:ultimate_lappack" }
+}

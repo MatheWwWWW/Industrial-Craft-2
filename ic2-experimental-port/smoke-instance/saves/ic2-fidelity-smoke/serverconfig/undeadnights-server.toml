@@ -1,0 +1,73 @@
+#If true, Nights of the Undead (horde nights) are enabled | default: true
+undeadNightsEnabled = true
+#Grace period in days before the first horde night | default: 0
+#After the grace period the first horde night will happen and
+#after the first horde night only the config values daysBetweenHordeNights
+#and chanceForHordeNight will be taken into consideration.
+#Note: if the grace period is set to 0 the first horde night will occur after
+#the number of days set with daysBetweenHordeNights below.
+#Range: > 0
+gracePeriod = 0
+#If true, each night a message will be sent to the player with how many nights are left before the next Horde Night | default: false
+sendHordeNightsCountdownMessage = false
+#If true, the horde has spawned message and the horde sound are enabled | default: true
+hordeSpawnedMessageAndSound = true
+#Minimum distance a horde will spawn away from the player | default: 70
+#Range: 10 ~ 256
+distanceMin = 70
+#Maximum distance a horde will spawn away from the player | default: 75
+#Range: 10 ~ 256
+distanceMax = 75
+#Maximum amount of horde mobs that can be loaded in the world at the same time | default: 80
+#Range: 1 ~ 2048
+hordeMobsSpawnCap = 80
+#If true, the vanilla gamerule doMobSpawning will be ignored | default: true
+ignoreDoMobSpawningGamerule = true
+#If true, horde waves can spawn in water | default: false
+hordeWavesCanSpawnInWater = false
+#If true, horde waves can spawn on trees | default: false
+hordeWavesCanSpawnOnTrees = false
+#If true, horde waves can spawn in caves [EXPERIMENTAL]| default: false
+hordeWavesCanSpawnInCaves = false
+#Distance a horde will spawn away from the player when in a cave | default: 50
+#Range: 10 ~ 100
+caveSpawnDistance = 50
+#If true, the light level of the block position can prevent horde mobs from spawning | default: false
+blockLightLevelsInfluenceMonsterSpawns = false
+#Maximum block light level so a monster can spawn | default: 0
+#Range: 0 ~ 256
+maxBlockLightLevelForMonsterSpawns = 0
+#If true, Players can't sleep through horde nights | default: true
+hordeNightsDisableSleeping = true
+#If true, the difficulty level will automatically progress over time | default: false
+enableAutomaticDifficultyProgression = true
+#If true, horde mobs will not despawn when closer than the max tracking range | default: false
+preventDespawnWhenInsideMaxTrackingRange = false
+#If true, the horde zombies will be persistent and not despawn | default: false
+persistentMobs = false
+#If true, Horde Zombies are not able to break reinforced blocks from the Security Craft mod | default: false
+securityCraftCompatibility = false
+#If true, Horde Zombies will spawn naturally | default: true
+hordeZombiesSpawnNaturally = true
+#If true, Elite Zombies will spawn naturally | default: true
+eliteZombiesSpawnNaturally = true
+#If true, Demolition Zombies will spawn naturally | default: true
+demolitionZombiesSpawnNaturally = true
+#If true, Horde, Elite and Demolition zombies will not spawn naturally before the first horde night | default: true
+noNaturalSpawningBeforeFirstHordeNight = true
+#Horde zombie max health | default: 40.0
+#Range: 1.0 ~ 2048.0
+maxHealthHordeZombies = 40.0
+#Elite zombie max health | default: 40.0
+#Range: 1.0 ~ 2048.0
+maxHealthEliteZombies = 40.0
+#Demolition zombie max health | default: 40.0
+#Range: 1.0 ~ 2048.0
+maxHealthDemolitionZombies = 40.0
+#If true, horde spawning will be done asynchronously to reduce lag spikes [WIP] | default: false
+enableAsynchronousHordeSpawning = false
+#If true, debug messages will be logged out | default: false
+printDebugMessages = false
+#If true, horde mobs are added with the glow effect (for debugging) | default: false
+debugMakeHordeMobsGlow = false
+

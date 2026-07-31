@@ -1,0 +1,9 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["P", "W", "P"],
+  "key": {
+    "P": { "tag": "minecraft:planks" },
+    "W": { "item": "ic2:rubber_wood" }
+  },
+  "result": { "item": "ic2:barrel" }
+}

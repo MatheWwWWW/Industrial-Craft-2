@@ -1,0 +1,6 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["X X", "XXX"],
+  "key": { "X": { "item": "ic2:rubber" } },
+  "result": { "item": "ic2:rubber_boat" }
+}

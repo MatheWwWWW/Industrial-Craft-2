@@ -1,0 +1,19 @@
+{
+	"black": "ic2:block/electric/cable/plasma/black",
+	"blank": "ic2:block/electric/cable/plasma/blank",
+	"blue": "ic2:block/electric/cable/plasma/blue",
+	"brown": "ic2:block/electric/cable/plasma/brown",
+	"cyan": "ic2:block/electric/cable/plasma/cyan",
+	"gray": "ic2:block/electric/cable/plasma/gray",
+	"green": "ic2:block/electric/cable/plasma/green",
+	"light_blue": "ic2:block/electric/cable/plasma/light_blue",
+	"light_gray": "ic2:block/electric/cable/plasma/light_gray",
+	"lime": "ic2:block/electric/cable/plasma/lime",
+	"magenta": "ic2:block/electric/cable/plasma/magenta",
+	"orange": "ic2:block/electric/cable/plasma/orange",
+	"pink": "ic2:block/electric/cable/plasma/magenta",
+	"purple": "ic2:block/electric/cable/plasma/purple",
+	"red": "ic2:block/electric/cable/plasma/red",
+	"white": "ic2:block/electric/cable/plasma/white",
+	"yellow": "ic2:block/electric/cable/plasma/yellow"
+}

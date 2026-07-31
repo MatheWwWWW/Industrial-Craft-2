@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "side": "advanced_solars:block/molecular_transformer/side",
+    "top": "advanced_solars:block/molecular_transformer/top",
+    "bottom": "advanced_solars:block/molecular_transformer/bottom"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "ic2:wooden_scaffold",
+    "ic2:reinforced_wooden_scaffold",
+    "ic2:iron_scaffold",
+    "ic2:reinforced_iron_scaffold"
+  ]
+}

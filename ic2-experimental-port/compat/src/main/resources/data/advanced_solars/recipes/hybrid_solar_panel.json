@@ -1,0 +1,13 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["CmC", "iai", "csc"],
+  "key": {
+    "C": { "item": "ic2:carbon_plate" },
+    "m": { "item": "ic2:solar_panel_mv" },
+    "i": { "item": "ic2:iridium" },
+    "a": { "item": "advanced_solars:advanced_solar_panel" },
+    "c": { "item": "ic2:advanced_circuit" },
+    "s": { "item": "advanced_solars:enriched_sunnarium" }
+  },
+  "result": { "item": "advanced_solars:hybrid_solar_panel" }
+}

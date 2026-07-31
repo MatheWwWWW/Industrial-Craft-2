@@ -1,0 +1,11 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["AEA", "CMC", "AEA"],
+  "key": {
+    "A": { "item": "ic2:advanced_machine" },
+    "E": { "item": "ic2:ev_transformer" },
+    "C": { "item": "ic2:advanced_circuit" },
+    "M": { "item": "advanced_solars:mt_core" }
+  },
+  "result": { "item": "advanced_solars:molecular_transformer" }
+}

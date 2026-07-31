@@ -1,0 +1,11 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["ppp", "pup", "ihi"],
+  "key": {
+    "p": { "item": "ic2:cell_plasma" },
+    "u": { "item": "advanced_solars:ultimate_hybrid_solar_panel" },
+    "i": { "item": "ic2:iridium" },
+    "h": { "item": "advanced_solars:hybrid_solar_helmet" }
+  },
+  "result": { "item": "advanced_solars:ultimate_hybrid_solar_helmet" }
+}

@@ -1,0 +1,7 @@
+{
+  "type": "ic2:shapeless",
+  "ingredients": [
+    { "item": "ic2:painter" }
+  ],
+  "result": { "item": "ic2:painter" }
+}

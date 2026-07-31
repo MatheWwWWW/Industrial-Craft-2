@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["C  ", " C ", " EC"],
+  "key": {
+    "C": { "item": "ic2:iron_casing" },
+    "E": { "item": "ic2:fluid_cell" }
+  },
+  "result": { "item": "ic2:foam_sprayer" },
+  "consuming": true
+}

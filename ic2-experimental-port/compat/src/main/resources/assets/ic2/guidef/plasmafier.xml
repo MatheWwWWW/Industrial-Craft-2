@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gui width="176" height="166">
+    <image x="0" y="0" width="176" height="166" basesize="256" u="0" v="0"
+           src="ic2:textures/gui_sprites/blocks/machines/ev/gui_plasmafier.png"/>
+    <text y="6" align="center">%name%</text>
+    <slot name="input" x="44" y="35"/>
+    <slot name="container" x="116" y="23"/>
+    <slot name="output" x="116" y="45"/>
+    <text x="43" y="58">UU: {%base.getUuMatter()%}</text>
+    <text x="77" y="69">{%base.getPlasma()%} / 10000 mB</text>
+    <playerInventory x="7" y="83"/>
+</gui>

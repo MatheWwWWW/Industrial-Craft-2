@@ -1,0 +1,20 @@
+{
+  "type": "ic2:shaped",
+  "pattern": [
+    "T T",
+    " E ",
+    "T T"
+  ],
+  "key": {
+    "E": {
+      "item": "ic2:electric_motor"
+    },
+    "T": {
+      "item": "ic2:dense_tin_plate"
+    }
+  },
+  "result": {
+    "item": "ic2:fluid_ejector_upgrade",
+    "count": 9
+  }
+}

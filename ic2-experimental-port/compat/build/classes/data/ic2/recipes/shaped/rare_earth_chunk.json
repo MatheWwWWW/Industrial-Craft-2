@@ -1,0 +1,9 @@
+{
+  "type": "ic2:shaped",
+  "pattern": [" X ", "XYX", " X "],
+  "key": {
+    "X": { "item": "ic2:rare_earth_dust" },
+    "Y": { "tag": "forge:ingots/iron" }
+  },
+  "result": { "item": "ic2:rare_earth_chunk" }
+}

@@ -1,0 +1,2469 @@
+
+["Generation ores"]
+	#Enable approximately default ore generation (false = vein system)
+	defaultSpawnEnabled = false
+
+[Mechanisms]
+	#Enable cooldown for mechanisms (false = no cooldown)
+	cooldownEnabled = true
+
+[General]
+	#Maximum amount of ore in a vein
+	#Range: > 1
+	maxVein = 30000
+	#Maximum amount of mb in a gas vein (not natural gas)
+	#Range: > 1
+	gasMaxVein = 200000
+	#Chance to get a gas vein (not natural gas)
+	#Range: 1 ~ 100
+	gasChance = 25
+
+["Information Text"]
+	#Informational text when logging the game
+	enable = true
+
+["Oil Vein"]
+	#Chance % for oil vein in desert
+	#Range: 0 ~ 100
+	desertChance = 65
+	#Range: > 0
+	desertMin = 250000
+	#Range: > 0
+	desertMax = 1000000
+	#Range: 0 ~ 100
+	oceanChance = 60
+	#Range: > 0
+	oceanMin = 250000
+	#Range: > 0
+	oceanMax = 750000
+	#Range: 0 ~ 100
+	deepOceanChance = 65
+	#Range: > 0
+	deepOceanMin = 150000
+	#Range: > 0
+	deepOceanMax = 500000
+	#Range: 0 ~ 100
+	riverChance = 50
+	#Range: > 0
+	riverMin = 100000
+	#Range: > 0
+	riverMax = 250000
+	#Range: 0 ~ 100
+	savannaChance = 50
+	#Range: > 0
+	savannaMin = 150000
+	#Range: > 0
+	savannaMax = 500000
+	#Range: 0 ~ 100
+	defaultChance = 11
+	#Range: > 0
+	defaultMin = 0
+	#Range: > 0
+	defaultMax = 300000
+
+[Ability]
+	#Enable special mining abilities.
+	abilityAllow = true
+	#Enable vein mining with a pickaxe (mine connected ore blocks at once).
+	abilityPickaxeAllow = true
+	#Enable tree felling with an axe (break the entire connected tree at once).
+	abilityTreeAllow = true
+	#Render ability visual effects and overlays.
+	abilityAllowRender = true
+	#Consume hunger/saturation when using special abilities.
+	abilityAllowUseFood = true
+
+[TransformerMode]
+	#Transformer mode enabled
+	TransformerMode = true
+	#Unchecking the tier
+	enableUnchecking = false
+	#Unlimiting the conduction of energy in the cable
+	cableUnlimiting = false
+	#Enable explosion from mechanisms if transformer mode is on
+	enableExplosion = true
+	#Enable lose energy in cables if transformer mode is on
+	enableLosing = true
+
+[VillagerProfessions]
+	#Enable registration of ALL custom villager professions
+	enableAllProfessions = true
+	enableEngineer = true
+	enableMechanic = true
+	enableNuclear = true
+	enableMetallurg = true
+	enableChemist = true
+	enableBotanist = true
+
+[pollution]
+	#Air pollution
+	airPollution = true
+	#Soil pollution
+	soilPollution = true
+
+["Pressure Network"]
+	#Remove the pressure level restriction in the pressure system (allows machines to work at any pressure level)
+	pressureRestriction = true
+
+[Radiation]
+	#Enable damage from radiation chunk
+	radiationDamageEnabled = true
+	#Enable radiation chunks generation
+	radiationChunksEnabled = true
+	#Enable radiation accumulation on the player
+	radiationAccumulationEnabled = true
+	#Enable render radiation chunk
+	radiationRenderEnabled = true
+
+[mechanisms_unique]
+	#Improved Combined Pump: operation length (old value 30)
+	#Range: > 1
+	improved_combined_pump_operation_length = 30
+	#Improved Combined Pump: radius or size (old value 80)
+	#Range: > 0
+	improved_combined_pump_radius_or_size = 80
+	#Improved Alloy Smelter: energy per tick (old value 1)
+	#Range: > 1
+	improved_alloy_smelter_energy_per_tick = 1
+	#Improved Alloy Smelter: operation length (old value 300)
+	#Range: > 1
+	improved_alloy_smelter_operation_length = 300
+	#Improved Gas-Cooling Reactor Regenerator: capacity (old value 7500)
+	#Range: > 1
+	improved_gas_cooling_reactor_regenerator_capacity = 7500
+	#Improved Gas-Cooling Reactor Socket: capacity (old value 20000)
+	#Range: > 1
+	improved_gas_cooling_reactor_socket_capacity = 20000
+	#Improved Generator: energy storage (old value 8000)
+	#Range: > 1
+	improved_generator_energy_storage = 8000
+	#Improved Matter Fabricator: tank capacity (old value 12)
+	#Range: > 1
+	improved_matter_fabricator_tank_capacity = 12
+	#Improved Quantum Quarry: efficiency (old value 3)
+	#Range: > 0
+	improved_quantum_quarry_efficiency = 3
+	#Improved Scanner: operation length (old value 2500)
+	#Range: > 1
+	improved_scanner_operation_length = 2500
+	#Alloy Smelter: energy per tick (old value 1)
+	#Range: > 1
+	alloy_smelter_energy_per_tick = 1
+	#Alloy Smelter: operation length (old value 300)
+	#Range: > 1
+	alloy_smelter_operation_length = 300
+	#Auto Crafter: energy_use (old value 1)
+	#Range: > 0
+	auto_crafter_energy_use = 1
+	#Excavator: chance (old value 0)
+	#Range: > 0
+	excavator_chance = 0
+	#Excavator: energy_use (old value 500)
+	#Range: > 0
+	excavator_energy_use = 500
+	#Auto Spawner: chance (old value 0)
+	#Range: > 0
+	auto_spawner_chance = 0
+	#Base Plastic Creator: tank capacity (old value 12)
+	#Range: > 1
+	base_plastic_creator_tank_capacity = 12
+	#Base Plastic Plate Creator: tank capacity (old value 12)
+	#Range: > 1
+	base_plastic_plate_creator_tank_capacity = 12
+	#Base Quantum Quarry: chance (old value 0)
+	#Range: > 0
+	base_quantum_quarry_chance = 0
+	#Base World Collector: energy_use (old value 40)
+	#Range: > 0
+	base_world_collector_energy_use = 40
+	#Electric Bio-Generator: energy_use (old value 1)
+	#Range: > 0
+	electric_bio_generator_energy_use = 1
+	#Fluid/Solid Canning Machine: tank capacity (old value 10)
+	#Range: > 1
+	fluid_solid_canning_machine_tank_capacity = 10
+	#Bee Product Centrifuge: energy use (old value 1)
+	#Range: > 0
+	bee_product_centrifuge_energy_use = 1
+	#Combined Matter Fabricator: tank capacity (old value 12)
+	#Range: > 1
+	combined_matter_fabricator_tank_capacity = 12
+	#Converter Solid Matter: energy_use (old value 2)
+	#Range: > 0
+	converter_solid_matter_energy_use = 2
+	#Cyclotron Chamber: chance (old value 100)
+	#Range: > 0
+	cyclotron_chamber_chance = 100
+	#Electric Latex Dryer: energy_use (old value 1)
+	#Range: > 0
+	electric_latex_dryer_energy_use = 1
+	#Electric Refractory Furnace: energy per tick (old value 1)
+	#Range: > 1
+	electric_refractory_furnace_energy_per_tick = 1
+	#Electric Refractory Furnace: operation length (old value 200)
+	#Range: > 1
+	electric_refractory_furnace_operation_length = 200
+	#Electric Latex Extractor: energy_use (old value 1)
+	#Range: > 0
+	electric_latex_extractor_energy_use = 1
+	#Enrichment: energy per tick (old value 1)
+	#Range: > 1
+	enrichment_energy_per_tick = 1
+	#Enrichment: operation length (old value 300)
+	#Range: > 1
+	enrichment_operation_length = 300
+	#Fishing Machine: energy_use (old value 100)
+	#Range: > 0
+	fishing_machine_energy_use = 100
+	#Fluid Adapter: energy_use (old value 1)
+	#Range: > 0
+	fluid_adapter_energy_use = 1
+	#Fluid Heater: energy_use (old value 1)
+	#Range: > 0
+	fluid_heater_energy_use = 1
+	#Fluid Integrator: energy_use (old value 1)
+	#Range: > 0
+	fluid_integrator_energy_use = 1
+	#Fluid Mixer: energy_use (old value 1)
+	#Range: > 0
+	fluid_mixer_energy_use = 1
+	#Fluid Separator: energy_use (old value 1)
+	#Range: > 0
+	fluid_separator_energy_use = 1
+	#Gas Mixer: energy_use (old value 1)
+	#Range: > 0
+	gas_mixer_energy_use = 1
+	#Gas Generator: tank capacity (old value 24)
+	#Range: > 1
+	gas_generator_tank_capacity = 24
+	#Gas Installation: tank capacity (old value 20)
+	#Range: > 1
+	gas_installation_tank_capacity = 20
+	#Gas-Cooling Reactor Regenerator: capacity (old value 5000)
+	#Range: > 1
+	gas_cooling_reactor_regenerator_capacity = 5000
+	#Gas-Cooling Reactor Socket: capacity (old value 10000)
+	#Range: > 1
+	gas_cooling_reactor_socket_capacity = 10000
+	#Expanded Stone Generator: energy per tick (old value 1)
+	#Range: > 1
+	expanded_stone_generator_energy_per_tick = 1
+	#Expanded Stone Generator: operation length (old value 100)
+	#Range: > 1
+	expanded_stone_generator_operation_length = 100
+	#Biogenerator: tank capacity (old value 12)
+	#Range: > 1
+	biogenerator_tank_capacity = 12
+	#Diesel Generator: tank capacity (old value 12)
+	#Range: > 1
+	diesel_generator_tank_capacity = 12
+	#Hydrogen Generator: tank capacity (old value 12)
+	#Range: > 1
+	hydrogen_generator_tank_capacity = 12
+	#Obsidian Generator: energy per tick (old value 1)
+	#Range: > 1
+	obsidian_generator_energy_per_tick = 1
+	#Obsidian Generator: operation length (old value 300)
+	#Range: > 1
+	obsidian_generator_operation_length = 300
+	#Gasoline Generator: tank capacity (old value 12)
+	#Range: > 1
+	gasoline_generator_tank_capacity = 12
+	#Stone Generator: energy per tick (old value 1)
+	#Range: > 1
+	stone_generator_energy_per_tick = 1
+	#Stone Generator: operation length (old value 100)
+	#Range: > 1
+	stone_generator_operation_length = 100
+	#Solarite Transformer: energy per tick (old value 1)
+	#Range: > 1
+	solarite_transformer_energy_per_tick = 1
+	#Solarite Transformer: operation length (old value 300)
+	#Range: > 1
+	solarite_transformer_operation_length = 300
+	#Wither Manufacturer: energy per tick (old value 1)
+	#Range: > 1
+	wither_manufacturer_energy_per_tick = 1
+	#Wither Manufacturer: operation length (old value 1500)
+	#Range: > 1
+	wither_manufacturer_operation_length = 1500
+	#Generator: energy storage (old value 4000)
+	#Range: > 1
+	generator_energy_storage = 4000
+	#Matter Fabricator: tank capacity (old value 10)
+	#Range: > 1
+	matter_fabricator_tank_capacity = 10
+	#Circuit Manufacturer: energy per tick (old value 1)
+	#Range: > 1
+	circuit_manufacturer_energy_per_tick = 1
+	#Circuit Manufacturer: operation length (old value 300)
+	#Range: > 1
+	circuit_manufacturer_operation_length = 300
+	#Genetic Polymerizer: tank capacity (old value 12)
+	#Range: > 1
+	genetic_polymerizer_tank_capacity = 12
+	#Genetic Replicator: energy_use (old value 1)
+	#Range: > 0
+	genetic_replicator_energy_use = 1
+	#Genetic Stabilize: energy_use (old value 1)
+	#Range: > 0
+	genetic_stabilize_energy_use = 1
+	#Genetic Transposer: tank capacity (old value 12)
+	#Range: > 1
+	genetic_transposer_tank_capacity = 12
+	#Improved Graphite-Water Reactor Socket: capacity (old value 20000)
+	#Range: > 1
+	improved_graphite_water_reactor_socket_capacity = 20000
+	#Advanced Graphite-Water Reactor Socket: capacity (old value 40000)
+	#Range: > 1
+	advanced_graphite_water_reactor_socket_capacity = 40000
+	#Perfect Graphite-Water Reactor Socket: capacity (old value 80000)
+	#Range: > 1
+	perfect_graphite_water_reactor_socket_capacity = 80000
+	#Graphite-Water Reactor Socket: capacity (old value 10000)
+	#Range: > 1
+	graphite_water_reactor_socket_capacity = 10000
+	#Improved High-Temperature Reactor Socket: capacity (old value 20000)
+	#Range: > 1
+	improved_high_temperature_reactor_socket_capacity = 20000
+	#Advanced High-Temperature Reactor Socket: capacity (old value 40000)
+	#Range: > 1
+	advanced_high_temperature_reactor_socket_capacity = 40000
+	#Perfect High-Temperature Reactor Socket: capacity (old value 80000)
+	#Range: > 1
+	perfect_high_temperature_reactor_socket_capacity = 80000
+	#High-Temperature Reactor Socket: capacity (old value 10000)
+	#Range: > 1
+	high_temperature_reactor_socket_capacity = 10000
+	#Advanced Combined Pump: operation length (old value 20)
+	#Range: > 1
+	advanced_combined_pump_operation_length = 20
+	#Advanced Combined Pump: radius or size (old value 160)
+	#Range: > 0
+	advanced_combined_pump_radius_or_size = 160
+	#Advanced Gas-Cooling Reactor Regenerator: capacity (old value 1000)
+	#Range: > 1
+	advanced_gas_cooling_reactor_regenerator_capacity = 1000
+	#Advanced Gas-Cooling Reactor Socket: capacity (old value 40000)
+	#Range: > 1
+	advanced_gas_cooling_reactor_socket_capacity = 40000
+	#Advanced Generator: energy storage (old value 16000)
+	#Range: > 1
+	advanced_generator_energy_storage = 16000
+	#Advanced Matter Fabricator: tank capacity (old value 14)
+	#Range: > 1
+	advanced_matter_fabricator_tank_capacity = 14
+	#Advanced Quantum Quarry: efficiency (old value 2)
+	#Range: > 0
+	advanced_quantum_quarry_efficiency = 2
+	#Advanced Scanner: operation length (old value 2000)
+	#Range: > 1
+	advanced_scanner_operation_length = 2000
+	#Incubator: energy_use (old value 1)
+	#Range: > 0
+	incubator_energy_use = 1
+	#Industrial Radioactive Element Purifier: energy_use (old value 1)
+	#Range: > 0
+	industrial_radioactive_element_purifier_energy_use = 1
+	#Insulator: energy_use (old value 1)
+	#Range: > 0
+	insulator_energy_use = 1
+	#Item Divider: energy_use (old value 1)
+	#Range: > 0
+	item_divider_energy_use = 1
+	#Item Divider Fluids: energy_use (old value 1)
+	#Range: > 0
+	item_divider_fluids_energy_use = 1
+	#Magnet default X radius
+	#Range: 1 ~ 128
+	magnet_default_x_radius = 11
+	#Magnet default Y radius
+	#Range: 1 ~ 128
+	magnet_default_y_radius = 11
+	#Magnet default Z radius
+	#Range: 1 ~ 128
+	magnet_default_z_radius = 11
+	#Magnet EF used when pulling one item stack
+	#Range: > 0
+	magnet_energy_per_item = 1000
+	#Magnet maximum X radius
+	#Range: 1 ~ 128
+	magnet_max_x_radius = 11
+	#Magnet maximum Y radius
+	#Range: 1 ~ 128
+	magnet_max_y_radius = 11
+	#Magnet maximum Z radius
+	#Range: 1 ~ 128
+	magnet_max_z_radius = 11
+	#Magnet work scan interval in ticks
+	#Range: 1 ~ 200
+	magnet_work_interval_ticks = 4
+	#Mutatron: energy_use (old value 1)
+	#Range: > 0
+	mutatron_energy_use = 1
+	#Neutron Separator: energy_use (old value 50)
+	#Range: > 0
+	neutron_separator_energy_use = 50
+	#Oak Tank: tank capacity (old value 4)
+	#Range: > 1
+	oak_tank_tank_capacity = 4
+	#Oil Purifier: energy_use (old value 1)
+	#Range: > 0
+	oil_purifier_energy_use = 1
+	#Perfect Combined Pump: operation length (old value 10)
+	#Range: > 1
+	perfect_combined_pump_operation_length = 10
+	#Perfect Combined Pump: radius or size (old value 320)
+	#Range: > 0
+	perfect_combined_pump_radius_or_size = 320
+	#Painting: energy per tick (old value 1)
+	#Range: > 1
+	painting_energy_per_tick = 1
+	#Painting: operation length (old value 300)
+	#Range: > 1
+	painting_operation_length = 300
+	#Perfect Gas-Cooling Reactor Regenerator: capacity (old value 1500)
+	#Range: > 1
+	perfect_gas_cooling_reactor_regenerator_capacity = 1500
+	#Perfect Gas-Cooling Reactor Socket: capacity (old value 80000)
+	#Range: > 1
+	perfect_gas_cooling_reactor_socket_capacity = 80000
+	#Perfect Generator: energy storage (old value 32000)
+	#Range: > 1
+	perfect_generator_energy_storage = 32000
+	#Perfect Matter Fabricator: tank capacity (old value 16)
+	#Range: > 1
+	perfect_matter_fabricator_tank_capacity = 16
+	#Perfect Quantum Quarry: efficiency (old value 1)
+	#Range: > 0
+	perfect_quantum_quarry_efficiency = 1
+	#Perfect Scanner: operation length (old value 1500)
+	#Range: > 1
+	perfect_scanner_operation_length = 1500
+	#Pumpjack: tank capacity (old value 20)
+	#Range: > 1
+	pumpjack_tank_capacity = 20
+	#Photonic Comb Pump: operation length (old value 10)
+	#Range: > 1
+	photonic_comb_pump_operation_length = 10
+	#Photonic Comb Pump: radius or size (old value 320)
+	#Range: > 0
+	photonic_comb_pump_radius_or_size = 320
+	#Photonic Matter Fabricator: tank capacity (old value 16)
+	#Range: > 1
+	photonic_matter_fabricator_tank_capacity = 16
+	#Photonic Generator: energy storage (old value 70000)
+	#Range: > 1
+	photonic_generator_energy_storage = 70000
+	#Photonic Scanner: operation length (old value 1000)
+	#Range: > 1
+	photonic_scanner_operation_length = 1000
+	#Chemical Plant: energy per tick (old value 1)
+	#Range: > 1
+	chemical_plant_energy_per_tick = 1
+	#Chemical Plant: operation length (old value 300)
+	#Range: > 1
+	chemical_plant_operation_length = 300
+	#Plastic Plate Machine: energy per tick (old value 1)
+	#Range: > 1
+	plastic_plate_machine_energy_per_tick = 1
+	#Plastic Plate Machine: operation length (old value 300)
+	#Range: > 1
+	plastic_plate_machine_operation_length = 300
+	#Polymerizer: energy_use (old value 1)
+	#Range: > 0
+	polymerizer_energy_use = 1
+	#Primal Pump: tank capacity (old value 4)
+	#Range: > 1
+	primal_pump_tank_capacity = 4
+	#Pump: energy_use (old value 1)
+	#Range: > 0
+	pump_energy_use = 1
+	#Quantum Quarry: efficiency (old value 4)
+	#Range: > 0
+	quantum_quarry_efficiency = 4
+	#Fluid Cooler: energy_use (old value 1)
+	#Range: > 0
+	fluid_cooler_energy_use = 1
+	#Reverse Transriptor: energy_use (old value 1)
+	#Range: > 0
+	reverse_transriptor_energy_use = 1
+	#RNA Collector: energy_use (old value 1)
+	#Range: > 0
+	rna_collector_energy_use = 1
+	#Rod Manufacturer: energy_use (old value 2)
+	#Range: > 0
+	rod_manufacturer_energy_use = 2
+	#Rotor Assembler: energy_use (old value 2)
+	#Range: > 0
+	rotor_assembler_energy_use = 2
+	#Southern: operation length (old value 40)
+	#Range: > 1
+	southern_operation_length = 40
+	#Southern: radius or size (old value 40)
+	#Range: > 0
+	southern_radius_or_size = 40
+	#Scanner: operation length (old value 3300)
+	#Range: > 1
+	scanner_operation_length = 3300
+	#Single Fluid Adapter: energy_use (old value 1)
+	#Range: > 0
+	single_fluid_adapter_energy_use = 1
+	#Solid-Fluid Integrator: energy_use (old value 1)
+	#Range: > 0
+	solid_fluid_integrator_energy_use = 1
+	#Solid-Fluid Mixer: energy_use (old value 1)
+	#Range: > 0
+	solid_fluid_mixer_energy_use = 1
+	#Solid Mixer: energy_use (old value 1)
+	#Range: > 0
+	solid_mixer_energy_use = 1
+	#Solid-State Electrolyzer: energy_use (old value 1)
+	#Range: > 0
+	solid_state_electrolyzer_energy_use = 1
+	#Steam Bio-Generator: energy_use (old value 1)
+	#Range: > 0
+	steam_bio_generator_energy_use = 1
+	#Steam Crystal Charger: energy_use (old value 1)
+	#Range: > 0
+	steam_crystal_charger_energy_use = 1
+	#Steam Dryer: energy_use (old value 2)
+	#Range: > 0
+	steam_dryer_energy_use = 2
+	#Steam Pump: energy_use (old value 2)
+	#Range: > 0
+	steam_pump_energy_use = 2
+	#Steam Pump: tank capacity (old value 10)
+	#Range: > 1
+	steam_pump_tank_capacity = 10
+	#Steam Sharpener: energy_use (old value 1)
+	#Range: > 0
+	steam_sharpener_energy_use = 1
+	#Steam Solid-Fluid Mixer: energy_use (old value 1)
+	#Range: > 0
+	steam_solid_fluid_mixer_energy_use = 1
+	#Steam Squeezer: energy_use (old value 2)
+	#Range: > 0
+	steam_squeezer_energy_use = 2
+	#Steam Cable Insulator: energy_use (old value 1)
+	#Range: > 0
+	steam_cable_insulator_energy_use = 1
+	#Steel Tank: tank capacity (old value 10)
+	#Range: > 1
+	steel_tank_tank_capacity = 10
+	#Sunnarium Panel Maker: energy per tick (old value 1)
+	#Range: > 1
+	sunnarium_panel_maker_energy_per_tick = 1
+	#Sunnarium Panel Maker: operation length (old value 300)
+	#Range: > 1
+	sunnarium_panel_maker_operation_length = 300
+	#Nuclear Fusion Reactor: energy per tick (old value 1)
+	#Range: > 1
+	nuclear_fusion_reactor_energy_per_tick = 1
+	#Nuclear Fusion Reactor: operation length (old value 300)
+	#Range: > 1
+	nuclear_fusion_reactor_operation_length = 300
+	#Liquid Tank: tank capacity (old value 40)
+	#Range: > 1
+	liquid_tank_tank_capacity = 40
+	#Teleporter: cooldown_ticks (old value 0)
+	#Range: > 0
+	teleporter_cooldown_ticks = 0
+	#Triple Solid Mixer: energy_use (old value 1)
+	#Range: > 0
+	triple_solid_mixer_energy_use = 1
+	#Update: energy per tick (old value 1)
+	#Range: > 1
+	update_energy_per_tick = 1
+	#Update: operation length (old value 300)
+	#Range: > 1
+	update_operation_length = 300
+	#Rover Upgrade Station: energy per tick (old value 1)
+	#Range: > 1
+	rover_upgrade_station_energy_per_tick = 1
+	#Rover Upgrade Station: operation length (old value 300)
+	#Range: > 1
+	rover_upgrade_station_operation_length = 300
+	#Improved Liquid Reactor Socket: capacity (old value 15000)
+	#Range: > 1
+	improved_liquid_reactor_socket_capacity = 15000
+	#Advanced Liquid Reactor Socket: capacity (old value 30000)
+	#Range: > 1
+	advanced_liquid_reactor_socket_capacity = 30000
+	#Perfect Liquid Reactor Socket: capacity (old value 80000)
+	#Range: > 1
+	perfect_liquid_reactor_socket_capacity = 80000
+	#Water Rotor Assembler: energy_use (old value 2)
+	#Range: > 0
+	water_rotor_assembler_energy_use = 2
+	#Liquid Reactor Socket: capacity (old value 10000)
+	#Range: > 1
+	liquid_reactor_socket_capacity = 10000
+	#Welding Machine: energy per tick (old value 1)
+	#Range: > 1
+	welding_machine_energy_per_tick = 1
+	#Welding Machine: operation length (old value 140)
+	#Range: > 1
+	welding_machine_operation_length = 140
+	#Improved Alloy Smelter: air pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	improved_alloy_smelter_air_pollution_amount = 0.15
+	#Improved Alloy Smelter: soil pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	improved_alloy_smelter_soil_pollution_amount = 0.075
+	#Improved Generator: efficiency (old value 2.2)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	improved_generator_efficiency = 2.2
+	#Improved Geo Generator: air pollution amount (old value 0.5)
+	#Range: 0.0 ~ 1000000.0
+	improved_geo_generator_air_pollution_amount = 0.5
+	#Improved Geo Generator: soil pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	improved_geo_generator_soil_pollution_amount = 0.2
+	#Improved Handler Heavy Ore: air pollution amount (old value 0.8)
+	#Range: 0.0 ~ 1000000.0
+	improved_handler_heavy_ore_air_pollution_amount = 0.8
+	#Improved Handler Heavy Ore: soil pollution amount (old value 0.35)
+	#Range: 0.0 ~ 1000000.0
+	improved_handler_heavy_ore_soil_pollution_amount = 0.35
+	#Improved Matter Fabricator: energy storage (old value 900000F)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	improved_matter_fabricator_energy_storage = 900000.0
+	#Improved Oil Refiner: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	improved_oil_refiner_air_pollution_amount = 0.2
+	#Improved Oil Refiner: soil pollution amount (old value 0.06)
+	#Range: 0.0 ~ 1000000.0
+	improved_oil_refiner_soil_pollution_amount = 0.06
+	#Improved Pump: air pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	improved_pump_air_pollution_amount = 0.15
+	#Improved Pump: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	improved_pump_soil_pollution_amount = 0.05
+	#Improved Redstone Generator: air pollution amount (old value 0.3)
+	#Range: 0.0 ~ 1000000.0
+	improved_redstone_generator_air_pollution_amount = 0.3
+	#Improved Redstone Generator: efficiency (old value 2.2)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	improved_redstone_generator_efficiency = 2.2
+	#Improved Redstone Generator: soil pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	improved_redstone_generator_soil_pollution_amount = 0.2
+	#Improved Oil Refinery: energy storage (old value 24000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	improved_oil_refinery_energy_storage = 24000.0
+	#Improved Replicator: air pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	improved_replicator_air_pollution_amount = 0.15
+	#Improved Replicator: efficiency (old value 0.95)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	improved_replicator_efficiency = 0.95
+	#Improved Replicator: soil pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	improved_replicator_soil_pollution_amount = 0.075
+	#Improved Scanner: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	improved_scanner_air_pollution_amount = 0.2
+	#Improved Scanner: soil pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	improved_scanner_soil_pollution_amount = 0.075
+	#Advanced: energy storage (old value 16000000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	advanced_energy_storage = 1.6E7
+	#Advanced Matter: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	advanced_matter_air_pollution_amount = 0.1
+	#Advanced Matter: soil pollution amount (old value 0.02)
+	#Range: 0.0 ~ 1000000.0
+	advanced_matter_soil_pollution_amount = 0.02
+	#Air Collector: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	air_collector_soil_pollution_amount = 0.1
+	#Air Separation Unit: energy storage (old value 5000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	air_separation_unit_energy_storage = 5000.0
+	#Alkaline Earth Quarry: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	alkaline_earth_quarry_air_pollution_amount = 0.1
+	#Alkaline Earth Quarry: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	alkaline_earth_quarry_soil_pollution_amount = 0.1
+	#Alkaline Earth Quarry: energy storage (old value 100)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	alkaline_earth_quarry_energy_storage = 100.0
+	#Alloy Smelter: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	alloy_smelter_air_pollution_amount = 0.2
+	#Alloy Smelter: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	alloy_smelter_soil_pollution_amount = 0.1
+	#Current Converter: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	current_converter_energy_storage = 0.0
+	#Ampere Storage: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	ampere_storage_energy_storage = 0.0
+	#Analyze: air pollution amount (old value 1)
+	#Range: 0.0 ~ 1000000.0
+	analyze_air_pollution_amount = 1.0
+	#Analyze: energy storage (old value 10000000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	analyze_energy_storage = 1.0E7
+	#Analyze: soil pollution amount (old value 0.5)
+	#Range: 0.0 ~ 1000000.0
+	analyze_soil_pollution_amount = 0.5
+	#Module Removal Station: energy storage (old value 1000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	module_removal_station_energy_storage = 1000.0
+	#Assampler Scrap: air pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	assampler_scrap_air_pollution_amount = 0.15
+	#Assampler Scrap: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	assampler_scrap_soil_pollution_amount = 0.1
+	#Auto Crafter: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	auto_crafter_air_pollution_amount = 0.1
+	#Auto Crafter: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	auto_crafter_soil_pollution_amount = 0.1
+	#Excavator: air pollution amount (old value 0.5)
+	#Range: 0.0 ~ 1000000.0
+	excavator_air_pollution_amount = 0.5
+	#Excavator: soil pollution amount (old value 0.5)
+	#Range: 0.0 ~ 1000000.0
+	excavator_soil_pollution_amount = 0.5
+	#Box unpacker: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	box_unpacker_air_pollution_amount = 0.1
+	#Box unpacker: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	box_unpacker_soil_pollution_amount = 0.1
+	#Auto Spawner: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	auto_spawner_air_pollution_amount = 0.1
+	#Auto Spawner: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	auto_spawner_soil_pollution_amount = 0.1
+	#Automatic Crafting Table: energy storage (old value 1000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	automatic_crafting_table_energy_storage = 1000.0
+	#Base Handler Heavy Ore: energy storage (old value 300)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	base_handler_heavy_ore_energy_storage = 300.0
+	#Base Redstone Generator: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	base_redstone_generator_energy_storage = 0.0
+	#Base Replicator: energy storage (old value 2000000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	base_replicator_energy_storage = 2000000.0
+	#Base Wither Maker: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	base_wither_maker_air_pollution_amount = 0.2
+	#Base Wither Maker: soil pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	base_wither_maker_soil_pollution_amount = 0.2
+	#Base World Collector: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	base_world_collector_energy_storage = 0.0
+	#Battery Factory: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	battery_factory_air_pollution_amount = 0.1
+	#Battery Factory: energy storage (old value 400)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	battery_factory_energy_storage = 400.0
+	#Battery Factory: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	battery_factory_soil_pollution_amount = 0.1
+	#Bio Fuel Generator: air pollution amount (old value 0.3)
+	#Range: 0.0 ~ 1000000.0
+	bio_fuel_generator_air_pollution_amount = 0.3
+	#Bio Fuel Generator: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	bio_fuel_generator_soil_pollution_amount = 0.1
+	#Electric Bio-Generator: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	electric_bio_generator_energy_storage = 0.0
+	#Blast Furnace Controller: air pollution amount (old value 0.5)
+	#Range: 0.0 ~ 1000000.0
+	blast_furnace_controller_air_pollution_amount = 0.5
+	#Blast Furnace Controller: soil pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	blast_furnace_controller_soil_pollution_amount = 0.2
+	#Brewing Plant: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	brewing_plant_air_pollution_amount = 0.2
+	#Brewing Plant: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	brewing_plant_soil_pollution_amount = 0.1
+	#Cactus Farm: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	cactus_farm_air_pollution_amount = 0.1
+	#Cactus Farm: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	cactus_farm_soil_pollution_amount = 0.1
+	#Canner: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	canner_air_pollution_amount = 0.1
+	#Fluid/Solid Canning Machine: energy storage (old value 300)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	fluid_solid_canning_machine_energy_storage = 300.0
+	#Canner: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	canner_soil_pollution_amount = 0.05
+	#Bee Product Centrifuge: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	bee_product_centrifuge_air_pollution_amount = 0.1
+	#Bee Product Centrifuge: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	bee_product_centrifuge_soil_pollution_amount = 0.1
+	#Chicken Farm: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	chicken_farm_air_pollution_amount = 0.1
+	#Chicken Farm: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	chicken_farm_soil_pollution_amount = 0.1
+	#Coke Oven Controller: air pollution amount (old value 0.5)
+	#Range: 0.0 ~ 1000000.0
+	coke_oven_controller_air_pollution_amount = 0.5
+	#Coke Oven Controller: soil pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	coke_oven_controller_soil_pollution_amount = 0.2
+	#Bee Product Collector: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	bee_product_collector_air_pollution_amount = 0.1
+	#Bee Product Collector: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	bee_product_collector_soil_pollution_amount = 0.1
+	#Comb Double Macerator: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	comb_double_macerator_air_pollution_amount = 0.1
+	#Comb Double Macerator: soil pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	comb_double_macerator_soil_pollution_amount = 0.075
+	#Combined Macerator: air pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	combined_macerator_air_pollution_amount = 0.15
+	#Combined Macerator: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	combined_macerator_soil_pollution_amount = 0.1
+	#Comb Quad Macerator: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	comb_quad_macerator_air_pollution_amount = 0.05
+	#Comb Quad Macerator: soil pollution amount (old value 0.025)
+	#Range: 0.0 ~ 1000000.0
+	comb_quad_macerator_soil_pollution_amount = 0.025
+	#Comb Triple Macerator: air pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	comb_triple_macerator_air_pollution_amount = 0.075
+	#Comb Triple Macerator: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	comb_triple_macerator_soil_pollution_amount = 0.05
+	#Combined Pump: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	combined_pump_energy_storage = 0.0
+	#Combined Matter Fabricator: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	combined_matter_fabricator_air_pollution_amount = 0.1
+	#Combined Matter Fabricator: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	combined_matter_fabricator_energy_storage = 0.0
+	#Combined Matter Fabricator: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	combined_matter_fabricator_soil_pollution_amount = 0.05
+	#Primitive Compressor: air pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	primitive_compressor_air_pollution_amount = 0.15
+	#Primitive Compressor: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	primitive_compressor_soil_pollution_amount = 0.1
+	#Solid Matter Transformer: energy storage (old value 50000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	solid_matter_transformer_energy_storage = 50000.0
+	#Refrigerator: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	refrigerator_air_pollution_amount = 0.05
+	#Refrigerator: energy storage (old value 10000D)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	refrigerator_energy_storage = 10000.0
+	#Refrigerator: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	refrigerator_soil_pollution_amount = 0.05
+	#Cow Farm: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	cow_farm_air_pollution_amount = 0.1
+	#Cow Farm: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	cow_farm_soil_pollution_amount = 0.1
+	#Crystal Charger: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	crystal_charger_energy_storage = 200.0
+	#Crystal Charger: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	crystal_charger_air_pollution_amount = 0.05
+	#Crystal Charger: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	crystal_charger_soil_pollution_amount = 0.05
+	#Cutting Machine: air pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	cutting_machine_air_pollution_amount = 0.15
+	#Cutting Machine: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	cutting_machine_soil_pollution_amount = 0.1
+	#Background radiation is low: energy storage (old value 400000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	background_radiation_is_low_energy_storage = 400000.0
+	#Diesel Generator: air pollution amount (old value 0.75)
+	#Range: 0.0 ~ 1000000.0
+	diesel_generator_air_pollution_amount = 0.75
+	#Diesel Generator: soil pollution amount (old value 0.45)
+	#Range: 0.0 ~ 1000000.0
+	diesel_generator_soil_pollution_amount = 0.45
+	#Double Assampler Scrap: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	double_assampler_scrap_air_pollution_amount = 0.1
+	#Double Assampler Scrap: soil pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	double_assampler_scrap_soil_pollution_amount = 0.075
+	#Double Centrifuge: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	double_centrifuge_air_pollution_amount = 0.1
+	#Double Centrifuge: soil pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	double_centrifuge_soil_pollution_amount = 0.075
+	#Improved Combined Recycler: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	improved_combined_recycler_air_pollution_amount = 0.1
+	#Improved Combined Recycler: soil pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	improved_combined_recycler_soil_pollution_amount = 0.075
+	#Double Compressor: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	double_compressor_air_pollution_amount = 0.1
+	#Double Compressor: soil pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	double_compressor_soil_pollution_amount = 0.075
+	#Improved Cutting Machine: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	improved_cutting_machine_air_pollution_amount = 0.1
+	#Improved Cutting Machine: soil pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	improved_cutting_machine_soil_pollution_amount = 0.075
+	#Double Electric Furnace: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	double_electric_furnace_air_pollution_amount = 0.1
+	#Double Electric Furnace: soil pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	double_electric_furnace_soil_pollution_amount = 0.075
+	#Improved Extractor: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	improved_extractor_air_pollution_amount = 0.1
+	#Improved Extractor: soil pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	improved_extractor_soil_pollution_amount = 0.075
+	#Double Extruding: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	double_extruding_air_pollution_amount = 0.1
+	#Double Extruding: soil pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	double_extruding_soil_pollution_amount = 0.075
+	#Double Fermer: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	double_fermer_air_pollution_amount = 0.1
+	#Double Fermer: soil pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	double_fermer_soil_pollution_amount = 0.075
+	#Double Gear Machine: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	double_gear_machine_air_pollution_amount = 0.1
+	#Double Gear Machine: soil pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	double_gear_machine_soil_pollution_amount = 0.075
+	#Improved Macerator: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	improved_macerator_air_pollution_amount = 0.1
+	#Improved Macerator: soil pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	improved_macerator_soil_pollution_amount = 0.075
+	#Double Ore Washing: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	double_ore_washing_air_pollution_amount = 0.1
+	#Double Ore Washing: soil pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	double_ore_washing_soil_pollution_amount = 0.075
+	#Improved Recycler: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	improved_recycler_air_pollution_amount = 0.1
+	#Improved Recycler: soil pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	improved_recycler_soil_pollution_amount = 0.075
+	#Improved Rolling Machine: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	improved_rolling_machine_air_pollution_amount = 0.1
+	#Improved Rolling Machine: soil pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	improved_rolling_machine_soil_pollution_amount = 0.075
+	#Advanced Molecular Transformer: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	advanced_molecular_transformer_energy_storage = 0.0
+	#Electric Brewing Machine: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	electric_brewing_machine_energy_storage = 200.0
+	#Electric Latex Dryer: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	electric_latex_dryer_air_pollution_amount = 0.1
+	#Electric Latex Dryer: energy storage (old value 100)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	electric_latex_dryer_energy_storage = 100.0
+	#Electric Latex Dryer: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	electric_latex_dryer_soil_pollution_amount = 0.1
+	#Electric Furnace: air pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	electric_furnace_air_pollution_amount = 0.15
+	#Electric Furnace: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	electric_furnace_soil_pollution_amount = 0.1
+	#Electric Heat: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	electric_heat_air_pollution_amount = 0.05
+	#Electric Heat: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	electric_heat_soil_pollution_amount = 0.1
+	#Electric Refractory Furnace: air pollution amount (old value 0.5)
+	#Range: 0.0 ~ 1000000.0
+	electric_refractory_furnace_air_pollution_amount = 0.5
+	#Electric Refractory Furnace: soil pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	electric_refractory_furnace_soil_pollution_amount = 0.25
+	#Electric Latex Extractor: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	electric_latex_extractor_air_pollution_amount = 0.1
+	#Electric Latex Extractor: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	electric_latex_extractor_energy_storage = 200.0
+	#Electric Latex Extractor: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	electric_latex_extractor_soil_pollution_amount = 0.1
+	#Electric Cable Insulator: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	electric_cable_insulator_energy_storage = 200.0
+	#Electrolyzer: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	electrolyzer_air_pollution_amount = 0.1
+	#Electrolyzer: energy storage (old value 24000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	electrolyzer_energy_storage = 24000.0
+	#Electrolyzer: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	electrolyzer_soil_pollution_amount = 0.05
+	#Electric Electronic Assembler: energy storage (old value 300)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	electric_electronic_assembler_energy_storage = 300.0
+	#Electronics Assembly Table: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	electronics_assembly_table_air_pollution_amount = 0.1
+	#Electronics Assembly Table: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	electronics_assembly_table_energy_storage = 0.0
+	#Electronics Assembly Table: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	electronics_assembly_table_soil_pollution_amount = 0.1
+	#Enchanting Machine: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	enchanting_machine_air_pollution_amount = 0.1
+	#Enchanting Machine: energy storage (old value 400)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	enchanting_machine_energy_storage = 400.0
+	#Enchanting Machine: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	enchanting_machine_soil_pollution_amount = 0.1
+	#Extractor: air pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	extractor_air_pollution_amount = 0.15
+	#Extractor: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	extractor_soil_pollution_amount = 0.1
+	#Extruding: air pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	extruding_air_pollution_amount = 0.15
+	#Extruding: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	extruding_soil_pollution_amount = 0.1
+	#Fermer: air pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	fermer_air_pollution_amount = 0.15
+	#Fermer: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	fermer_soil_pollution_amount = 0.1
+	#Field Cleaner: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	field_cleaner_air_pollution_amount = 0.1
+	#Field Cleaner: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	field_cleaner_soil_pollution_amount = 0.1
+	#Fishing Machine: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	fishing_machine_air_pollution_amount = 0.1
+	#Fishing Machine: energy storage (old value 1E4)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	fishing_machine_energy_storage = 10000.0
+	#Fishing Machine: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	fishing_machine_soil_pollution_amount = 0.05
+	#Fluid Adapter: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	fluid_adapter_air_pollution_amount = 0.1
+	#Fluid Adapter: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	fluid_adapter_energy_storage = 200.0
+	#Fluid Adapter: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	fluid_adapter_soil_pollution_amount = 0.1
+	#Fluid Refrigerator: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	fluid_refrigerator_energy_storage = 0.0
+	#Liquid Heater: air pollution amount (old value 0.4)
+	#Range: 0.0 ~ 1000000.0
+	liquid_heater_air_pollution_amount = 0.4
+	#Liquid Heater: soil pollution amount (old value 0.24)
+	#Range: 0.0 ~ 1000000.0
+	liquid_heater_soil_pollution_amount = 0.24
+	#Fluid Heater: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	fluid_heater_air_pollution_amount = 0.1
+	#Fluid Heater: energy storage (old value 100)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	fluid_heater_energy_storage = 100.0
+	#Fluid Heater: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	fluid_heater_soil_pollution_amount = 0.1
+	#Fluid Integrator: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	fluid_integrator_air_pollution_amount = 0.1
+	#Fluid Integrator: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	fluid_integrator_energy_storage = 200.0
+	#Fluid Integrator: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	fluid_integrator_soil_pollution_amount = 0.1
+	#Fluid Mixer: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	fluid_mixer_air_pollution_amount = 0.1
+	#Fluid Mixer: energy storage (old value 100)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	fluid_mixer_energy_storage = 100.0
+	#Fluid Mixer: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	fluid_mixer_soil_pollution_amount = 0.1
+	#Fluid Separator: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	fluid_separator_air_pollution_amount = 0.1
+	#Fluid Separator: energy storage (old value 100)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	fluid_separator_energy_storage = 100.0
+	#Fluid Separator: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	fluid_separator_soil_pollution_amount = 0.1
+	#Gas Mixer: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	gas_mixer_air_pollution_amount = 0.2
+	#Gas Mixer: energy storage (old value 100)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	gas_mixer_energy_storage = 100.0
+	#Gas Mixer: soil pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	gas_mixer_soil_pollution_amount = 0.2
+	#Gas Generator: air pollution amount (old value 0.75)
+	#Range: 0.0 ~ 1000000.0
+	gas_generator_air_pollution_amount = 0.75
+	#Gas Generator: soil pollution amount (old value 0.3)
+	#Range: 0.0 ~ 1000000.0
+	gas_generator_soil_pollution_amount = 0.3
+	#Gas Installation: energy storage (old value 50000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	gas_installation_energy_storage = 50000.0
+	#Gear Machine: air pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	gear_machine_air_pollution_amount = 0.15
+	#Gear Machine: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	gear_machine_soil_pollution_amount = 0.1
+	#Generation Addition Stone: air pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	generation_addition_stone_air_pollution_amount = 0.075
+	#Generation Addition Stone: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	generation_addition_stone_soil_pollution_amount = 0.05
+	#Generation Microchip: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	generation_microchip_air_pollution_amount = 0.2
+	#Generation Microchip: soil pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	generation_microchip_soil_pollution_amount = 0.15
+	#Generation Stone: air pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	generation_stone_air_pollution_amount = 0.075
+	#Generation Stone: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	generation_stone_soil_pollution_amount = 0.05
+	#Generator Improved: air pollution amount (old value 0.5)
+	#Range: 0.0 ~ 1000000.0
+	generator_improved_air_pollution_amount = 0.5
+	#Generator Improved: soil pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	generator_improved_soil_pollution_amount = 0.2
+	#Charging in the Generator: air pollution amount (old value 0.75)
+	#Range: 0.0 ~ 1000000.0
+	charging_in_the_generator_air_pollution_amount = 0.75
+	#Generator Advanced: air pollution amount (old value 0.35)
+	#Range: 0.0 ~ 1000000.0
+	generator_advanced_air_pollution_amount = 0.35
+	#Generator Advanced: soil pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	generator_advanced_soil_pollution_amount = 0.15
+	#Generator: efficiency (old value 1)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	generator_efficiency = 1.0
+	#Matter Fabricator: energy storage (old value 1000000F)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	matter_fabricator_energy_storage = 1000000.0
+	#Generator Perfect: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	generator_perfect_air_pollution_amount = 0.2
+	#Generator Perfect: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	generator_perfect_soil_pollution_amount = 0.1
+	#Charging in the Generator: soil pollution amount (old value 0.35)
+	#Range: 0.0 ~ 1000000.0
+	charging_in_the_generator_soil_pollution_amount = 0.35
+	#Genetic Polymerizer: air pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	genetic_polymerizer_air_pollution_amount = 0.25
+	#Genetic Polymerizer: energy storage (old value 300)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	genetic_polymerizer_energy_storage = 300.0
+	#Genetic Polymerizer: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	genetic_polymerizer_soil_pollution_amount = 0.1
+	#Genetic Replicator: air pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	genetic_replicator_air_pollution_amount = 0.25
+	#Genetic Replicator: energy storage (old value 100)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	genetic_replicator_energy_storage = 100.0
+	#Genetic Replicator: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	genetic_replicator_soil_pollution_amount = 0.1
+	#Genetic Stabilize: air pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	genetic_stabilize_air_pollution_amount = 0.25
+	#Genetic Stabilize: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	genetic_stabilize_soil_pollution_amount = 0.1
+	#Genetic Stabilizer: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	genetic_stabilizer_energy_storage = 200.0
+	#Genetic Transposer: air pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	genetic_transposer_air_pollution_amount = 0.25
+	#Genetic Transposer: energy storage (old value 300)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	genetic_transposer_energy_storage = 300.0
+	#Genetic Transposer: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	genetic_transposer_soil_pollution_amount = 0.1
+	#Genome Extractor: air pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	genome_extractor_air_pollution_amount = 0.25
+	#Genome Extractor: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	genome_extractor_soil_pollution_amount = 0.1
+	#Geo Generator: air pollution amount (old value 0.85)
+	#Range: 0.0 ~ 1000000.0
+	geo_generator_air_pollution_amount = 0.85
+	#Geo Generator: soil pollution amount (old value 0.35)
+	#Range: 0.0 ~ 1000000.0
+	geo_generator_soil_pollution_amount = 0.35
+	#Graphite Crystallizer: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	graphite_crystallizer_air_pollution_amount = 0.1
+	#Graphite Crystallizer: energy storage (old value 1000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	graphite_crystallizer_energy_storage = 1000.0
+	#Graphite Crystallizer: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	graphite_crystallizer_soil_pollution_amount = 0.1
+	#Handler Heavy Ore: air pollution amount (old value 1)
+	#Range: 0.0 ~ 1000000.0
+	handler_heavy_ore_air_pollution_amount = 1.0
+	#Handler Heavy Ore: soil pollution amount (old value 0.5)
+	#Range: 0.0 ~ 1000000.0
+	handler_heavy_ore_soil_pollution_amount = 0.5
+	#Helium Generator: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	helium_generator_air_pollution_amount = 0.1
+	#Helium Generator: energy storage (old value 50000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	helium_generator_energy_storage = 50000.0
+	#Helium Generator: soil pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	helium_generator_soil_pollution_amount = 0.15
+	#Generator without exhaust: air pollution amount (old value 0.3)
+	#Range: 0.0 ~ 1000000.0
+	generator_without_exhaust_air_pollution_amount = 0.3
+	#Generator without exhaust: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	generator_without_exhaust_soil_pollution_amount = 0.1
+	#Advanced Alloy Smelter: air pollution amount (old value 0.125)
+	#Range: 0.0 ~ 1000000.0
+	advanced_alloy_smelter_air_pollution_amount = 0.125
+	#Advanced Alloy Smelter: energy storage (old value 300)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	advanced_alloy_smelter_energy_storage = 300.0
+	#Advanced Alloy Smelter: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	advanced_alloy_smelter_soil_pollution_amount = 0.05
+	#Advanced Generator: efficiency (old value 3.4)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	advanced_generator_efficiency = 3.4
+	#Advanced Geo Generator: air pollution amount (old value 0.35)
+	#Range: 0.0 ~ 1000000.0
+	advanced_geo_generator_air_pollution_amount = 0.35
+	#Advanced Geo Generator: soil pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	advanced_geo_generator_soil_pollution_amount = 0.15
+	#Advanced Handler Heavy Ore: air pollution amount (old value 0.6)
+	#Range: 0.0 ~ 1000000.0
+	advanced_handler_heavy_ore_air_pollution_amount = 0.6
+	#Advanced Handler Heavy Ore: soil pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	advanced_handler_heavy_ore_soil_pollution_amount = 0.25
+	#Advanced Matter Fabricator: energy storage (old value 800000F)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	advanced_matter_fabricator_energy_storage = 800000.0
+	#Advanced Oil Refiner: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	advanced_oil_refiner_air_pollution_amount = 0.2
+	#Advanced Oil Refiner: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	advanced_oil_refiner_soil_pollution_amount = 0.05
+	#Advanced Pump: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	advanced_pump_air_pollution_amount = 0.1
+	#Advanced Pump: soil pollution amount (old value 0.025)
+	#Range: 0.0 ~ 1000000.0
+	advanced_pump_soil_pollution_amount = 0.025
+	#Advanced Redstone Generator: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	advanced_redstone_generator_air_pollution_amount = 0.2
+	#Advanced Redstone Generator: efficiency (old value 3.4)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	advanced_redstone_generator_efficiency = 3.4
+	#Advanced Redstone Generator: soil pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	advanced_redstone_generator_soil_pollution_amount = 0.15
+	#Advanced Oil Refinery: energy storage (old value 24000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	advanced_oil_refinery_energy_storage = 24000.0
+	#Advanced Replicator: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	advanced_replicator_air_pollution_amount = 0.1
+	#Advanced Replicator: efficiency (old value 0.85)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	advanced_replicator_efficiency = 0.85
+	#Advanced Replicator: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	advanced_replicator_soil_pollution_amount = 0.05
+	#Advanced Scanner: air pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	advanced_scanner_air_pollution_amount = 0.15
+	#Advanced Scanner: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	advanced_scanner_soil_pollution_amount = 0.05
+	#Advanced Solar Energy Generator: generation multiplier (old value 4)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	advanced_solar_energy_generator_generation_multiplier = 4.0
+	#Improved Matter: air pollution amount (old value 0.065)
+	#Range: 0.0 ~ 1000000.0
+	improved_matter_air_pollution_amount = 0.065
+	#Improved Matter: soil pollution amount (old value 0.015)
+	#Range: 0.0 ~ 1000000.0
+	improved_matter_soil_pollution_amount = 0.015
+	#Incubator: air pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	incubator_air_pollution_amount = 0.25
+	#Incubator: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	incubator_energy_storage = 200.0
+	#Incubator: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	incubator_soil_pollution_amount = 0.1
+	#Industrial Radioactive Element Purifier: air pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	industrial_radioactive_element_purifier_air_pollution_amount = 0.25
+	#Industrial Radioactive Element Purifier: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	industrial_radioactive_element_purifier_energy_storage = 200.0
+	#Industrial Radioactive Element Purifier: soil pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	industrial_radioactive_element_purifier_soil_pollution_amount = 0.25
+	#Inoculator: air pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	inoculator_air_pollution_amount = 0.25
+	#Inoculator: energy storage (old value 300)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	inoculator_energy_storage = 300.0
+	#Inoculator: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	inoculator_soil_pollution_amount = 0.1
+	#Insulator: air pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	insulator_air_pollution_amount = 0.25
+	#Insulator: energy storage (old value 100)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	insulator_energy_storage = 100.0
+	#Insulator: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	insulator_soil_pollution_amount = 0.1
+	#Item Divider: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	item_divider_air_pollution_amount = 0.1
+	#Item Divider: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	item_divider_energy_storage = 200.0
+	#Item Divider Fluids: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	item_divider_fluids_air_pollution_amount = 0.1
+	#Item Divider Fluids: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	item_divider_fluids_soil_pollution_amount = 0.1
+	#Item Divider: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	item_divider_soil_pollution_amount = 0.1
+	#Item-to-Fluid Divider: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	item_to_fluid_divider_energy_storage = 200.0
+	#Bag Unloader: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	bag_unloader_energy_storage = 0.0
+	#Laser Polisher: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	laser_polisher_air_pollution_amount = 0.1
+	#Laser Polisher: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	laser_polisher_energy_storage = 200.0
+	#Laser Polisher: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	laser_polisher_soil_pollution_amount = 0.1
+	#Lava Generator: energy storage (old value 20000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	lava_generator_energy_storage = 20000.0
+	#Lava Generator: air pollution amount (old value 0.3)
+	#Range: 0.0 ~ 1000000.0
+	lava_generator_air_pollution_amount = 0.3
+	#Lava Generator: soil pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	lava_generator_soil_pollution_amount = 0.15
+	#Maceration Tool: air pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	maceration_tool_air_pollution_amount = 0.15
+	#Maceration Tool: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	maceration_tool_soil_pollution_amount = 0.1
+	#Machine Charge: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	machine_charge_air_pollution_amount = 0.1
+	#Machine Charge: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	machine_charge_soil_pollution_amount = 0.1
+	#Magnet: energy storage (old value 100000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	magnet_energy_storage = 100000.0
+	#Magnetic Generator: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	magnetic_generator_energy_storage = 0.0
+	#Active Matter Factory: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	active_matter_factory_air_pollution_amount = 0.1
+	#Active Matter Factory: energy storage (old value 2000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	active_matter_factory_energy_storage = 2000.0
+	#Active Matter Factory: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	active_matter_factory_soil_pollution_amount = 0.1
+	#Mob Magnet: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	mob_magnet_air_pollution_amount = 0.1
+	#Mob Magnet: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	mob_magnet_soil_pollution_amount = 0.1
+	#Module Handler: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	module_handler_energy_storage = 0.0
+	#Molecular Transformer: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	molecular_transformer_energy_storage = 0.0
+	#Moonlight Infuser: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	moonlight_infuser_air_pollution_amount = 0.1
+	#Moonlight Infuser: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	moonlight_infuser_energy_storage = 0.0
+	#Moonlight Infuser: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	moonlight_infuser_soil_pollution_amount = 0.1
+	#Multi Crop: air pollution formula base value (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	multi_crop_air_pollution_formula_base_value = 0.1
+	#Multi Crop: soil pollution formula base value (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	multi_crop_soil_pollution_formula_base_value = 0.1
+	#Mutatron: air pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	mutatron_air_pollution_amount = 0.25
+	#Mutatron: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	mutatron_energy_storage = 200.0
+	#Mutatron: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	mutatron_soil_pollution_amount = 0.1
+	#Neutron Particle Generator: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	neutron_particle_generator_air_pollution_amount = 0.05
+	#Neutron Particle Generator: soil pollution amount (old value 0.005)
+	#Range: 0.0 ~ 1000000.0
+	neutron_particle_generator_soil_pollution_amount = 0.005
+	#Neutronium transformer: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	neutronium_transformer_energy_storage = 0.0
+	#Night Converter: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	night_converter_energy_storage = 0.0
+	#Radioactive Waste Reprocessor: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	radioactive_waste_reprocessor_air_pollution_amount = 0.1
+	#Radioactive Waste Reprocessor: energy storage (old value 500)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	radioactive_waste_reprocessor_energy_storage = 500.0
+	#Radioactive Waste Reprocessor: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	radioactive_waste_reprocessor_soil_pollution_amount = 0.1
+	#Obsidian Generator: air pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	obsidian_generator_air_pollution_amount = 0.25
+	#Obsidian Generator: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	obsidian_generator_soil_pollution_amount = 0.1
+	#Oil Purifier: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	oil_purifier_air_pollution_amount = 0.1
+	#Oil Purifier: energy storage (old value 100)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	oil_purifier_energy_storage = 100.0
+	#Oil Purifier: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	oil_purifier_soil_pollution_amount = 0.1
+	#Oil Refiner: air pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	oil_refiner_air_pollution_amount = 0.25
+	#Oil Refiner: soil pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	oil_refiner_soil_pollution_amount = 0.075
+	#Ore Washing: air pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	ore_washing_air_pollution_amount = 0.15
+	#Ore Washing: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	ore_washing_soil_pollution_amount = 0.1
+	#Painting: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	painting_air_pollution_amount = 0.1
+	#Painting: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	painting_soil_pollution_amount = 0.05
+	#Radioisotope Thermoelectric Generator: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	radioisotope_thermoelectric_generator_energy_storage = 0.0
+	#Peat Generator: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	peat_generator_air_pollution_amount = 0.2
+	#Peat Generator: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	peat_generator_energy_storage = 0.0
+	#Peat Generator: soil pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	peat_generator_soil_pollution_amount = 0.2
+	#Perfect Alloy Smelter: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	perfect_alloy_smelter_air_pollution_amount = 0.1
+	#Perfect Alloy Smelter: energy storage (old value 300)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	perfect_alloy_smelter_energy_storage = 300.0
+	#Perfect Alloy Smelter: soil pollution amount (old value 0.025)
+	#Range: 0.0 ~ 1000000.0
+	perfect_alloy_smelter_soil_pollution_amount = 0.025
+	#Perfect Generator: efficiency (old value 4.6)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	perfect_generator_efficiency = 4.6
+	#Perfect Geo Generator: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	perfect_geo_generator_air_pollution_amount = 0.2
+	#Perfect Geo Generator: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	perfect_geo_generator_soil_pollution_amount = 0.1
+	#Perfect Handler Heavy Ore: air pollution amount (old value 0.4)
+	#Range: 0.0 ~ 1000000.0
+	perfect_handler_heavy_ore_air_pollution_amount = 0.4
+	#Perfect Handler Heavy Ore: soil pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	perfect_handler_heavy_ore_soil_pollution_amount = 0.15
+	#Perfect Matter Fabricator: energy storage (old value 700000F)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	perfect_matter_fabricator_energy_storage = 700000.0
+	#Perfect Redstone Generator: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	perfect_redstone_generator_air_pollution_amount = 0.1
+	#Perfect Redstone Generator: efficiency (old value 4.6)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	perfect_redstone_generator_efficiency = 4.6
+	#Perfect Redstone Generator: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	perfect_redstone_generator_soil_pollution_amount = 0.1
+	#Perfect Replicator: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	perfect_replicator_air_pollution_amount = 0.05
+	#Perfect Replicator: efficiency (old value 0.8)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	perfect_replicator_efficiency = 0.8
+	#Perfect Replicator: soil pollution amount (old value 0.025)
+	#Range: 0.0 ~ 1000000.0
+	perfect_replicator_soil_pollution_amount = 0.025
+	#Perfect Scanner: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	perfect_scanner_air_pollution_amount = 0.1
+	#Perfect Scanner: soil pollution amount (old value 0.025)
+	#Range: 0.0 ~ 1000000.0
+	perfect_scanner_soil_pollution_amount = 0.025
+	#Perfect: energy storage (old value 160000000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	perfect_energy_storage = 1.6E8
+	#Gasoline Generator: air pollution amount (old value 0.75)
+	#Range: 0.0 ~ 1000000.0
+	gasoline_generator_air_pollution_amount = 0.75
+	#Gasoline Generator: soil pollution amount (old value 0.45)
+	#Range: 0.0 ~ 1000000.0
+	gasoline_generator_soil_pollution_amount = 0.45
+	#Pumpjack: energy storage (old value 50000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	pumpjack_energy_storage = 50000.0
+	#Photonic Quantum Storage: energy storage (old value 5120000000D)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	photonic_quantum_storage_energy_storage = 5.12E9
+	#Photonic Matter Fabricator: energy storage (old value 600000F)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	photonic_matter_fabricator_energy_storage = 600000.0
+	#Photonic Generator: efficiency (old value 6)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	photonic_generator_efficiency = 6.0
+	#Photonic Redstone Generator: efficiency (old value 6)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	photonic_redstone_generator_efficiency = 6.0
+	#Photonic Replicator: efficiency (old value 0.7)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	photonic_replicator_efficiency = 0.7
+	#Pig Farm: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	pig_farm_air_pollution_amount = 0.1
+	#Pig Farm: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	pig_farm_soil_pollution_amount = 0.1
+	#Plant Collector: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	plant_collector_air_pollution_amount = 0.2
+	#Plant Collector: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	plant_collector_soil_pollution_amount = 0.1
+	#Plant Fertilizer: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	plant_fertilizer_air_pollution_amount = 0.1
+	#Plant Fertilizer: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	plant_fertilizer_soil_pollution_amount = 0.1
+	#Plant Gardener: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	plant_gardener_air_pollution_amount = 0.2
+	#Plant Gardener: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	plant_gardener_soil_pollution_amount = 0.1
+	#Chemical Plant: air pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	chemical_plant_air_pollution_amount = 0.25
+	#Chemical Plant: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	chemical_plant_soil_pollution_amount = 0.1
+	#Plastic Plate Machine: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	plastic_plate_machine_air_pollution_amount = 0.1
+	#Plastic Plate Machine: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	plastic_plate_machine_soil_pollution_amount = 0.1
+	#Polymerizer: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	polymerizer_air_pollution_amount = 0.1
+	#Polymerizer: energy storage (old value 100)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	polymerizer_energy_storage = 100.0
+	#Polymerizer: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	polymerizer_soil_pollution_amount = 0.1
+	#Electric Wilson Chamber: energy storage (old value 500)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	electric_wilson_chamber_energy_storage = 500.0
+	#Primitive Fluid Heater: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	primitive_fluid_heater_energy_storage = 0.0
+	#Primitive Fluid Integrator: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	primitive_fluid_integrator_energy_storage = 0.0
+	#Gas Chamber: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	gas_chamber_energy_storage = 0.0
+	#Primal Programming Table: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	primal_programming_table_energy_storage = 0.0
+	#Primal Pump: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	primal_pump_energy_storage = 0.0
+	#Primitive Crystal Grower: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	primitive_crystal_grower_energy_storage = 0.0
+	#Soldering Table: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	soldering_table_energy_storage = 0.0
+	#Privatizer: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	privatizer_energy_storage = 0.0
+	#Probe Assembler: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	probe_assembler_air_pollution_amount = 0.1
+	#Probe Assembler: energy storage (old value 800)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	probe_assembler_energy_storage = 800.0
+	#Probe Assembler: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	probe_assembler_soil_pollution_amount = 0.1
+	#Electric Programming Table: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	electric_programming_table_air_pollution_amount = 0.1
+	#Electric Programming Table: energy storage (old value 100)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	electric_programming_table_energy_storage = 100.0
+	#Electric Programming Table: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	electric_programming_table_soil_pollution_amount = 0.1
+	#Pump: energy storage (old value 20)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	pump_energy_storage = 20.0
+	#Quad Assampler Scrap: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	quad_assampler_scrap_air_pollution_amount = 0.05
+	#Quad Assampler Scrap: soil pollution amount (old value 0.025)
+	#Range: 0.0 ~ 1000000.0
+	quad_assampler_scrap_soil_pollution_amount = 0.025
+	#Quad Centrifuge: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	quad_centrifuge_air_pollution_amount = 0.05
+	#Quad Centrifuge: soil pollution amount (old value 0.025)
+	#Range: 0.0 ~ 1000000.0
+	quad_centrifuge_soil_pollution_amount = 0.025
+	#Perfect Combined Recycle: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	perfect_combined_recycle_air_pollution_amount = 0.05
+	#Perfect Combined Recycle: soil pollution amount (old value 0.025)
+	#Range: 0.0 ~ 1000000.0
+	perfect_combined_recycle_soil_pollution_amount = 0.025
+	#Quad Compressor: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	quad_compressor_air_pollution_amount = 0.05
+	#Quad Compressor: soil pollution amount (old value 0.025)
+	#Range: 0.0 ~ 1000000.0
+	quad_compressor_soil_pollution_amount = 0.025
+	#Perfect Cutting Machine: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	perfect_cutting_machine_air_pollution_amount = 0.05
+	#Perfect Cutting Machine: soil pollution amount (old value 0.025)
+	#Range: 0.0 ~ 1000000.0
+	perfect_cutting_machine_soil_pollution_amount = 0.025
+	#Quad Electric Furnace: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	quad_electric_furnace_air_pollution_amount = 0.05
+	#Quad Electric Furnace: soil pollution amount (old value 0.025)
+	#Range: 0.0 ~ 1000000.0
+	quad_electric_furnace_soil_pollution_amount = 0.025
+	#Perfect Extractor: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	perfect_extractor_air_pollution_amount = 0.05
+	#Perfect Extractor: soil pollution amount (old value 0.025)
+	#Range: 0.0 ~ 1000000.0
+	perfect_extractor_soil_pollution_amount = 0.025
+	#Quad Extruding: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	quad_extruding_air_pollution_amount = 0.05
+	#Quad Extruding: soil pollution amount (old value 0.025)
+	#Range: 0.0 ~ 1000000.0
+	quad_extruding_soil_pollution_amount = 0.025
+	#Quad Fermer: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	quad_fermer_air_pollution_amount = 0.05
+	#Quad Fermer: soil pollution amount (old value 0.025)
+	#Range: 0.0 ~ 1000000.0
+	quad_fermer_soil_pollution_amount = 0.025
+	#Quad Gear Machine: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	quad_gear_machine_air_pollution_amount = 0.05
+	#Quad Gear Machine: soil pollution amount (old value 0.025)
+	#Range: 0.0 ~ 1000000.0
+	quad_gear_machine_soil_pollution_amount = 0.025
+	#Perfect Macerator: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	perfect_macerator_air_pollution_amount = 0.05
+	#Perfect Macerator: soil pollution amount (old value 0.025)
+	#Range: 0.0 ~ 1000000.0
+	perfect_macerator_soil_pollution_amount = 0.025
+	#Quad Ore Washing: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	quad_ore_washing_air_pollution_amount = 0.05
+	#Quad Ore Washing: soil pollution amount (old value 0.025)
+	#Range: 0.0 ~ 1000000.0
+	quad_ore_washing_soil_pollution_amount = 0.025
+	#Perfect Recycler: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	perfect_recycler_air_pollution_amount = 0.05
+	#Perfect Recycler: soil pollution amount (old value 0.025)
+	#Range: 0.0 ~ 1000000.0
+	perfect_recycler_soil_pollution_amount = 0.025
+	#Perfect Rolling Machine: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	perfect_rolling_machine_air_pollution_amount = 0.05
+	#Perfect Rolling Machine: soil pollution amount (old value 0.025)
+	#Range: 0.0 ~ 1000000.0
+	perfect_rolling_machine_soil_pollution_amount = 0.025
+	#Quantum Transformer: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	quantum_transformer_energy_storage = 0.0
+	#Drilling Rig: energy storage (old value 400)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	drilling_rig_energy_storage = 400.0
+	#Radiation Purifier: air pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	radiation_purifier_air_pollution_amount = 0.15
+	#Radiation Purifier: energy storage (old value 50000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	radiation_purifier_energy_storage = 50000.0
+	#Radiation Purifier: soil pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	radiation_purifier_soil_pollution_amount = 0.15
+	#Radioactive Ore Handler: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	radioactive_ore_handler_energy_storage = 200.0
+	#Radioactive Ore Handler: air pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	radioactive_ore_handler_air_pollution_amount = 0.25
+	#Radioactive Ore Handler: soil pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	radioactive_ore_handler_soil_pollution_amount = 0.25
+	#Reactor Rod Manufacturer: energy storage (old value 2000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	reactor_rod_manufacturer_energy_storage = 2000.0
+	#Reactor Protective Dome: energy storage (old value 50000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	reactor_protective_dome_energy_storage = 50000.0
+	#Recycler: air pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	recycler_air_pollution_amount = 0.15
+	#Recycler: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	recycler_soil_pollution_amount = 0.1
+	#Redstone Generator: air pollution amount (old value 0.4)
+	#Range: 0.0 ~ 1000000.0
+	redstone_generator_air_pollution_amount = 0.4
+	#Redstone Generator: efficiency (old value 1)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	redstone_generator_efficiency = 1.0
+	#Redstone Generator: soil pollution amount (old value 0.3)
+	#Range: 0.0 ~ 1000000.0
+	redstone_generator_soil_pollution_amount = 0.3
+	#Oil Refinery: energy storage (old value 24000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	oil_refinery_energy_storage = 24000.0
+	#Cooling Rod Refrigerator: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	cooling_rod_refrigerator_air_pollution_amount = 0.1
+	#Cooling Rod Refrigerator: energy storage (old value 400)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	cooling_rod_refrigerator_energy_storage = 400.0
+	#Cooling Rod Refrigerator: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	cooling_rod_refrigerator_soil_pollution_amount = 0.1
+	#Fluid Cooler: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	fluid_cooler_air_pollution_amount = 0.1
+	#Fluid Cooler: energy storage (old value 100)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	fluid_cooler_energy_storage = 100.0
+	#Fluid Cooler: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	fluid_cooler_soil_pollution_amount = 0.1
+	#Replicator: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	replicator_air_pollution_amount = 0.2
+	#Replicator: efficiency (old value 1)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	replicator_efficiency = 1.0
+	#Replicator: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	replicator_soil_pollution_amount = 0.1
+	#Genetic Reverser: energy storage (old value 100)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	genetic_reverser_energy_storage = 100.0
+	#Reverse Transriptor: air pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	reverse_transriptor_air_pollution_amount = 0.25
+	#Reverse Transriptor: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	reverse_transriptor_soil_pollution_amount = 0.1
+	#RNA Collector: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	rna_collector_energy_storage = 200.0
+	#RNA Collector: air pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	rna_collector_air_pollution_amount = 0.25
+	#RNA Collector: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	rna_collector_soil_pollution_amount = 0.1
+	#Rocket Assembler: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	rocket_assembler_air_pollution_amount = 0.1
+	#Rocket Assembler: energy storage (old value 800)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	rocket_assembler_energy_storage = 800.0
+	#Rocket Assembler: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	rocket_assembler_soil_pollution_amount = 0.1
+	#Rod Factory: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	rod_factory_air_pollution_amount = 0.1
+	#Rod Factory: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	rod_factory_soil_pollution_amount = 0.1
+	#Rod Manufacturer: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	rod_manufacturer_air_pollution_amount = 0.05
+	#Rod Manufacturer: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	rod_manufacturer_soil_pollution_amount = 0.05
+	#Rolling Machine: air pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	rolling_machine_air_pollution_amount = 0.15
+	#Rolling Machine: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	rolling_machine_soil_pollution_amount = 0.1
+	#Rotor Assembler: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	rotor_assembler_air_pollution_amount = 0.05
+	#Rotor Assembler: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	rotor_assembler_soil_pollution_amount = 0.05
+	#Rover Assembler: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	rover_assembler_air_pollution_amount = 0.1
+	#Rover Assembler: energy storage (old value 800)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	rover_assembler_energy_storage = 800.0
+	#Rover Assembler: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	rover_assembler_soil_pollution_amount = 0.1
+	#Sapling Gardener: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	sapling_gardener_air_pollution_amount = 0.1
+	#Sapling Gardener: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	sapling_gardener_soil_pollution_amount = 0.1
+	#Satellite Assembler: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	satellite_assembler_air_pollution_amount = 0.1
+	#Satellite Assembler: energy storage (old value 800)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	satellite_assembler_energy_storage = 800.0
+	#Satellite Assembler: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	satellite_assembler_soil_pollution_amount = 0.1
+	#Sawmill: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	sawmill_air_pollution_amount = 0.1
+	#Sawmill: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	sawmill_energy_storage = 200.0
+	#Sawmill: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	sawmill_soil_pollution_amount = 0.1
+	#Scanner: energy storage (old value 512000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	scanner_energy_storage = 512000.0
+	#Sheep Farm: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	sheep_farm_air_pollution_amount = 0.1
+	#Sheep Farm: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	sheep_farm_soil_pollution_amount = 0.1
+	#Crystal Grower: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	crystal_grower_air_pollution_amount = 0.1
+	#Crystal Grower: energy storage (old value 1000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	crystal_grower_energy_storage = 1000.0
+	#Crystal Grower: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	crystal_grower_soil_pollution_amount = 0.1
+	#Simple Pump: air pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	simple_pump_air_pollution_amount = 0.25
+	#Simple Pump: soil pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	simple_pump_soil_pollution_amount = 0.075
+	#Simple Scanner: air pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	simple_scanner_air_pollution_amount = 0.25
+	#Simple Scanner: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	simple_scanner_soil_pollution_amount = 0.1
+	#Single Fluid Adapter: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	single_fluid_adapter_air_pollution_amount = 0.1
+	#Single Fluid Adapter: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	single_fluid_adapter_energy_storage = 200.0
+	#Single Fluid Adapter: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	single_fluid_adapter_soil_pollution_amount = 0.1
+	#Smeltery Controller: air pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	smeltery_controller_air_pollution_amount = 0.25
+	#Smeltery Controller: soil pollution amount (old value 0.4)
+	#Range: 0.0 ~ 1000000.0
+	smeltery_controller_soil_pollution_amount = 0.4
+	#Socket Factory: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	socket_factory_air_pollution_amount = 0.1
+	#Socket Factory: energy storage (old value 400)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	socket_factory_energy_storage = 400.0
+	#Socket Factory: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	socket_factory_soil_pollution_amount = 0.1
+	#Soil Analyzer: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	soil_analyzer_air_pollution_amount = 0.05
+	#Soil Analyzer: energy storage (old value 5000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	soil_analyzer_energy_storage = 5000.0
+	#Soil Analyzer: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	soil_analyzer_soil_pollution_amount = 0.05
+	#Solid Refrigerator: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	solid_refrigerator_energy_storage = 0.0
+	#Solid-Fluid Integrator: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	solid_fluid_integrator_air_pollution_amount = 0.1
+	#Solid-Fluid Integrator: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	solid_fluid_integrator_energy_storage = 200.0
+	#Solid-Fluid Integrator: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	solid_fluid_integrator_soil_pollution_amount = 0.1
+	#Solid-Fluid Mixer: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	solid_fluid_mixer_air_pollution_amount = 0.1
+	#Solid-Fluid Mixer: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	solid_fluid_mixer_energy_storage = 200.0
+	#Solid-Fluid Mixer: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	solid_fluid_mixer_soil_pollution_amount = 0.1
+	#Solid Mixer: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	solid_mixer_air_pollution_amount = 0.1
+	#Solid Mixer: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	solid_mixer_energy_storage = 200.0
+	#Solid Mixer: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	solid_mixer_soil_pollution_amount = 0.1
+	#Solid-State Electrolyzer: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	solid_state_electrolyzer_air_pollution_amount = 0.1
+	#Solid-State Electrolyzer: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	solid_state_electrolyzer_energy_storage = 200.0
+	#Solid-State Electrolyzer: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	solid_state_electrolyzer_soil_pollution_amount = 0.1
+	#Automatic Hunter: energy storage (old value 150000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	automatic_hunter_energy_storage = 150000.0
+	#Stamping Machine: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	stamping_machine_air_pollution_amount = 0.1
+	#Stamping Machine: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	stamping_machine_energy_storage = 200.0
+	#Stamping Machine: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	stamping_machine_soil_pollution_amount = 0.1
+	#Steam Current Converter: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	steam_current_converter_energy_storage = 0.0
+	#Steam Bio-Generator: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	steam_bio_generator_energy_storage = 0.0
+	#Steam Compressor: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	steam_compressor_air_pollution_amount = 0.2
+	#Steam Compressor: soil pollution amount (old value 0.125)
+	#Range: 0.0 ~ 1000000.0
+	steam_compressor_soil_pollution_amount = 0.125
+	#Steam Converter: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	steam_converter_energy_storage = 0.0
+	#Steam Crystal Charger: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	steam_crystal_charger_energy_storage = 0.0
+	#Steam Cutting Machine: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	steam_cutting_machine_air_pollution_amount = 0.2
+	#Steam Cutting Machine: soil pollution amount (old value 0.125)
+	#Range: 0.0 ~ 1000000.0
+	steam_cutting_machine_soil_pollution_amount = 0.125
+	#Steam Electrolyzer: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	steam_electrolyzer_energy_storage = 0.0
+	#Steam Extractor: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	steam_extractor_air_pollution_amount = 0.2
+	#Steam Extractor: soil pollution amount (old value 0.125)
+	#Range: 0.0 ~ 1000000.0
+	steam_extractor_soil_pollution_amount = 0.125
+	#Steam Extruder: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	steam_extruder_air_pollution_amount = 0.2
+	#Steam Extruder: soil pollution amount (old value 0.125)
+	#Range: 0.0 ~ 1000000.0
+	steam_extruder_soil_pollution_amount = 0.125
+	#Steam Fluid Heater: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	steam_fluid_heater_energy_storage = 0.0
+	#Electric Steam Generator: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	electric_steam_generator_air_pollution_amount = 0.1
+	#Electric Steam Generator: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	electric_steam_generator_soil_pollution_amount = 0.1
+	#Steam Ore Separator: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	steam_ore_separator_energy_storage = 0.0
+	#Steam Macerator: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	steam_macerator_air_pollution_amount = 0.2
+	#Steam Macerator: soil pollution amount (old value 0.125)
+	#Range: 0.0 ~ 1000000.0
+	steam_macerator_soil_pollution_amount = 0.125
+	#Steam Peat Generator: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	steam_peat_generator_energy_storage = 0.0
+	#Steam Pump: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	steam_pump_energy_storage = 0.0
+	#Steam Rolling Mill: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	steam_rolling_mill_air_pollution_amount = 0.2
+	#Steam Rolling Mill: soil pollution amount (old value 0.125)
+	#Range: 0.0 ~ 1000000.0
+	steam_rolling_mill_soil_pollution_amount = 0.125
+	#Steam Sharpener: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	steam_sharpener_energy_storage = 0.0
+	#Steam Solid-Fluid Mixer: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	steam_solid_fluid_mixer_energy_storage = 0.0
+	#Steam Squeezer: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	steam_squeezer_energy_storage = 0.0
+	#Steam Cable Insulator: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	steam_cable_insulator_energy_storage = 0.0
+	#Steam Boiler: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	steam_boiler_energy_storage = 0.0
+	#Steam Dryer: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	steam_dryer_energy_storage = 0.0
+	#Steam Pressure Converter: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	steam_pressure_converter_energy_storage = 0.0
+	#Teleporter: energy storage (old value 500000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	teleporter_energy_storage = 500000.0
+	#Tree Breaker: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	tree_breaker_air_pollution_amount = 0.1
+	#Tree Breaker: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	tree_breaker_soil_pollution_amount = 0.1
+	#Triple Assampler Scrap: air pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	triple_assampler_scrap_air_pollution_amount = 0.075
+	#Triple Assampler Scrap: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	triple_assampler_scrap_soil_pollution_amount = 0.05
+	#Triple Centrifuge: air pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	triple_centrifuge_air_pollution_amount = 0.075
+	#Triple Centrifuge: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	triple_centrifuge_soil_pollution_amount = 0.05
+	#Advanced Combined Recycler: air pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	advanced_combined_recycler_air_pollution_amount = 0.075
+	#Advanced Combined Recycler: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	advanced_combined_recycler_soil_pollution_amount = 0.05
+	#Triple Compressor: air pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	triple_compressor_air_pollution_amount = 0.075
+	#Triple Compressor: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	triple_compressor_soil_pollution_amount = 0.05
+	#Advanced Cutting Machine: air pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	advanced_cutting_machine_air_pollution_amount = 0.075
+	#Advanced Cutting Machine: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	advanced_cutting_machine_soil_pollution_amount = 0.05
+	#Triple Electric Furnace: air pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	triple_electric_furnace_air_pollution_amount = 0.075
+	#Triple Electric Furnace: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	triple_electric_furnace_soil_pollution_amount = 0.05
+	#Advanced Extractor: air pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	advanced_extractor_air_pollution_amount = 0.075
+	#Advanced Extractor: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	advanced_extractor_soil_pollution_amount = 0.05
+	#Triple Extruding: air pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	triple_extruding_air_pollution_amount = 0.075
+	#Triple Extruding: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	triple_extruding_soil_pollution_amount = 0.05
+	#Triple Fermer: air pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	triple_fermer_air_pollution_amount = 0.075
+	#Triple Fermer: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	triple_fermer_soil_pollution_amount = 0.05
+	#Triple Gear Machine: air pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	triple_gear_machine_air_pollution_amount = 0.075
+	#Triple Gear Machine: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	triple_gear_machine_soil_pollution_amount = 0.05
+	#Advanced Macerator: air pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	advanced_macerator_air_pollution_amount = 0.075
+	#Advanced Macerator: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	advanced_macerator_soil_pollution_amount = 0.05
+	#Triple Ore Washing: air pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	triple_ore_washing_air_pollution_amount = 0.075
+	#Triple Ore Washing: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	triple_ore_washing_soil_pollution_amount = 0.05
+	#Advanced Recycler: air pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	advanced_recycler_air_pollution_amount = 0.075
+	#Advanced Recycler: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	advanced_recycler_soil_pollution_amount = 0.05
+	#Advanced Rolling Machine: air pollution amount (old value 0.075)
+	#Range: 0.0 ~ 1000000.0
+	advanced_rolling_machine_air_pollution_amount = 0.075
+	#Advanced Rolling Machine: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	advanced_rolling_machine_soil_pollution_amount = 0.05
+	#Triple Solid Mixer: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	triple_solid_mixer_air_pollution_amount = 0.1
+	#Triple Solid Mixer: energy storage (old value 200)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	triple_solid_mixer_energy_storage = 200.0
+	#Triple Solid Mixer: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	triple_solid_mixer_soil_pollution_amount = 0.1
+	#Wireless Adjuster: energy storage (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	wireless_adjuster_energy_storage = 0.0
+	#Ultimate Matter: air pollution amount (old value 0.045)
+	#Range: 0.0 ~ 1000000.0
+	ultimate_matter_air_pollution_amount = 0.045
+	#Ultimate Matter: soil pollution amount (old value 0.011)
+	#Range: 0.0 ~ 1000000.0
+	ultimate_matter_soil_pollution_amount = 0.011
+	#Upgrade Kit Manufacturer: energy storage (old value 400)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	upgrade_kit_manufacturer_energy_storage = 400.0
+	#Upgrade Machine Factory: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	upgrade_machine_factory_air_pollution_amount = 0.1
+	#Upgrade Machine Factory: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	upgrade_machine_factory_soil_pollution_amount = 0.1
+	#Rover Upgrade Station: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	rover_upgrade_station_air_pollution_amount = 0.1
+	#Rover Upgrade Station: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	rover_upgrade_station_soil_pollution_amount = 0.1
+	#Water Generator: air pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	water_generator_air_pollution_amount = 0.25
+	#Water Generator: soil pollution amount (old value 0.25)
+	#Range: 0.0 ~ 1000000.0
+	water_generator_soil_pollution_amount = 0.25
+	#Water Rotor Assembler: air pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	water_rotor_assembler_air_pollution_amount = 0.05
+	#Water Rotor Assembler: soil pollution amount (old value 0.05)
+	#Range: 0.0 ~ 1000000.0
+	water_rotor_assembler_soil_pollution_amount = 0.05
+	#Water Generator: energy storage (old value 10000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	water_generator_energy_storage = 10000.0
+	#Weeder: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	weeder_air_pollution_amount = 0.1
+	#Weeder: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	weeder_soil_pollution_amount = 0.1
+	#Welding Machine: air pollution amount (old value 0.2)
+	#Range: 0.0 ~ 1000000.0
+	welding_machine_air_pollution_amount = 0.2
+	#Welding Machine: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	welding_machine_soil_pollution_amount = 0.1
+	#Wire Insulator: air pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	wire_insulator_air_pollution_amount = 0.1
+	#Wire Insulator: soil pollution amount (old value 0.1)
+	#Range: 0.0 ~ 1000000.0
+	wire_insulator_soil_pollution_amount = 0.1
+	#Wireless Matter Collector: air pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	wireless_matter_collector_air_pollution_amount = 0.15
+	#Wireless Matter Collector: soil pollution amount (old value 0.15)
+	#Range: 0.0 ~ 1000000.0
+	wireless_matter_collector_soil_pollution_amount = 0.15
+
+[items_unique]
+	#Base Rod: durability (old value 1)
+	#Range: > 1
+	base_rod_durability = 1
+	#Canister: capacity (old value 1)
+	#Range: > 1
+	canister_capacity = 1
+	#Restores nearby durability by: durability (old value 1)
+	#Range: > 1
+	restores_nearby_durability_by_durability = 1
+	#Energy Tool Hoe: energy use (old value 50)
+	#Range: > 0
+	energy_tool_hoe_energy_use = 50
+	#Universal Fluid Cell: capacity (old value 1000)
+	#Range: > 1
+	universal_fluid_cell_capacity = 1000
+	#Latex Pipette: capacity (old value 1)
+	#Range: > 1
+	latex_pipette_capacity = 1
+	#Pipette: capacity (old value 1)
+	#Range: > 1
+	pipette_capacity = 1
+	#Radioprotector: capacity (old value 1)
+	#Range: > 1
+	radioprotector_capacity = 1
+	#Regular Plate: durability (old value 0)
+	#Range: > 1
+	regular_plate_durability = 1
+	#Reinforced Fluid Cell: capacity (old value 10000)
+	#Range: > 1
+	reinforced_fluid_cell_capacity = 10000
+	#Maximum saved relocator points per player, 0 = unlimited
+	#Range: 0 ~ 10000
+	relocator_max_points = 0
+	#Maximum relocator teleport distance in blocks, 0 = unlimited
+	#Range: 0 ~ 1000000
+	relocator_max_teleport_distance = 0
+	#Relocator EF cost per teleport
+	#Range: > 0
+	relocator_teleport_energy_cost = 100000
+	#Small Fluid Cell: capacity (old value 500)
+	#Range: > 1
+	small_fluid_cell_capacity = 500
+	#Sprayer: capacity (old value 1)
+	#Range: > 1
+	sprayer_capacity = 1
+	#Tool Cutter: durability (old value 60)
+	#Range: > 1
+	tool_cutter_durability = 60
+	#Treetap Energy: energy use (old value 50)
+	#Range: > 0
+	treetap_energy_energy_use = 50
+	#Water Rotor: radius (old value 4)
+	#Range: > 0
+	water_rotor_radius = 4
+	#Net: durability (old value 0)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	net_durability = 0.0
+	#Hammer: durability (old value 2)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	hammer_durability = 2.0
+	#Planetary Translocator: transfer limit (old value 8192D)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	planetary_translocator_transfer_limit = 8192.0
+	#Relocator: energy capacity (old value 10000000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	relocator_energy_capacity = 1.0E7
+	#Relocator: transfer limit (old value 8192)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	relocator_transfer_limit = 8192.0
+	#Wind Meter: energy capacity (old value 5000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	wind_meter_energy_capacity = 5000.0
+	#Wind Meter: transfer limit (old value 500)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	wind_meter_transfer_limit = 500.0
+	#Wireless Terminal: energy capacity (old value 1000000)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	wireless_terminal_energy_capacity = 1000000.0
+	#Wireless Terminal: transfer limit (old value 4096)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	wireless_terminal_transfer_limit = 4096.0
+
+[mechanics_unique]
+	#Anti-magnet protection radius in blocks
+	#Range: 1 ~ 128
+	antimagnet_radius = 10
+

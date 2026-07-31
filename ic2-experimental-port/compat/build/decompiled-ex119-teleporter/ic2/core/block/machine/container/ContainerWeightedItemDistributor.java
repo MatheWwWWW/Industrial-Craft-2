@@ -1,0 +1,26 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  net.minecraft.world.entity.player.Inventory
+ */
+package ic2.core.block.machine.container;
+
+import ic2.core.ContainerFullInv;
+import ic2.core.block.machine.tileentity.TileEntityWeightedItemDistributor;
+import ic2.core.ref.Ic2ScreenHandlers;
+import ic2.core.slot.SlotInvSlot;
+import net.minecraft.world.entity.player.Inventory;
+
+public class ContainerWeightedItemDistributor
+extends ContainerFullInv<TileEntityWeightedItemDistributor> {
+    public static final short HEIGHT = 211;
+
+    public ContainerWeightedItemDistributor(int n, Inventory inventory, TileEntityWeightedItemDistributor tileEntityWeightedItemDistributor) {
+        super(Ic2ScreenHandlers.WEIGHTED_ITEM_DISTRIBUTOR, n, inventory, tileEntityWeightedItemDistributor, 211);
+        for (int i = 0; i < tileEntityWeightedItemDistributor.buffer.size(); ++i) {
+            this.m_38897_(new SlotInvSlot(tileEntityWeightedItemDistributor.buffer, i, 8 + i * 18, 108));
+        }
+    }
+}
+

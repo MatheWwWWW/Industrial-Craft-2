@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "ic2:refractory_bricks",
+    "ic2:coke_kiln",
+    "ic2:coke_kiln_hatch",
+    "ic2:coke_kiln_grate"
+  ]
+}

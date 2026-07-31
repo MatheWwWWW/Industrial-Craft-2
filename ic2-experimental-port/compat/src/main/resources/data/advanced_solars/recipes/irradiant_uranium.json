@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["ugu", "geg", "ugu"],
+  "key": {
+    "u": { "item": "ic2:uu_matter" },
+    "g": { "tag": "forge:dusts/glowstone" },
+    "e": { "item": "ic2:re_enriched_uranium" }
+  },
+  "result": { "item": "advanced_solars:irradiant_uranium" }
+}

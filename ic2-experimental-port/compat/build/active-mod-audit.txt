@@ -1,0 +1,16 @@
+Active JARs: 69
+Declared mod ids: 72
+Duplicate mod ids: 0
+
+IC2-family dependencies:
+advanced_solars -> ic2 [1.0,) mandatory=true jar=IC2-Experimental-Fidelity-0.1.0.jar
+advanced_solars -> ic2_experimental_fidelity [0.1.0,) mandatory=true jar=IC2-Experimental-Fidelity-0.1.0.jar
+gravisuit -> ic2 [1.0,) mandatory=true jar=IC2-Experimental-Fidelity-0.1.0.jar
+gravisuit -> ic2_experimental_fidelity [0.1.0,) mandatory=true jar=IC2-Experimental-Fidelity-0.1.0.jar
+ic2_experimental_fidelity -> ic2 [1.0,) mandatory=true jar=IC2-Experimental-Fidelity-0.1.0.jar
+ic2cuumatter -> ic2 [1.0,) mandatory=true jar=IC2-Experimental-Fidelity-0.1.0.jar
+ic2cuumatter -> ic2_experimental_fidelity [0.1.0,) mandatory=true jar=IC2-Experimental-Fidelity-0.1.0.jar
+
+JARs without Forge/Fabric mod metadata:
+kotlinforforge-3.12.0-all-1.19.2.jar
+ScalableCatsForce-2.13.10-build-10-with-library.jar

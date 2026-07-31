@@ -1,0 +1,186 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package ic2.shades.org.ejml.alg.dense.decomposition.qr;
+
+import ic2.shades.org.ejml.alg.dense.decomposition.qr.QrHelperFunctions;
+import ic2.shades.org.ejml.data.DenseMatrix64F;
+import ic2.shades.org.ejml.interfaces.decomposition.QRDecomposition;
+import ic2.shades.org.ejml.ops.CommonOps;
+
+public class QRDecompositionHouseholderTran_D64
+implements QRDecomposition<DenseMatrix64F> {
+    protected DenseMatrix64F QR;
+    protected double[] v;
+    protected int numCols;
+    protected int numRows;
+    protected int minLength;
+    protected double[] gammas;
+    protected double gamma;
+    protected double tau;
+    protected boolean error;
+
+    public void setExpectedMaxSize(int numRows, int numCols) {
+        this.numCols = numCols;
+        this.numRows = numRows;
+        this.minLength = Math.min(numCols, numRows);
+        int maxLength = Math.max(numCols, numRows);
+        if (this.QR == null) {
+            this.QR = new DenseMatrix64F(numCols, numRows);
+            this.v = new double[maxLength];
+            this.gammas = new double[this.minLength];
+        } else {
+            this.QR.reshape(numCols, numRows, false);
+        }
+        if (this.v.length < maxLength) {
+            this.v = new double[maxLength];
+        }
+        if (this.gammas.length < this.minLength) {
+            this.gammas = new double[this.minLength];
+        }
+    }
+
+    public DenseMatrix64F getQR() {
+        return this.QR;
+    }
+
+    @Override
+    public DenseMatrix64F getQ(DenseMatrix64F Q, boolean compact) {
+        if (compact) {
+            if (Q == null) {
+                Q = CommonOps.identity(this.numRows, this.minLength);
+            } else {
+                if (Q.numRows != this.numRows || Q.numCols != this.minLength) {
+                    throw new IllegalArgumentException("Unexpected matrix dimension.");
+                }
+                CommonOps.setIdentity(Q);
+            }
+        } else if (Q == null) {
+            Q = CommonOps.identity(this.numRows);
+        } else {
+            if (Q.numRows != this.numRows || Q.numCols != this.numRows) {
+                throw new IllegalArgumentException("Unexpected matrix dimension.");
+            }
+            CommonOps.setIdentity(Q);
+        }
+        for (int j = this.minLength - 1; j >= 0; --j) {
+            int diagIndex = j * this.numRows + j;
+            double before = this.QR.data[diagIndex];
+            this.QR.data[diagIndex] = 1.0;
+            QrHelperFunctions.rank1UpdateMultR(Q, this.QR.data, j * this.numRows, this.gammas[j], j, j, this.numRows, this.v);
+            this.QR.data[diagIndex] = before;
+        }
+        return Q;
+    }
+
+    public void applyQ(DenseMatrix64F A) {
+        if (A.numRows != this.numRows) {
+            throw new IllegalArgumentException("A must have at least " + this.numRows + " rows.");
+        }
+        for (int j = this.minLength - 1; j >= 0; --j) {
+            int diagIndex = j * this.numRows + j;
+            double before = this.QR.data[diagIndex];
+            this.QR.data[diagIndex] = 1.0;
+            QrHelperFunctions.rank1UpdateMultR(A, this.QR.data, j * this.numRows, this.gammas[j], 0, j, this.numRows, this.v);
+            this.QR.data[diagIndex] = before;
+        }
+    }
+
+    public void applyTranQ(DenseMatrix64F A) {
+        for (int j = 0; j < this.minLength; ++j) {
+            int diagIndex = j * this.numRows + j;
+            double before = this.QR.data[diagIndex];
+            this.QR.data[diagIndex] = 1.0;
+            QrHelperFunctions.rank1UpdateMultR(A, this.QR.data, j * this.numRows, this.gammas[j], 0, j, this.numRows, this.v);
+            this.QR.data[diagIndex] = before;
+        }
+    }
+
+    @Override
+    public DenseMatrix64F getR(DenseMatrix64F R, boolean compact) {
+        int i;
+        if (R == null) {
+            R = compact ? new DenseMatrix64F(this.minLength, this.numCols) : new DenseMatrix64F(this.numRows, this.numCols);
+        } else {
+            if (compact ? R.numCols != this.numCols || R.numRows != this.minLength : R.numCols != this.numCols || R.numRows != this.numRows) {
+                throw new IllegalArgumentException("Unexpected dimensions");
+            }
+            for (i = 0; i < R.numRows; ++i) {
+                int min = Math.min(i, R.numCols);
+                for (int j = 0; j < min; ++j) {
+                    R.unsafe_set(i, j, 0.0);
+                }
+            }
+        }
+        for (i = 0; i < R.numRows; ++i) {
+            for (int j = i; j < R.numCols; ++j) {
+                R.unsafe_set(i, j, this.QR.unsafe_get(j, i));
+            }
+        }
+        return R;
+    }
+
+    @Override
+    public boolean decompose(DenseMatrix64F A) {
+        this.setExpectedMaxSize(A.numRows, A.numCols);
+        CommonOps.transpose(A, this.QR);
+        this.error = false;
+        for (int j = 0; j < this.minLength; ++j) {
+            this.householder(j);
+            this.updateA(j);
+        }
+        return !this.error;
+    }
+
+    @Override
+    public boolean inputModified() {
+        return false;
+    }
+
+    protected void householder(int j) {
+        int startQR = j * this.numRows;
+        int endQR = startQR + this.numRows;
+        double max = QrHelperFunctions.findMax(this.QR.data, startQR += j, this.numRows - j);
+        if (max == 0.0) {
+            this.gamma = 0.0;
+            this.error = true;
+        } else {
+            this.tau = QrHelperFunctions.computeTauAndDivide(startQR, endQR, this.QR.data, max);
+            double u_0 = this.QR.data[startQR] + this.tau;
+            QrHelperFunctions.divideElements(startQR + 1, endQR, this.QR.data, u_0);
+            this.gamma = u_0 / this.tau;
+            this.tau *= max;
+            this.QR.data[startQR] = -this.tau;
+        }
+        this.gammas[j] = this.gamma;
+    }
+
+    protected void updateA(int w) {
+        int rowJ;
+        double[] data = this.QR.data;
+        int rowW = w * this.numRows + w + 1;
+        int rowJEnd = rowJ + (this.numCols - w - 1) * this.numRows;
+        int indexWEnd = rowW + this.numRows - w - 1;
+        for (rowJ = rowW + this.numRows; rowJEnd != rowJ; rowJ += this.numRows) {
+            double val = data[rowJ - 1];
+            int indexW = rowW;
+            int indexJ = rowJ;
+            while (indexW != indexWEnd) {
+                val += data[indexW++] * data[indexJ++];
+            }
+            int n = rowJ - 1;
+            data[n] = data[n] - (val *= this.gamma);
+            indexW = rowW;
+            indexJ = rowJ;
+            while (indexW != indexWEnd) {
+                int n2 = indexJ++;
+                data[n2] = data[n2] - data[indexW++] * val;
+            }
+        }
+    }
+
+    public double[] getGammas() {
+        return this.gammas;
+    }
+}
+

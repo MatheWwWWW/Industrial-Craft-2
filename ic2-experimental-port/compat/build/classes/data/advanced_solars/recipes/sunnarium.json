@@ -1,0 +1,9 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["UUU", "GGG", "UUU"],
+  "key": {
+    "U": { "item": "ic2:uu_matter" },
+    "G": { "tag": "forge:dusts/glowstone" }
+  },
+  "result": { "item": "advanced_solars:sunnarium" }
+}

@@ -1,0 +1,10 @@
+{
+  "translation.ic2cuumatter.amplifier": "Amplifier",
+  "translation.ic2cuumatter.energy": "Energy",
+  "translation.ic2cuumatter.tier": "Tier",
+  "translation.ic2cuumatter.tier.hv": "HV",
+  "translation.ic2cuumatter.tier.ev": "EV",
+  "translation.ic2cuumatter.ticks": "Ticks",
+  "translation.ic2cuumatter.format1": "%s: ",
+  "translation.ic2cuumatter.format2": "%s: %s"
+}

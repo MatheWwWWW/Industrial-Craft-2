@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["MEM", "ETE", "MEM"],
+  "key": {
+    "M": { "item": "ic2:memory_stick" },
+    "E": { "item": "minecraft:ender_eye" },
+    "T": { "item": "ic2:portable_teleporter" }
+  },
+  "result": { "item": "gravisuit:relocator" }
+}

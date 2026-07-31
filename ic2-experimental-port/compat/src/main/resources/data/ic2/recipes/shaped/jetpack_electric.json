@@ -1,0 +1,11 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["ICI", "IBI", "G G"],
+  "key": {
+    "I": { "item": "ic2:iron_casing" },
+    "C": { "item": "ic2:advanced_circuit" },
+    "B": { "item": "ic2:batbox" },
+    "G": { "item": "minecraft:glowstone_dust" }
+  },
+  "result": { "item": "ic2:jetpack_electric" }
+}

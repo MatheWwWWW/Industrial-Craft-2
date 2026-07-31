@@ -1,0 +1,8 @@
+{
+  "parent": "ic2:item/pipe/pipe_tiny",
+  "overrides": [
+    { "predicate": { "ic2:pipe_variant": 0.25 }, "model": "ic2:item/pipe/pipe_small" },
+    { "predicate": { "ic2:pipe_variant": 0.5 }, "model": "ic2:item/pipe/pipe_medium" },
+    { "predicate": { "ic2:pipe_variant": 0.75 }, "model": "ic2:item/pipe/pipe_large" }
+  ]
+}

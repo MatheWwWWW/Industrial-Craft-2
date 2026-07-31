@@ -1,0 +1,47 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package net.minecraft.data.loot;
+
+import java.util.function.BiConsumer;
+import java.util.function.Consumer;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.Potions;
+import net.minecraft.world.level.storage.loot.BuiltInLootTables;
+import net.minecraft.world.level.storage.loot.LootPool;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
+import net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer;
+import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.functions.SetPotionFunction;
+import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
+import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
+
+public class GiftLoot
+implements Consumer<BiConsumer<ResourceLocation, LootTable.Builder>> {
+    @Override
+    public void accept(BiConsumer<ResourceLocation, LootTable.Builder> p_124402_) {
+        p_124402_.accept(BuiltInLootTables.f_78724_, LootTable.m_79147_().m_79161_(LootPool.m_79043_().m_165133_(ConstantValue.m_165692_(1.0f)).m_79076_((LootPoolEntryContainer.Builder<?>)LootItem.m_79579_(Items.f_42649_).m_79707_(10)).m_79076_((LootPoolEntryContainer.Builder<?>)LootItem.m_79579_(Items.f_42648_).m_79707_(10)).m_79076_((LootPoolEntryContainer.Builder<?>)LootItem.m_79579_(Items.f_42581_).m_79707_(10)).m_79076_((LootPoolEntryContainer.Builder<?>)LootItem.m_79579_(Items.f_42402_).m_79707_(10)).m_79076_((LootPoolEntryContainer.Builder<?>)LootItem.m_79579_(Items.f_42583_).m_79707_(10)).m_79076_((LootPoolEntryContainer.Builder<?>)LootItem.m_79579_(Items.f_42401_).m_79707_(10)).m_79076_((LootPoolEntryContainer.Builder<?>)LootItem.m_79579_(Items.f_42714_).m_79707_(2))));
+        p_124402_.accept(BuiltInLootTables.f_78725_, LootTable.m_79147_().m_79161_(LootPool.m_79043_().m_165133_(ConstantValue.m_165692_(1.0f)).m_79076_(LootItem.m_79579_(Items.f_42464_)).m_79076_(LootItem.m_79579_(Items.f_42465_)).m_79076_(LootItem.m_79579_(Items.f_42466_)).m_79076_(LootItem.m_79579_(Items.f_42467_))));
+        p_124402_.accept(BuiltInLootTables.f_78726_, LootTable.m_79147_().m_79161_(LootPool.m_79043_().m_165133_(ConstantValue.m_165692_(1.0f)).m_79076_(LootItem.m_79579_(Items.f_42698_)).m_79076_(LootItem.m_79579_(Items.f_42582_)).m_79076_(LootItem.m_79579_(Items.f_42486_)).m_79076_(LootItem.m_79579_(Items.f_42580_)).m_79076_(LootItem.m_79579_(Items.f_42659_))));
+        p_124402_.accept(BuiltInLootTables.f_78727_, LootTable.m_79147_().m_79161_(LootPool.m_79043_().m_165133_(ConstantValue.m_165692_(1.0f)).m_79076_(LootItem.m_79579_(Items.f_42676_)).m_79076_(LootItem.m_79579_(Items.f_42516_))));
+        p_124402_.accept(BuiltInLootTables.f_78728_, LootTable.m_79147_().m_79161_(LootPool.m_79043_().m_165133_(ConstantValue.m_165692_(1.0f)).m_79076_(LootItem.m_79579_(Items.f_42451_)).m_79076_(LootItem.m_79579_(Items.f_42534_))));
+        p_124402_.accept(BuiltInLootTables.f_78729_, LootTable.m_79147_().m_79161_(LootPool.m_79043_().m_165133_(ConstantValue.m_165692_(1.0f)).m_79076_(LootItem.m_79579_(Items.f_42406_)).m_79076_(LootItem.m_79579_(Items.f_42687_)).m_79076_(LootItem.m_79579_(Items.f_42572_))));
+        p_124402_.accept(BuiltInLootTables.f_78730_, LootTable.m_79147_().m_79161_(LootPool.m_79043_().m_165133_(ConstantValue.m_165692_(1.0f)).m_79076_(LootItem.m_79579_(Items.f_42526_)).m_79076_(LootItem.m_79579_(Items.f_42527_))));
+        p_124402_.accept(BuiltInLootTables.f_78731_, LootTable.m_79147_().m_79161_(LootPool.m_79043_().m_165133_(ConstantValue.m_165692_(1.0f)).m_79076_((LootPoolEntryContainer.Builder<?>)LootItem.m_79579_(Items.f_42412_).m_79707_(26)).m_79076_((LootPoolEntryContainer.Builder<?>)((Object)((LootPoolSingletonContainer.Builder)LootItem.m_79579_(Items.f_42738_).m_79078_(SetItemCountFunction.m_165412_(UniformGenerator.m_165780_(0.0f, 1.0f)))).m_79078_(SetPotionFunction.m_193075_(Potions.f_43612_)))).m_79076_((LootPoolEntryContainer.Builder<?>)((Object)((LootPoolSingletonContainer.Builder)LootItem.m_79579_(Items.f_42738_).m_79078_(SetItemCountFunction.m_165412_(UniformGenerator.m_165780_(0.0f, 1.0f)))).m_79078_(SetPotionFunction.m_193075_(Potions.f_43615_)))).m_79076_((LootPoolEntryContainer.Builder<?>)((Object)((LootPoolSingletonContainer.Builder)LootItem.m_79579_(Items.f_42738_).m_79078_(SetItemCountFunction.m_165412_(UniformGenerator.m_165780_(0.0f, 1.0f)))).m_79078_(SetPotionFunction.m_193075_(Potions.f_43590_)))).m_79076_((LootPoolEntryContainer.Builder<?>)((Object)((LootPoolSingletonContainer.Builder)LootItem.m_79579_(Items.f_42738_).m_79078_(SetItemCountFunction.m_165412_(UniformGenerator.m_165780_(0.0f, 1.0f)))).m_79078_(SetPotionFunction.m_193075_(Potions.f_43623_)))).m_79076_((LootPoolEntryContainer.Builder<?>)((Object)((LootPoolSingletonContainer.Builder)LootItem.m_79579_(Items.f_42738_).m_79078_(SetItemCountFunction.m_165412_(UniformGenerator.m_165780_(0.0f, 1.0f)))).m_79078_(SetPotionFunction.m_193075_(Potions.f_43582_)))).m_79076_((LootPoolEntryContainer.Builder<?>)((Object)((LootPoolSingletonContainer.Builder)LootItem.m_79579_(Items.f_42738_).m_79078_(SetItemCountFunction.m_165412_(UniformGenerator.m_165780_(0.0f, 1.0f)))).m_79078_(SetPotionFunction.m_193075_(Potions.f_43607_)))).m_79076_((LootPoolEntryContainer.Builder<?>)((Object)((LootPoolSingletonContainer.Builder)LootItem.m_79579_(Items.f_42738_).m_79078_(SetItemCountFunction.m_165412_(UniformGenerator.m_165780_(0.0f, 1.0f)))).m_79078_(SetPotionFunction.m_193075_(Potions.f_43587_)))).m_79076_((LootPoolEntryContainer.Builder<?>)((Object)((LootPoolSingletonContainer.Builder)LootItem.m_79579_(Items.f_42738_).m_79078_(SetItemCountFunction.m_165412_(UniformGenerator.m_165780_(0.0f, 1.0f)))).m_79078_(SetPotionFunction.m_193075_(Potions.f_43610_)))).m_79076_((LootPoolEntryContainer.Builder<?>)((Object)((LootPoolSingletonContainer.Builder)LootItem.m_79579_(Items.f_42738_).m_79078_(SetItemCountFunction.m_165412_(UniformGenerator.m_165780_(0.0f, 1.0f)))).m_79078_(SetPotionFunction.m_193075_(Potions.f_43621_)))).m_79076_((LootPoolEntryContainer.Builder<?>)((Object)((LootPoolSingletonContainer.Builder)LootItem.m_79579_(Items.f_42738_).m_79078_(SetItemCountFunction.m_165412_(UniformGenerator.m_165780_(0.0f, 1.0f)))).m_79078_(SetPotionFunction.m_193075_(Potions.f_43605_)))).m_79076_((LootPoolEntryContainer.Builder<?>)((Object)((LootPoolSingletonContainer.Builder)LootItem.m_79579_(Items.f_42738_).m_79078_(SetItemCountFunction.m_165412_(UniformGenerator.m_165780_(0.0f, 1.0f)))).m_79078_(SetPotionFunction.m_193075_(Potions.f_43603_)))).m_79076_((LootPoolEntryContainer.Builder<?>)((Object)((LootPoolSingletonContainer.Builder)LootItem.m_79579_(Items.f_42738_).m_79078_(SetItemCountFunction.m_165412_(UniformGenerator.m_165780_(0.0f, 1.0f)))).m_79078_(SetPotionFunction.m_193075_(Potions.f_43593_)))).m_79076_((LootPoolEntryContainer.Builder<?>)((Object)((LootPoolSingletonContainer.Builder)LootItem.m_79579_(Items.f_42738_).m_79078_(SetItemCountFunction.m_165412_(UniformGenerator.m_165780_(0.0f, 1.0f)))).m_79078_(SetPotionFunction.m_193075_(Potions.f_43584_))))));
+        p_124402_.accept(BuiltInLootTables.f_78732_, LootTable.m_79147_().m_79161_(LootPool.m_79043_().m_165133_(ConstantValue.m_165692_(1.0f)).m_79076_(LootItem.m_79579_(Items.f_42454_))));
+        p_124402_.accept(BuiltInLootTables.f_78733_, LootTable.m_79147_().m_79161_(LootPool.m_79043_().m_165133_(ConstantValue.m_165692_(1.0f)).m_79076_(LootItem.m_79579_(Items.f_42517_))));
+        p_124402_.accept(BuiltInLootTables.f_78734_, LootTable.m_79147_().m_79161_(LootPool.m_79043_().m_165133_(ConstantValue.m_165692_(1.0f)).m_79076_(LootItem.m_79579_(Items.f_41983_))));
+        p_124402_.accept(BuiltInLootTables.f_78735_, LootTable.m_79147_().m_79161_(LootPool.m_79043_().m_165133_(ConstantValue.m_165692_(1.0f)).m_79076_(LootItem.m_79579_(Items.f_41870_)).m_79076_(LootItem.m_79579_(Items.f_41871_)).m_79076_(LootItem.m_79579_(Items.f_41872_)).m_79076_(LootItem.m_79579_(Items.f_41873_)).m_79076_(LootItem.m_79579_(Items.f_41874_)).m_79076_(LootItem.m_79579_(Items.f_41875_)).m_79076_(LootItem.m_79579_(Items.f_41876_)).m_79076_(LootItem.m_79579_(Items.f_41877_)).m_79076_(LootItem.m_79579_(Items.f_41878_)).m_79076_(LootItem.m_79579_(Items.f_41932_)).m_79076_(LootItem.m_79579_(Items.f_41933_)).m_79076_(LootItem.m_79579_(Items.f_41934_)).m_79076_(LootItem.m_79579_(Items.f_41935_)).m_79076_(LootItem.m_79579_(Items.f_41936_)).m_79076_(LootItem.m_79579_(Items.f_41937_)).m_79076_(LootItem.m_79579_(Items.f_41938_))));
+        p_124402_.accept(BuiltInLootTables.f_78736_, LootTable.m_79147_().m_79161_(LootPool.m_79043_().m_165133_(ConstantValue.m_165692_(1.0f)).m_79076_(LootItem.m_79579_(Items.f_42427_)).m_79076_(LootItem.m_79579_(Items.f_42428_)).m_79076_(LootItem.m_79579_(Items.f_42429_)).m_79076_(LootItem.m_79579_(Items.f_42426_))));
+        p_124402_.accept(BuiltInLootTables.f_78737_, LootTable.m_79147_().m_79161_(LootPool.m_79043_().m_165133_(ConstantValue.m_165692_(1.0f)).m_79076_(LootItem.m_79579_(Items.f_42428_)).m_79076_(LootItem.m_79579_(Items.f_42433_)).m_79076_(LootItem.m_79579_(Items.f_42386_))));
+    }
+
+    @Override
+    public /* synthetic */ void accept(Object object) {
+        this.accept((BiConsumer)object);
+    }
+}
+

@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "trinsdar/gravisuit/mixin/BlockMixin": {
+      "playerDestroy": "Lnet/minecraft/world/level/block/Block;m_6240_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntity;Lnet/minecraft/world/item/ItemStack;)V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "trinsdar/gravisuit/mixin/BlockMixin": {
+        "playerDestroy": "Lnet/minecraft/world/level/block/Block;m_6240_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/block/entity/BlockEntity;Lnet/minecraft/world/item/ItemStack;)V"
+      }
+    }
+  }
+}

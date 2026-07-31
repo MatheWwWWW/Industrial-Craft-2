@@ -1,0 +1,9 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["I I", " I ", "RIR"],
+  "key": {
+    "I": { "tag": "forge:ingots/iron" },
+    "R": { "item": "ic2:rubber" }
+  },
+  "result": { "item": "ic2:weeding_trowel" }
+}

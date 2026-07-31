@@ -1,0 +1,103 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  com.google.common.collect.Iterables
+ *  net.minecraft.item.ItemStack
+ *  net.minecraft.item.crafting.Ingredient
+ *  net.minecraftforge.fluids.Fluid
+ */
+package ic2.core.recipe;
+
+import com.google.common.collect.Iterables;
+import ic2.api.recipe.IRecipeInput;
+import ic2.api.recipe.IRecipeInputFactory;
+import ic2.core.recipe.IngredientRecipeInput;
+import ic2.core.recipe.RecipeInputFluidContainer;
+import ic2.core.recipe.RecipeInputIngredient;
+import ic2.core.recipe.RecipeInputItemStack;
+import ic2.core.recipe.RecipeInputItemStackExact;
+import ic2.core.recipe.RecipeInputMultiple;
+import ic2.core.recipe.RecipeInputOreDict;
+import java.util.Collection;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraftforge.fluids.Fluid;
+
+public class RecipeInputFactory
+implements IRecipeInputFactory {
+    @Override
+    public IRecipeInput forStack(ItemStack stack) {
+        return new RecipeInputItemStack(stack);
+    }
+
+    @Override
+    public IRecipeInput forStack(ItemStack stack, int amount) {
+        return new RecipeInputItemStack(stack, amount);
+    }
+
+    @Override
+    public IRecipeInput forExactStack(ItemStack stack) {
+        if (stack.func_77960_j() == Short.MAX_VALUE) {
+            return this.forStack(stack);
+        }
+        return new RecipeInputItemStackExact(stack);
+    }
+
+    @Override
+    public IRecipeInput forExactStack(ItemStack stack, int amount) {
+        if (stack.func_77960_j() == Short.MAX_VALUE) {
+            return this.forStack(stack, amount);
+        }
+        return new RecipeInputItemStackExact(stack, amount);
+    }
+
+    @Override
+    public IRecipeInput forOreDict(String name) {
+        return new RecipeInputOreDict(name);
+    }
+
+    @Override
+    public IRecipeInput forOreDict(String name, int amount) {
+        return new RecipeInputOreDict(name, amount);
+    }
+
+    @Override
+    public IRecipeInput forOreDict(String name, int amount, int metaOverride) {
+        return new RecipeInputOreDict(name, amount, metaOverride);
+    }
+
+    @Override
+    public IRecipeInput forFluidContainer(Fluid fluid) {
+        return new RecipeInputFluidContainer(fluid);
+    }
+
+    @Override
+    public IRecipeInput forFluidContainer(Fluid fluid, int amount) {
+        return new RecipeInputFluidContainer(fluid, amount);
+    }
+
+    @Override
+    public IRecipeInput forAny(IRecipeInput ... options) {
+        return new RecipeInputMultiple(options);
+    }
+
+    @Override
+    public IRecipeInput forAny(Iterable<IRecipeInput> options) {
+        if (options instanceof Collection) {
+            return new RecipeInputMultiple(((Collection)options).toArray(new IRecipeInput[0]));
+        }
+        return new RecipeInputMultiple((IRecipeInput[])Iterables.toArray(options, IRecipeInput.class));
+    }
+
+    @Override
+    public Ingredient getIngredient(IRecipeInput input) {
+        return new IngredientRecipeInput(input);
+    }
+
+    @Override
+    public IRecipeInput forIngredient(Ingredient ingredient) {
+        return new RecipeInputIngredient(ingredient);
+    }
+}
+

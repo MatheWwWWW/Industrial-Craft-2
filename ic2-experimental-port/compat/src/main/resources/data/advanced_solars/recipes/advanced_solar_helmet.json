@@ -1,0 +1,13 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["sas", "cnc", "glg"],
+  "key": {
+    "s": { "item": "ic2:advanced_solar_helmet" },
+    "a": { "item": "advanced_solars:advanced_solar_panel" },
+    "c": { "item": "ic2:advanced_circuit" },
+    "n": { "item": "ic2:advanced_solar_helmet" },
+    "g": { "item": "ic2:double_insulated_gold_cable" },
+    "l": { "item": "ic2:lv_transformer" }
+  },
+  "result": { "item": "advanced_solars:advanced_solar_helmet" }
+}

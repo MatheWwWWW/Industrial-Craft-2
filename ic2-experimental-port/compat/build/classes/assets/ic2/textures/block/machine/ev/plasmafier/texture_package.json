@@ -1,0 +1,14 @@
+{
+	"active_down": "ic2:block/machine/ev/plasmafier/active_down",
+	"active_east": "ic2:block/machine/ev/plasmafier/active_down",
+	"active_north": "ic2:block/machine/ev/plasmafier/active_down",
+	"active_south": "ic2:block/machine/ev/plasmafier/active_south",
+	"active_up": "ic2:block/machine/ev/plasmafier/active_down",
+	"active_west": "ic2:block/machine/ev/plasmafier/active_down",
+	"inactive_down": "ic2:block/machine/ev/plasmafier/active_down",
+	"inactive_east": "ic2:block/machine/ev/plasmafier/active_down",
+	"inactive_north": "ic2:block/machine/ev/plasmafier/active_down",
+	"inactive_south": "ic2:block/machine/ev/plasmafier/inactive_south",
+	"inactive_up": "ic2:block/machine/ev/plasmafier/active_down",
+	"inactive_west": "ic2:block/machine/ev/plasmafier/active_down"
+}

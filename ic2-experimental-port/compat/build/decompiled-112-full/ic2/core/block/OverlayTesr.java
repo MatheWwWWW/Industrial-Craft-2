@@ -1,0 +1,66 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  net.minecraft.block.state.IBlockState
+ *  net.minecraft.client.Minecraft
+ *  net.minecraft.client.renderer.BlockRendererDispatcher
+ *  net.minecraft.client.renderer.BufferBuilder
+ *  net.minecraft.client.renderer.GlStateManager
+ *  net.minecraft.client.renderer.RenderHelper
+ *  net.minecraft.client.renderer.Tessellator
+ *  net.minecraft.client.renderer.texture.TextureMap
+ *  net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer
+ *  net.minecraft.client.renderer.vertex.DefaultVertexFormats
+ *  net.minecraft.world.IBlockAccess
+ *  org.lwjgl.opengl.GL11
+ */
+package ic2.core.block;
+
+import ic2.core.block.TileEntityBlock;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.BlockRendererDispatcher;
+import net.minecraft.client.renderer.BufferBuilder;
+import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.client.renderer.RenderHelper;
+import net.minecraft.client.renderer.Tessellator;
+import net.minecraft.client.renderer.texture.TextureMap;
+import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
+import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
+import net.minecraft.world.IBlockAccess;
+import org.lwjgl.opengl.GL11;
+
+public class OverlayTesr
+extends TileEntitySpecialRenderer<TileEntityBlock> {
+    public void render(TileEntityBlock te, double x, double y, double z, float partialTicks, int destroyStage, float alpha) {
+        IBlockState state = te.getBlockType().func_176223_P();
+        GL11.glPushAttrib((int)64);
+        GL11.glPushMatrix();
+        RenderHelper.func_74518_a();
+        GlStateManager.func_179112_b((int)770, (int)771);
+        GlStateManager.func_179147_l();
+        GlStateManager.func_179129_p();
+        if (Minecraft.func_71379_u()) {
+            GlStateManager.func_179103_j((int)7425);
+        } else {
+            GlStateManager.func_179103_j((int)7424);
+        }
+        this.func_147499_a(TextureMap.field_110575_b);
+        float zScale = 1.001f;
+        GlStateManager.func_179109_b((float)((float)(x + 0.5)), (float)((float)(y + 0.5)), (float)((float)(z + 0.5)));
+        GlStateManager.func_179152_a((float)zScale, (float)zScale, (float)zScale);
+        GlStateManager.func_179109_b((float)((float)(-(x + 0.5))), (float)((float)(-(y + 0.5))), (float)((float)(-(z + 0.5))));
+        BlockRendererDispatcher renderer = Minecraft.func_71410_x().func_175602_ab();
+        Tessellator tessellator = Tessellator.func_178181_a();
+        BufferBuilder wr = tessellator.func_178180_c();
+        wr.func_181668_a(7, DefaultVertexFormats.field_176600_a);
+        wr.func_178969_c(x - (double)te.func_174877_v().func_177958_n(), y - (double)te.func_174877_v().func_177956_o(), z - (double)te.func_174877_v().func_177952_p());
+        renderer.func_175019_b().func_178267_a((IBlockAccess)te.func_145831_w(), renderer.func_184389_a(state), state, te.func_174877_v(), wr, true);
+        wr.func_178969_c(0.0, 0.0, 0.0);
+        tessellator.func_78381_a();
+        GL11.glPopMatrix();
+        GL11.glPopAttrib();
+    }
+}
+

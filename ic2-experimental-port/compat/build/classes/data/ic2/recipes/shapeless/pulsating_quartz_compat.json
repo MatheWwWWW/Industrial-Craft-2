@@ -1,0 +1,9 @@
+{
+  "type": "ic2:shapeless",
+  "ingredients": [
+    { "item": "minecraft:quartz" },
+    { "tag": "forge:dusts/redstone" },
+    { "tag": "forge:dusts/redstone" }
+  ],
+  "result": { "item": "ic2:pulsating_quartz" }
+}

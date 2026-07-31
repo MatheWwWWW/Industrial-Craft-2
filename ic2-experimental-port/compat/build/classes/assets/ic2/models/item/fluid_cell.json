@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ic2:items/cell/fluid_cell",
+    "layer1": "ic2:items/cell/fluid_cell_window"
+  }
+}

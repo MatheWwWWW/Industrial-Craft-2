@@ -1,0 +1,81 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package net.minecraft.world.level.block;
+
+public class LevelEvent {
+    public static final int f_153607_ = 1000;
+    public static final int f_153627_ = 1001;
+    public static final int f_153628_ = 1002;
+    public static final int f_153629_ = 1003;
+    public static final int f_153630_ = 1004;
+    public static final int f_153631_ = 1005;
+    public static final int f_153632_ = 1006;
+    public static final int f_153633_ = 1007;
+    public static final int f_153634_ = 1008;
+    public static final int f_153635_ = 1009;
+    public static final int f_153636_ = 1010;
+    public static final int f_153637_ = 1011;
+    public static final int f_153638_ = 1012;
+    public static final int f_153639_ = 1013;
+    public static final int f_153640_ = 1014;
+    public static final int f_153641_ = 1015;
+    public static final int f_153642_ = 1016;
+    public static final int f_153643_ = 1017;
+    public static final int f_153644_ = 1018;
+    public static final int f_153645_ = 1019;
+    public static final int f_153646_ = 1020;
+    public static final int f_153647_ = 1021;
+    public static final int f_153648_ = 1022;
+    public static final int f_153649_ = 1023;
+    public static final int f_153650_ = 1024;
+    public static final int f_153651_ = 1025;
+    public static final int f_153581_ = 1026;
+    public static final int f_153582_ = 1027;
+    public static final int f_153583_ = 1028;
+    public static final int f_153584_ = 1029;
+    public static final int f_153585_ = 1030;
+    public static final int f_153586_ = 1031;
+    public static final int f_153587_ = 1032;
+    public static final int f_153588_ = 1033;
+    public static final int f_153589_ = 1034;
+    public static final int f_153590_ = 1035;
+    public static final int f_153591_ = 1036;
+    public static final int f_153592_ = 1037;
+    public static final int f_153593_ = 1038;
+    public static final int f_153594_ = 1039;
+    public static final int f_153595_ = 1040;
+    public static final int f_153596_ = 1041;
+    public static final int f_153597_ = 1042;
+    public static final int f_153598_ = 1043;
+    public static final int f_153599_ = 1044;
+    public static final int f_153600_ = 1045;
+    public static final int f_153601_ = 1046;
+    public static final int f_153602_ = 1047;
+    public static final int f_153603_ = 1048;
+    public static final int f_153604_ = 1500;
+    public static final int f_153605_ = 1501;
+    public static final int f_153606_ = 1502;
+    public static final int f_153608_ = 1503;
+    public static final int f_153609_ = 1504;
+    public static final int f_153610_ = 1505;
+    public static final int f_153611_ = 2000;
+    public static final int f_153612_ = 2001;
+    public static final int f_153613_ = 2002;
+    public static final int f_153614_ = 2003;
+    public static final int f_153615_ = 2004;
+    public static final int f_153616_ = 2005;
+    public static final int f_153617_ = 2006;
+    public static final int f_153618_ = 2007;
+    public static final int f_153619_ = 2008;
+    public static final int f_153620_ = 2009;
+    public static final int f_153621_ = 3000;
+    public static final int f_153622_ = 3001;
+    public static final int f_153623_ = 3002;
+    public static final int f_153624_ = 3003;
+    public static final int f_153625_ = 3004;
+    public static final int f_153626_ = 3005;
+    public static final int f_221392_ = 3006;
+    public static final int f_221393_ = 3007;
+}
+

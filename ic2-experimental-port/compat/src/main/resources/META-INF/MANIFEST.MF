@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: ic2_experimental_fidelity
+Specification-Vendor: mot
+Specification-Version: 1
+Implementation-Title: IC2 Experimental Fidelity
+Implementation-Version: 0.1.0
+Implementation-Vendor: mot
+MixinConfigs: ic2_experimental_fidelity.mixins.json
+

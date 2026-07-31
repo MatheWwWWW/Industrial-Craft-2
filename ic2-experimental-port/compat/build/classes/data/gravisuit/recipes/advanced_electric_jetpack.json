@@ -1,0 +1,13 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["CEC", "BLB", "GAG"],
+  "key": {
+    "C": { "item": "ic2:carbon_plate" },
+    "E": { "item": "ic2:jetpack_electric" },
+    "B": { "item": "gravisuit:engine_boost" },
+    "L": { "item": "gravisuit:advanced_lappack" },
+    "G": { "item": "ic2:glass_fibre_cable" },
+    "A": { "item": "ic2:advanced_circuit" }
+  },
+  "result": { "item": "gravisuit:advanced_electric_jetpack" }
+}

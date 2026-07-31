@@ -1,0 +1,12 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["SJS", "GTG", "SUS"],
+  "key": {
+    "S": { "item": "gravisuit:super_conductor" },
+    "J": { "item": "ic2:compacted_nuclear_jetpack" },
+    "G": { "item": "gravisuit:gravitation_engine" },
+    "T": { "item": "ic2:ev_transformer" },
+    "U": { "item": "gravisuit:ultimate_lappack" }
+  },
+  "result": { "item": "gravisuit:nuclear_gravitation_jetpack" }
+}

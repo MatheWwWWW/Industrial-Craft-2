@@ -1,0 +1,5 @@
+{
+  "type":"ic2:shaped", "pattern":["PPP","   ","PPP"],
+  "key":{"P":{"tag":"forge:plates/steel"}},
+  "result":{"item":"ic2:pipe","count":2,"nbt":{"type":1,"size":2}}
+}

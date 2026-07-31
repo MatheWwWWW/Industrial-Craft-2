@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["CLC", "LOL", "CLC"],
+  "key": {
+    "C": { "item": "ic2:advanced_heat_exchanger" },
+    "L": { "item": "ic2:lapotron_crystal" },
+    "O": { "item": "ic2:charging_energy_crystal" }
+  },
+  "result": { "item": "ic2:charging_lapotron_crystal" }
+}

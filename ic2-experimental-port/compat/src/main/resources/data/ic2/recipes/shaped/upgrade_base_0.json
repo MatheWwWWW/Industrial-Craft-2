@@ -1,0 +1,11 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["X X", "YCY", "XVX"],
+  "key": {
+    "X": { "tag": "forge:ingots/copper" },
+    "Y": { "item": "ic2:insulated_copper_cable" },
+    "C": { "item": "ic2:circuit" },
+    "V": { "item": "ic2:mining_pipe" }
+  },
+  "result": { "item": "ic2:upgrade_base", "count": 3 }
+}

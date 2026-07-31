@@ -1,0 +1,12 @@
+{
+  "type": "ic2:shapeless",
+  "ingredients": [
+    { "item": "gravisuit:gravitool" },
+    { "item": "minecraft:wooden_axe" },
+    { "item": "ic2:simple_import" }
+  ],
+  "result": {
+    "item": "gravisuit:gravitool",
+    "nbt": { "inv_import": true }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["GAG", "COC", "AHA"],
+  "key": {
+    "G": { "tag": "forge:dusts/glowstone" },
+    "A": { "item": "ic2:alloy" },
+    "C": { "item": "ic2:advanced_circuit" },
+    "O": { "item": "ic2:overclocker_upgrade" },
+    "H": { "item": "ic2:advanced_heat_vent" }
+  },
+  "result": { "item": "gravisuit:engine_boost" }
+}

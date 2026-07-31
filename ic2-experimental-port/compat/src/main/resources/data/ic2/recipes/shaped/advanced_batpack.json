@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["BCB", "BTB", "B B"],
+  "key": {
+    "B": { "item": "ic2:advanced_re_battery" },
+    "C": { "item": "ic2:circuit" },
+    "T": { "item": "ic2:copper_casing" }
+  },
+  "result": { "item": "ic2:advanced_batpack" }
+}

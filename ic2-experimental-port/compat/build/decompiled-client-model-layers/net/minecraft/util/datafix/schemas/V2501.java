@@ -1,0 +1,39 @@
+/*
+ * Decompiled with CFR 0.152.
+ * 
+ * Could not load the following classes:
+ *  com.mojang.datafixers.DSL
+ *  com.mojang.datafixers.schemas.Schema
+ *  com.mojang.datafixers.types.Type
+ *  com.mojang.datafixers.types.templates.TypeTemplate
+ */
+package net.minecraft.util.datafix.schemas;
+
+import com.mojang.datafixers.DSL;
+import com.mojang.datafixers.schemas.Schema;
+import com.mojang.datafixers.types.Type;
+import com.mojang.datafixers.types.templates.TypeTemplate;
+import java.util.Map;
+import java.util.function.Supplier;
+import net.minecraft.util.datafix.fixes.References;
+import net.minecraft.util.datafix.schemas.NamespacedSchema;
+
+public class V2501
+extends NamespacedSchema {
+    public V2501(int p_17848_, Schema p_17849_) {
+        super(p_17848_, p_17849_);
+    }
+
+    private static void m_17852_(Schema p_17853_, Map<String, Supplier<TypeTemplate>> p_17854_, String p_17855_) {
+        p_17853_.register(p_17854_, p_17855_, () -> DSL.optionalFields((String)"Items", (TypeTemplate)DSL.list((TypeTemplate)References.f_16782_.in(p_17853_)), (String)"RecipesUsed", (TypeTemplate)DSL.compoundList((TypeTemplate)References.f_16793_.in(p_17853_), (TypeTemplate)DSL.constType((Type)DSL.intType()))));
+    }
+
+    public Map<String, Supplier<TypeTemplate>> registerBlockEntities(Schema p_17857_) {
+        Map $$1 = super.registerBlockEntities(p_17857_);
+        V2501.m_17852_(p_17857_, $$1, "minecraft:furnace");
+        V2501.m_17852_(p_17857_, $$1, "minecraft:smoker");
+        V2501.m_17852_(p_17857_, $$1, "minecraft:blast_furnace");
+        return $$1;
+    }
+}
+

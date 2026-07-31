@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["#T#", "TVT", "#T#"],
+  "key": {
+    "#": { "item": "minecraft:iron_bars" },
+    "T": { "tag": "forge:plates/tin" },
+    "V": { "item": "ic2:heat_vent" }
+  },
+  "result": { "item": "ic2:component_heat_vent" }
+}

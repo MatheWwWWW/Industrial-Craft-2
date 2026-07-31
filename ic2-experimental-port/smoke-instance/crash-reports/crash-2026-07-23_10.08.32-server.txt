@@ -1,0 +1,167 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 2026-07-23 10:08:32
+Description: Exception in server tick loop
+
+java.lang.IllegalStateException: Uniform legacy shaped recipe differs from IC2 2.8.222: ic2:shaped/diamond_dust_from_small_dusts
+	at ru.mot.ic2exfidelity.integration.SmokeFunctionalChecks.checkUniformLegacyShapedRecipe(SmokeFunctionalChecks.java:301) ~[IC2-Experimental-Fidelity-0.1.0.jar%23249!/:0.1.0] {re:classloading}
+	at ru.mot.ic2exfidelity.integration.SmokeFunctionalChecks.checkLegacyCrops(SmokeFunctionalChecks.java:211) ~[IC2-Experimental-Fidelity-0.1.0.jar%23249!/:0.1.0] {re:classloading}
+	at ru.mot.ic2exfidelity.integration.SmokeFunctionalChecks.run(SmokeFunctionalChecks.java:78) ~[IC2-Experimental-Fidelity-0.1.0.jar%23249!/:0.1.0] {re:classloading}
+	at ru.mot.ic2exfidelity.Ic2ExperimentalFidelity.onServerStarted(Ic2ExperimentalFidelity.java:225) ~[IC2-Experimental-Fidelity-0.1.0.jar%23249!/:0.1.0] {re:classloading}
+	at net.minecraftforge.eventbus.EventBus.doCastFilter(EventBus.java:260) ~[eventbus-6.0.3.jar%2386!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.lambda$addListener$11(EventBus.java:252) ~[eventbus-6.0.3.jar%2386!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.3.jar%2386!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.3.jar%2386!/:?] {}
+	at net.minecraftforge.server.ServerLifecycleHooks.handleServerStarted(ServerLifecycleHooks.java:109) ~[forge-1.19.2-43.5.2-universal.jar%23297!/:?] {re:mixin,re:classloading}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:629) ~[client-1.19.2-20220805.130853-srg.jar%23292!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:244) ~[client-1.19.2-20220805.130853-srg.jar%23292!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {re:mixin}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.2
+	Minecraft Version ID: 1.19.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.15, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Microsoft
+	Memory: 637390984 bytes (607 MiB) / 4294967296 bytes (4096 MiB) up to 4294967296 bytes (4096 MiB)
+	CPUs: 12
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 5 7600X 6-Core Processor             
+	Identifier: AuthenticAMD Family 25 Model 97 Stepping 2
+	Microarchitecture: Zen 3
+	Frequency (GHz): 4.69
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: NVIDIA GeForce RTX 5070
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x2f04
+	Graphics card #0 versionInfo: DriverVersion=32.0.16.1074
+	Graphics card #1 name: AMD Radeon(TM) Graphics
+	Graphics card #1 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #1 VRAM (MB): 512.00
+	Graphics card #1 deviceId: 0x164e
+	Graphics card #1 versionInfo: DriverVersion=32.0.13018.6
+	Memory slot #0 capacity (MB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 5.20
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 5.20
+	Memory slot #1 type: Unknown
+	Virtual memory max (MB): 33909.91
+	Virtual memory used (MB): 19164.65
+	Swap memory total (MB): 2048.00
+	Swap memory used (MB): 0.00
+	JVM Flags: 4 total; -Xms512M -Xmx4G -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M
+	Loaded Shaderpack: (off)
+	Server Running: true
+	Player Count: 0 / 8; []
+	Data Packs: vanilla, mod:dynamiclightsreforged (incompatible), mod:createbigcannons (incompatible), mod:quarryplus, mod:kleiders_custom_renderer, mod:undeadnights (incompatible), mod:treeharvester, mod:tacz (incompatible), mod:waystones (incompatible), mod:ritchiesprojectilelib (incompatible), mod:journeymap (incompatible), mod:configured (incompatible), mod:badpackets (incompatible), mod:zombieawareness (incompatible), mod:hordes (incompatible), mod:balm (incompatible), mod:terralith (incompatible), mod:jeresources, mod:cameraoverhaul (incompatible), mod:cloth_config (incompatible), mod:sound_physics_remastered (incompatible), mod:forge, mod:tlskincape (incompatible), mod:konkrete (incompatible), mod:embeddium (incompatible), mod:ironchest (incompatible), mod:cofh_core, mod:thermal, mod:entity_model_features (incompatible), mod:entity_texture_features (incompatible), mod:libipn (incompatible), mod:theoneprobe (incompatible), mod:terrablender, mod:ambientsounds, mod:mousetweaks, mod:creativecore, mod:wthit (incompatible), mod:simplybackpacks, mod:kotlinforforge (incompatible), mod:curios, mod:flywheel (incompatible), mod:create, mod:ic2, mod:foglooksgoodnow, mod:oculus, mod:collective, mod:almostunified (incompatible), mod:jei (incompatible), mod:ae2 (incompatible), mod:industrialupgrade, mod:powerutils, mod:reactorplus, mod:simplyquarries, mod:thermal_foundation, mod:thermal_expansion, mod:lostcities (incompatible), mod:tacticalvests, mod:quantumgenerators, mod:atlaslib (incompatible), mod:wateringcan, mod:coroutil (incompatible), mod:inventoryprofilesnext (incompatible), mod:diamondvein, mod:byg, mod:corgilib (incompatible), mod:justzoom (incompatible), mod:geckolib3 (incompatible), mod:betterfoliage (incompatible), mod:presencefootsteps, tacz_pack/tacz (incompatible), mod:toughasnails (incompatible), mod:toughasnails_clothing (incompatible), mod:ic2_experimental_fidelity (incompatible), C:\Users\mot\AppData\Roaming\.minecraft\ic2-experimental-port\smoke-instance\config\hordes (incompatible)
+	World Generation: Stable
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Launched Version: Forge 1.19.2
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.3.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19.2-43.5.2.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19.2-43.5.2.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19.2-43.5.2.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19.2-43.5.2.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19.2-43.5.2.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		javafml@null
+		kotlinforforge@3.12.0
+		lowcodefml@null
+		kotori_scala@2.13.10-build-10
+	Mod List: 
+		dynamiclightsreforged-1.19.2_v1.4.0.jar           |Rubidium Dynamic Lights       |dynamiclightsreforged         |1.19.2_v1.4.0       |DONE      |Manifest: NOSIGNATURE
+		createbigcannons-5.6.0-mc.1.19.2-forge.jar        |Create Big Cannons            |createbigcannons              |5.6.0+mc.1.19.2-forg|DONE      |Manifest: NOSIGNATURE
+		AdditionalEnchantedMiner-1.19.2-1192.4.65.jar     |QuarryPlus                    |quarryplus                    |1192.4.65           |DONE      |Manifest: ef:50:af:b3:03:e0:3e:70:a7:ef:78:77:a5:4d:d4:b5:07:ec:df:9d:d6:f3:12:13:c9:3c:cd:9a:0a:3e:6b:43
+		Kleiders+Custom+Renderer+API+5.4.0+1.19.2.jar     |Kleiders Custom Renderer      |kleiders_custom_renderer      |5.4.0               |DONE      |Manifest: NOSIGNATURE
+		UndeadNights-2.1.0-Forge-mc1.19.2.jar             |UndeadNights                  |undeadnights                  |2.1.0-Forge-mc1.19.2|DONE      |Manifest: NOSIGNATURE
+		treeharvester-1.19.2-8.2.jar                      |Tree Harvester                |treeharvester                 |8.2                 |DONE      |Manifest: NOSIGNATURE
+		tacz-1.19.2-1.1.4-hotfix-all.jar                  |Timeless & Classics Guns: Zero|tacz                          |1.1.4-hotfix        |DONE      |Manifest: NOSIGNATURE
+		waystones-forge-1.19.2-11.4.1.jar                 |Waystones                     |waystones                     |11.4.1              |DONE      |Manifest: NOSIGNATURE
+		ritchiesprojectilelib-2.0.0-dev+mc.1.19.2-forge-bu|Ritchie's Projectile Library  |ritchiesprojectilelib         |2.0.0-dev+mc.1.19.2-|DONE      |Manifest: NOSIGNATURE
+		journeymap-1.19.2-5.9.7-forge.jar                 |Journeymap                    |journeymap                    |5.9.7               |DONE      |Manifest: NOSIGNATURE
+		configured-2.1.1-1.19.2.jar                       |Configured                    |configured                    |2.1.1               |DONE      |Manifest: NOSIGNATURE
+		badpackets-forge-0.2.2.jar                        |Bad Packets                   |badpackets                    |0.2.2               |DONE      |Manifest: NOSIGNATURE
+		zombieawareness-1.19.2-1.12.3.jar                 |Zombie Awareness              |zombieawareness               |1.19.2-1.12.3       |DONE      |Manifest: NOSIGNATURE
+		The-Hordes-1.19.2-1.5.4.jar                       |The Hordes                    |hordes                        |1.5.4               |DONE      |Manifest: NOSIGNATURE
+		balm-forge-1.19.2-4.6.0.jar                       |Balm                          |balm                          |4.6.0               |DONE      |Manifest: NOSIGNATURE
+		Terralith-v2.3.5-Fabric-Forge-1.19.2.jar          |Terralith                     |terralith                     |0.0NONE             |DONE      |Manifest: NOSIGNATURE
+		JustEnoughResources-1.19.2-1.2.2.236.jar          |Just Enough Resources         |jeresources                   |1.2.2.236           |DONE      |Manifest: NOSIGNATURE
+		CameraOverhaul-v2.1.1-forge-mc-1.19-1.19.2.jar    |CameraOverhaul                |cameraoverhaul                |2.1.1-forge+mc.1.19-|DONE      |Manifest: NOSIGNATURE
+		cloth-config-8.3.134-forge-1.19.2.jar             |Cloth Config v8 API           |cloth_config                  |8.3.134             |DONE      |Manifest: NOSIGNATURE
+		sound-physics-remastered-forge-1.19.2-1.4.5.jar   |Sound Physics Remastered      |sound_physics_remastered      |1.19.2-1.4.5        |DONE      |Manifest: NOSIGNATURE
+		forge-1.19.2-43.5.2-universal.jar                 |Forge                         |forge                         |43.5.2              |DONE      |Manifest: NOSIGNATURE
+		tl_skin_cape_forge_1.19_1.19.2-1.38.jar           |TLSkinCape                    |tlskincape                    |1.38                |DONE      |Manifest: ef:fe:e7:59:91:bb:3a:06:c1:94:f4:f3:9c:3e:26:69:47:fa:2e:c5:53:d3:38:21:65:cc:04:75:e7:61:19:40
+		konkrete_forge_1.6.1_MC_1.19-1.19.2.jar           |Konkrete                      |konkrete                      |1.6.1               |DONE      |Manifest: NOSIGNATURE
+		embeddium-0.3.18.1+mc1.19.2.jar                   |Embeddium                     |embeddium                     |0.3.18.1+mc1.19.2   |DONE      |Manifest: NOSIGNATURE
+		ironchest-1.19.2-14.2.7.jar                       |Iron Chests                   |ironchest                     |1.19.2-14.2.7       |DONE      |Manifest: NOSIGNATURE
+		client-1.19.2-20220805.130853-srg.jar             |Minecraft                     |minecraft                     |1.19.2              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		cofh_core-1.19.2-10.3.0.46.jar                    |CoFH Core                     |cofh_core                     |10.3.0              |DONE      |Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		thermal_core-1.19.2-10.3.0.9.jar                  |Thermal Series                |thermal                       |10.3.0              |DONE      |Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		entity_model_features_forge_1.19.2-2.0.2.jar      |Entity Model Features         |entity_model_features         |2.0.2               |DONE      |Manifest: NOSIGNATURE
+		entity_texture_features_forge_1.19.2-6.0.1.jar    |Entity Texture Features       |entity_texture_features       |6.0.1               |DONE      |Manifest: NOSIGNATURE
+		libIPN-forge-1.19-4.0.2.jar                       |libIPN                        |libipn                        |4.0.2               |DONE      |Manifest: NOSIGNATURE
+		theoneprobe-1.19-6.2.2.jar                        |The One Probe                 |theoneprobe                   |1.19-6.2.2          |DONE      |Manifest: NOSIGNATURE
+		TerraBlender-forge-1.19.2-2.0.1.136.jar           |TerraBlender                  |terrablender                  |2.0.1.136           |DONE      |Manifest: NOSIGNATURE
+		AmbientSounds_FORGE_v5.3.9_mc1.19.2.jar           |AmbientSounds                 |ambientsounds                 |5.3.9               |DONE      |Manifest: NOSIGNATURE
+		MouseTweaks-forge-mc1.19-2.23.jar                 |Mouse Tweaks                  |mousetweaks                   |2.23                |DONE      |Manifest: NOSIGNATURE
+		CreativeCore_FORGE_v2.11.28_mc1.19.2.jar          |CreativeCore                  |creativecore                  |2.11.28             |DONE      |Manifest: NOSIGNATURE
+		wthit-forge-5.19.0.jar                            |wthit                         |wthit                         |5.19.0              |DONE      |Manifest: NOSIGNATURE
+		simplybackpacks-1.19-2.1.5-build.45.jar           |Simply Backpacks              |simplybackpacks               |1.19-2.1.5-build.45 |DONE      |Manifest: NOSIGNATURE
+		kffmod-3.12.0.jar                                 |Kotlin For Forge              |kotlinforforge                |3.12.0              |DONE      |Manifest: NOSIGNATURE
+		curios-forge-1.19.2-5.1.6.4.jar                   |Curios API                    |curios                        |1.19.2-5.1.6.4      |DONE      |Manifest: NOSIGNATURE
+		flywheel-forge-1.19.2-0.6.11-22.jar               |Flywheel                      |flywheel                      |0.6.11-22           |DONE      |Manifest: NOSIGNATURE
+		create-1.19.2-0.5.1.i.jar                         |Create                        |create                        |0.5.1.i             |DONE      |Manifest: NOSIGNATURE
+		industrialcraft-2-2.9.162+ex119-fidelity-1.19.2-fo|IndustrialCraft 2             |ic2                           |2.9.162+ex119       |DONE      |Manifest: NOSIGNATURE
+		IC2-Experimental-Fidelity-0.1.0.jar               |IC2 Experimental Fidelity     |ic2_experimental_fidelity     |0.1.0               |DONE      |Manifest: NOSIGNATURE
+		betterfog-1.19.2-1.1.2.jar                        |Fog Looks Good Now            |foglooksgoodnow               |1.1.1               |DONE      |Manifest: NOSIGNATURE
+		oculus-mc1.19.2-1.6.9a.jar                        |Oculus                        |oculus                        |1.6.9a              |DONE      |Manifest: NOSIGNATURE
+		collective-1.19.2-6.66.jar                        |Collective                    |collective                    |6.66                |DONE      |Manifest: NOSIGNATURE
+		almostunified-forge-1.19.2-0.8.2.jar              |AlmostUnified                 |almostunified                 |1.19.2-0.8.2        |DONE      |Manifest: NOSIGNATURE
+		jei-1.19.2-forge-11.8.1.1034.jar                  |Just Enough Items             |jei                           |11.8.1.1034         |DONE      |Manifest: NOSIGNATURE
+		appliedenergistics2-forge-12.9.12.jar             |Applied Energistics 2         |ae2                           |12.9.12             |DONE      |Manifest: NOSIGNATURE
+		IndustrialUpgrade-1.19.2-3.4.0.9.jar              |Industrial Upgrade            |industrialupgrade             |3.4.0.9             |DONE      |Manifest: NOSIGNATURE
+		powerutils-1.8.jar                                |Power Utilities               |powerutils                    |1.8                 |DONE      |Manifest: NOSIGNATURE
+		reactorplus-1.1.jar                               |Reactor Plus                  |reactorplus                   |1.1                 |DONE      |Manifest: NOSIGNATURE
+		simplyquarries-1.8.jar                            |Simply Quarries               |simplyquarries                |1.8                 |DONE      |Manifest: NOSIGNATURE
+		Tough-As-Nails-1.19-8.0.0.78.jar                  |Tough As Nails                |toughasnails                  |0.0NONE             |DONE      |Manifest: NOSIGNATURE
+		ToughAsNails-ClothingSlots-1.0.0.jar              |Tough As Nails: Clothing Slots|toughasnails_clothing         |1.0.1               |DONE      |Manifest: NOSIGNATURE
+		thermal_foundation-1.19.2-10.3.1.57.jar           |Thermal Foundation            |thermal_foundation            |10.3.1              |DONE      |Manifest: NOSIGNATURE
+		thermal_expansion-1.19.2-10.3.1.25.jar            |Thermal Expansion             |thermal_expansion             |10.3.1              |DONE      |Manifest: 75:0b:cc:9b:64:2e:9b:c4:41:d1:95:00:71:ee:87:1a:b3:5e:4b:da:8e:e8:39:00:fd:5d:e5:9c:40:42:33:09
+		lostcities-1.19-6.2.2.jar                         |LostCities                    |lostcities                    |1.19-6.2.2          |DONE      |Manifest: NOSIGNATURE
+		tacticalvests-1.0.6-forge-1.19.2.jar              |Tactical Vests                |tacticalvests                 |1.0.4               |DONE      |Manifest: NOSIGNATURE
+		quantumgenerators-1.8.jar                         |Quantum Generators            |quantumgenerators             |1.8                 |DONE      |Manifest: NOSIGNATURE
+		Atlas-Lib-1.19.2-1.1.6.jar                        |Atlas Lib                     |atlaslib                      |1.1.5a              |DONE      |Manifest: NOSIGNATURE
+		wateringcan-1.0.jar                               |Watering Can                  |wateringcan                   |1.0                 |DONE      |Manifest: NOSIGNATURE
+		coroutil-1.19.2-1.2.37.jar                        |CoroUtil                      |coroutil                      |1.19.2-1.2.37       |DONE      |Manifest: NOSIGNATURE
+		InventoryProfilesNext-forge-1.19-1.10.20.jar      |Inventory Profiles Next       |inventoryprofilesnext         |1.10.20             |DONE      |Manifest: NOSIGNATURE
+		diamondvein-1.2.jar                               |Diamond Vein                  |diamondvein                   |1.2                 |DONE      |Manifest: NOSIGNATURE
+		Oh_The_Biomes_You'll_Go-forge-1.19.2-2.0.1.4.jar  |Oh The Biomes You'll Go       |byg                           |2.0.1.4             |DONE      |Manifest: NOSIGNATURE
+		CorgiLib-forge-1.19.2-1.0.0.34.jar                |CorgiLib                      |corgilib                      |1.0.0.34            |DONE      |Manifest: NOSIGNATURE
+		justzoom_forge_1.0.1-1_MC_1.19.jar                |Just Zoom                     |justzoom                      |1.0.1               |DONE      |Manifest: NOSIGNATURE
+		geckolib-forge-1.19-3.1.40 .jar                   |GeckoLib                      |geckolib3                     |3.1.40              |DONE      |Manifest: NOSIGNATURE
+		betterfoliage-1.19.2-4.0.4.jar                    |Better Foliage                |betterfoliage                 |4.0.4               |DONE      |Manifest: NOSIGNATURE
+		presencefootsteps-1.19.2-1.6.4-forge.jar          |Presence Footsteps (Forge)    |presencefootsteps             |1.19.2-1.6.4        |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 4fddbbdd-901d-4ae5-9067-9a5e16092fa2
+	FML: 43.5
+	Forge: net.minecraftforge:43.5.2
+	Flywheel Backend: GL33 Instanced Arrays

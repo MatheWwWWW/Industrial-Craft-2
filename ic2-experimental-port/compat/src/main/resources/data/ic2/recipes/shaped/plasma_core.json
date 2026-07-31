@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["XYX", "YCY", "XYX"],
+  "key": {
+    "X": { "item": "ic2:magnet", "count": 2 },
+    "Y": { "item": "ic2:alloy", "count": 4 },
+    "C": { "item": "ic2:cell_plasma" }
+  },
+  "result": { "item": "ic2:plasma_core" }
+}

@@ -1,0 +1,4 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": { "layer0": "ic2:items/brewing/booze_mug_beer_beer" }
+}

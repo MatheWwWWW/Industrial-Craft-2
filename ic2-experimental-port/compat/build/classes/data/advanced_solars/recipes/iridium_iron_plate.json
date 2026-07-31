@@ -1,0 +1,9 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["rrr", "rir", "rrr"],
+  "key": {
+    "r": { "tag": "forge:ingots/steel" },
+    "i": { "tag": "forge:ingots/iridium" }
+  },
+  "result": { "item": "advanced_solars:iridium_iron_plate" }
+}

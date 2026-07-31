@@ -1,0 +1,9 @@
+{
+  "type": "ic2:shaped",
+  "pattern": [" CC", " IC", "I  "],
+  "key": {
+    "C": { "tag": "minecraft:wool" },
+    "I": { "item": "minecraft:iron_ingot" }
+  },
+  "result": { "item": "ic2:painter" }
+}

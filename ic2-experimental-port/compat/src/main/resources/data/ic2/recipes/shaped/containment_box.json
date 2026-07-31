@@ -1,0 +1,9 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["III", "ICI", "III"],
+  "key": {
+    "I": { "item": "ic2:lead_casing" },
+    "C": { "tag": "forge:chests/wooden" }
+  },
+  "result": { "item": "ic2:containment_box" }
+}

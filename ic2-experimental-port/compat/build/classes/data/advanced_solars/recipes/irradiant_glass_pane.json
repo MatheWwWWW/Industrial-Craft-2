@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["rrr", "igi", "rrr"],
+  "key": {
+    "r": { "item": "ic2:reinforced_glass" },
+    "i": { "item": "advanced_solars:irradiant_uranium" },
+    "g": { "tag": "forge:dusts/glowstone" }
+  },
+  "result": { "item": "advanced_solars:irradiant_glass_pane", "count": 6 }
+}

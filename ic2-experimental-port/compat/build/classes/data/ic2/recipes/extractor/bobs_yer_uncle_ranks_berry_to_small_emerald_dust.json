@@ -1,0 +1,5 @@
+{
+  "type": "ic2:extractor",
+  "ingredient": { "item": "ic2:bobs_yer_uncle_ranks_berry" },
+  "result": { "item": "ic2:small_emerald_dust" }
+}

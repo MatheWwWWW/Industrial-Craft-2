@@ -1,0 +1,36 @@
+{
+  "multipart": [
+    { "when": { "size": "tiny" }, "apply": { "model": "ic2:block/transport/fluid_pipe_core_tiny" } },
+    { "when": { "size": "small" }, "apply": { "model": "ic2:block/transport/fluid_pipe_core_small" } },
+    { "when": { "size": "medium" }, "apply": { "model": "ic2:block/transport/fluid_pipe_core_medium" } },
+    { "when": { "size": "large" }, "apply": { "model": "ic2:block/transport/fluid_pipe_core_large" } },
+
+    { "when": { "size": "tiny", "east": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_tiny" } },
+    { "when": { "size": "tiny", "west": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_tiny", "y": 180, "uvlock": true } },
+    { "when": { "size": "tiny", "south": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_tiny", "y": 90, "uvlock": true } },
+    { "when": { "size": "tiny", "north": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_tiny", "y": 270, "uvlock": true } },
+    { "when": { "size": "tiny", "up": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_tiny", "x": 270, "uvlock": true } },
+    { "when": { "size": "tiny", "down": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_tiny", "x": 90, "uvlock": true } },
+
+    { "when": { "size": "small", "east": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_small" } },
+    { "when": { "size": "small", "west": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_small", "y": 180, "uvlock": true } },
+    { "when": { "size": "small", "south": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_small", "y": 90, "uvlock": true } },
+    { "when": { "size": "small", "north": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_small", "y": 270, "uvlock": true } },
+    { "when": { "size": "small", "up": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_small", "x": 270, "uvlock": true } },
+    { "when": { "size": "small", "down": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_small", "x": 90, "uvlock": true } },
+
+    { "when": { "size": "medium", "east": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_medium" } },
+    { "when": { "size": "medium", "west": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_medium", "y": 180, "uvlock": true } },
+    { "when": { "size": "medium", "south": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_medium", "y": 90, "uvlock": true } },
+    { "when": { "size": "medium", "north": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_medium", "y": 270, "uvlock": true } },
+    { "when": { "size": "medium", "up": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_medium", "x": 270, "uvlock": true } },
+    { "when": { "size": "medium", "down": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_medium", "x": 90, "uvlock": true } },
+
+    { "when": { "size": "large", "east": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_large" } },
+    { "when": { "size": "large", "west": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_large", "y": 180, "uvlock": true } },
+    { "when": { "size": "large", "south": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_large", "y": 90, "uvlock": true } },
+    { "when": { "size": "large", "north": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_large", "y": 270, "uvlock": true } },
+    { "when": { "size": "large", "up": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_large", "x": 270, "uvlock": true } },
+    { "when": { "size": "large", "down": "true" }, "apply": { "model": "ic2:block/transport/fluid_pipe_arm_large", "x": 90, "uvlock": true } }
+  ]
+}

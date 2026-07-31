@@ -1,0 +1,9 @@
+{
+  "type":"ic2:shapeless",
+  "ingredients":[
+    {"item":"ic2:pipe","nbt":true,"data":{"type":0,"size":2}},
+    {"item":"minecraft:piston"},
+    {"item":"ic2:insulated_copper_cable"}
+  ],
+  "result":{"item":"ic2:cover","nbt":{"type":0}}
+}

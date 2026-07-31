@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "package": "trinsdar.gravisuit.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "KeyboardClientMixin"
+  ],
+  "mixins": [
+    "PlayerHandlerMixin",
+    "CompactedJetpackMixin",
+    "CompactedNuclearJetpackMixin",
+    "IC2ElectricJetpackBaseMixin",
+    "IC2ModularElectricArmorMixin",
+    "ElectricPackArmorMixin",
+    "CurioPluginMixin",
+    "CurioModuleMixin",
+    "BlockMixin"
+  ],
+  "minVersion": "0.8",
+  "refmap": "gravisuit-refmap.json"
+}

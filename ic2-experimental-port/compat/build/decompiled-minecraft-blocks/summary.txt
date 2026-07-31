@@ -1,0 +1,2 @@
+Summary for libraries\net\minecraft\client\1.19.2-20220805.130853\client-1.19.2-20220805.130853-srg.jar
+Decompiled with CFR 0.152

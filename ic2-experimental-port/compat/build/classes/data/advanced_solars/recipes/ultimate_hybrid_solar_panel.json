@@ -1,0 +1,12 @@
+{
+  "type": "ic2:shaped",
+  "pattern": [" h ", "pHp", "scs"],
+  "key": {
+    "h": { "item": "ic2:solar_panel_hv" },
+    "p": { "item": "ic2:plasma_core" },
+    "H": { "item": "advanced_solars:hybrid_solar_panel" },
+    "s": { "item": "advanced_solars:enriched_sunnarium_alloy" },
+    "c": { "item": "ic2:coal_chunk" }
+  },
+  "result": { "item": "advanced_solars:ultimate_hybrid_solar_panel" }
+}

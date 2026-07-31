@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["XYX", "XCX"],
+  "key": {
+    "X": { "item": "minecraft:diamond" },
+    "Y": { "item": "ic2:extractor" },
+    "C": { "item": "ic2:recycler" }
+  },
+  "result": { "item": "ic2:rare_earth_extractor" }
+}

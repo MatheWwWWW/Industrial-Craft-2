@@ -1,0 +1,50 @@
+{
+    "variants":  {
+                     "active=false,facing=north":  {
+                                                       "model":  "ic2:block/wiring/transformer/transformer_iv"
+                                                   },
+                     "active=false,facing=east":  {
+                                                      "model":  "ic2:block/wiring/transformer/transformer_iv",
+                                                      "y":  90
+                                                  },
+                     "active=false,facing=south":  {
+                                                       "model":  "ic2:block/wiring/transformer/transformer_iv",
+                                                       "y":  180
+                                                   },
+                     "active=false,facing=west":  {
+                                                      "model":  "ic2:block/wiring/transformer/transformer_iv",
+                                                      "y":  270
+                                                  },
+                     "active=false,facing=up":  {
+                                                    "model":  "ic2:block/wiring/transformer/transformer_iv",
+                                                    "x":  -90
+                                                },
+                     "active=false,facing=down":  {
+                                                      "model":  "ic2:block/wiring/transformer/transformer_iv",
+                                                      "x":  90
+                                                  },
+                     "active=true,facing=north":  {
+                                                      "model":  "ic2:block/wiring/transformer/transformer_iv_active"
+                                                  },
+                     "active=true,facing=east":  {
+                                                     "model":  "ic2:block/wiring/transformer/transformer_iv_active",
+                                                     "y":  90
+                                                 },
+                     "active=true,facing=south":  {
+                                                      "model":  "ic2:block/wiring/transformer/transformer_iv_active",
+                                                      "y":  180
+                                                  },
+                     "active=true,facing=west":  {
+                                                     "model":  "ic2:block/wiring/transformer/transformer_iv_active",
+                                                     "y":  270
+                                                 },
+                     "active=true,facing=up":  {
+                                                   "model":  "ic2:block/wiring/transformer/transformer_iv_active",
+                                                   "x":  -90
+                                               },
+                     "active=true,facing=down":  {
+                                                     "model":  "ic2:block/wiring/transformer/transformer_iv_active",
+                                                     "x":  90
+                                                 }
+                 }
+}

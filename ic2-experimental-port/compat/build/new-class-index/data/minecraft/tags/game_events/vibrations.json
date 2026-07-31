@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "ic2:generator_activate",
+    "ic2:machine_activate",
+    "ic2:generator_deactivate",
+    "ic2:machine_deactivate",
+    "ic2:tool_use"
+  ]
+}

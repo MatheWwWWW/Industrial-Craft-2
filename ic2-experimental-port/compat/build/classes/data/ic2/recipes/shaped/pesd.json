@@ -1,0 +1,11 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["XYX", "CVC", "XYX"],
+  "key": {
+    "X": { "item": "ic2:carbon_plate" },
+    "Y": { "item": "ic2:alloy" },
+    "C": { "item": "ic2:iridium" },
+    "V": { "item": "ic2:plasma_core" }
+  },
+  "result": { "item": "ic2:pesd" }
+}

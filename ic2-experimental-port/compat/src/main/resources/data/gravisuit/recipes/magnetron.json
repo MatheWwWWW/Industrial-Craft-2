@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["ICI", "CSC", "ICI"],
+  "key": {
+    "I": { "tag": "forge:ingots/steel" },
+    "C": { "tag": "forge:ingots/copper" },
+    "S": { "item": "gravisuit:super_conductor" }
+  },
+  "result": { "item": "gravisuit:magnetron" }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "ic2:shaped",
+  "pattern": [
+    "T T",
+    " P ",
+    "T T"
+  ],
+  "key": {
+    "T": {
+      "item": "ic2:dense_tin_plate"
+    },
+    "P": {
+      "item": "minecraft:piston"
+    }
+  },
+  "result": {
+    "item": "ic2:ejector_upgrade",
+    "count": 9
+  }
+}

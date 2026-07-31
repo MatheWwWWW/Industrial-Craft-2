@@ -1,0 +1,11 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["CCC", "XmX", "XrX"],
+  "key": {
+    "C": { "item": "ic2:insulated_copper_cable" },
+    "X": { "tag": "forge:plates/iron" },
+    "m": { "item": "ic2:electric_motor" },
+    "r": { "item": "ic2:iron_rotor" }
+  },
+  "result": { "item": "ic2:electric_boat" }
+}

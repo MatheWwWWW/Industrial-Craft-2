@@ -1,0 +1,16 @@
+Summary for ic2-experimental-port\compat\build\client-srg-inspect.jar
+Decompiled with CFR 0.152
+
+
+net.minecraft.client.resources.PackResourcesAdapterV4
+----------------------------
+
+m_118773_(java.io.InputStream java.io.InputStream int int int int int )
+  Loose catch block
+
+
+net.minecraft.nbt.ListTag
+----------------------------
+
+m_196511_(java.io.DataInput net.minecraft.nbt.StreamTagVisitor )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [4[SWITCH], 8[CASE]], but top level block is 9[SWITCH]

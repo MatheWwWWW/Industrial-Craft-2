@@ -1,0 +1,21 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package net.minecraft.client.gui.screens.inventory;
+
+import net.minecraft.client.gui.screens.inventory.AbstractFurnaceScreen;
+import net.minecraft.client.gui.screens.recipebook.SmeltingRecipeBookComponent;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.inventory.FurnaceMenu;
+
+public class FurnaceScreen
+extends AbstractFurnaceScreen<FurnaceMenu> {
+    private static final ResourceLocation f_98773_ = new ResourceLocation("textures/gui/container/furnace.png");
+
+    public FurnaceScreen(FurnaceMenu p_98776_, Inventory p_98777_, Component p_98778_) {
+        super(p_98776_, new SmeltingRecipeBookComponent(), p_98777_, p_98778_, f_98773_);
+    }
+}
+

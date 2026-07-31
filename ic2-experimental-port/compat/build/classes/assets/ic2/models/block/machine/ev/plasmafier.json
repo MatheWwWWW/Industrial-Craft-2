@@ -1,0 +1,12 @@
+{
+    "parent":  "minecraft:block/cube",
+    "textures":  {
+                     "particle":  "ic2:block/machine/ev/plasmafier/inactive_north",
+                     "down":  "ic2:block/machine/ev/plasmafier/inactive_down",
+                     "up":  "ic2:block/machine/ev/plasmafier/inactive_up",
+                     "north":  "ic2:block/machine/ev/plasmafier/inactive_north",
+                     "south":  "ic2:block/machine/ev/plasmafier/inactive_south",
+                     "west":  "ic2:block/machine/ev/plasmafier/inactive_west",
+                     "east":  "ic2:block/machine/ev/plasmafier/inactive_east"
+                 }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "ic2:shapeless",
+  "ingredients": [
+    { "item": "ic2:bronze_cable_item" },
+    { "item": "ic2:rubber" },
+    { "item": "ic2:rubber" }
+  ],
+  "result": { "item": "ic2:bronze_double_insulated_cable_item" }
+}

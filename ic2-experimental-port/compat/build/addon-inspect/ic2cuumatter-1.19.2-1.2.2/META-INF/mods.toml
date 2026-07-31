@@ -1,0 +1,41 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+issueTrackerURL="https://github.com/Christofmeg/IC2C-UU-Matter/issues" #optional
+license="The MIT License (MIT)"
+[[mods]]
+modId="ic2cuumatter"
+version="${file.jarVersion}"
+displayName="IC2C UU-Matter"
+displayURL="https://github.com/Christofmeg/IC2C-UU-Matter" #optional
+logoFile="pack.png"
+#credits=""
+authors="Christofmeg"
+description='''
+Addon for IC2-Classic adding JEI pages for UU-Matter and Plasma Cell creation.
+'''
+[[dependencies.ic2cuumatter]]
+    modId="forge"
+    mandatory=true
+    versionRange="[43,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.ic2cuumatter]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2,1.19.3)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.ic2cuumatter]]
+    modId="ic2"
+    mandatory=true
+    versionRange="[1.19.2-2.0.0,)"
+    ordering="AFTER"
+    side="BOTH"
+[[dependencies.ic2cuumatter]]
+    modId="jei"
+    mandatory=false
+    versionRange="[11.4.0.287,)"
+    ordering="NONE"
+    side="BOTH"
+[modproperties.ic2cuumatter]
+    catalogueImageIcon="ic2cuumatter-icon.png"

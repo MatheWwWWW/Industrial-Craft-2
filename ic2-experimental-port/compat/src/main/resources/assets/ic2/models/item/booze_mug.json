@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": { "layer0": "ic2:items/brewing/booze_mug_beer_brew" },
+  "overrides": [
+    { "predicate": { "ic2:booze_variant": 2 }, "model": "ic2:item/booze_mug_beer_youngster" },
+    { "predicate": { "ic2:booze_variant": 3 }, "model": "ic2:item/booze_mug_beer_beer" },
+    { "predicate": { "ic2:booze_variant": 4 }, "model": "ic2:item/booze_mug_beer_ale" },
+    { "predicate": { "ic2:booze_variant": 5 }, "model": "ic2:item/booze_mug_beer_dragon_blood" },
+    { "predicate": { "ic2:booze_variant": 6 }, "model": "ic2:item/booze_mug_beer_black_stuff" },
+    { "predicate": { "ic2:booze_variant": 7 }, "model": "ic2:item/booze_mug_rum" }
+  ]
+}

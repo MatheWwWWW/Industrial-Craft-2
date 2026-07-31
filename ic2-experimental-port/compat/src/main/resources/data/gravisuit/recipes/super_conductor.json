@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["SSS", "GUG", "SSS"],
+  "key": {
+    "S": { "item": "gravisuit:super_conductor_cover" },
+    "G": { "item": "ic2:glass_fibre_cable" },
+    "U": { "item": "ic2:uu_matter" }
+  },
+  "result": { "item": "gravisuit:super_conductor", "count": 3 }
+}

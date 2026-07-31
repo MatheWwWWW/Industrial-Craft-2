@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gui width="176" height="166">
+  <text y="6" align="center">%name%</text>
+  <slot name="output" x="89" y="35"/>
+  <gauge name="progress" x="71" y="36" style="fuel"/>
+  <playerInventory x="7" y="83"/>
+</gui>

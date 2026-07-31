@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["pep", "ese", "pep"],
+  "key": {
+    "p": { "item": "ic2:cell_plasma" },
+    "e": { "item": "advanced_solars:enriched_sunnarium" },
+    "s": { "item": "advanced_solars:sunnarium_alloy" }
+  },
+  "result": { "item": "advanced_solars:enriched_sunnarium_alloy" }
+}

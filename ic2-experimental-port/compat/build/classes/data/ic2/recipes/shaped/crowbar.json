@@ -1,0 +1,9 @@
+{
+  "type": "ic2:shaped",
+  "pattern": [" DB", "DBD", "BD "],
+  "key": {
+    "B": { "tag": "forge:ingots/bronze" },
+    "D": { "tag": "forge:dyes/red" }
+  },
+  "result": { "item": "ic2:crowbar" }
+}

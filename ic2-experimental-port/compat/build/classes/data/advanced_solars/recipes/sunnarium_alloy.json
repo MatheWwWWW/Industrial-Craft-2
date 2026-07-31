@@ -1,0 +1,9 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["III", "ISI", "III"],
+  "key": {
+    "I": { "item": "ic2:iridium" },
+    "S": { "item": "advanced_solars:sunnarium" }
+  },
+  "result": { "item": "advanced_solars:sunnarium_alloy" }
+}

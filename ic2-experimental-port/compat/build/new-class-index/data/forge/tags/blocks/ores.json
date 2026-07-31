@@ -1,0 +1,8 @@
+{
+	"replace": false,
+	"values": [
+		"ic2:lead_ore",
+		"ic2:tin_ore",
+		"ic2:uranium_ore"
+	]
+}

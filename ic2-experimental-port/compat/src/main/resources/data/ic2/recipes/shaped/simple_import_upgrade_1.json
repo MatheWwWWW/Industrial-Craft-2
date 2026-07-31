@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["X", "Y", "V"],
+  "key": {
+    "X": { "item": "minecraft:sticky_piston" },
+    "Y": { "item": "ic2:upgrade_base" },
+    "V": { "item": "minecraft:redstone_torch" }
+  },
+  "result": { "item": "ic2:simple_import" }
+}

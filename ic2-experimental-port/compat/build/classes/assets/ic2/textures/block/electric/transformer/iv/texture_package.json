@@ -1,0 +1,14 @@
+{
+	"active_down": "ic2:block/electric/energy_storage/isu/south",
+	"active_east": "ic2:block/electric/energy_storage/isu/south",
+	"active_north": "ic2:block/electric/energy_storage/isu/south",
+	"active_south": "ic2:block/electric/transformer/iv/active_south",
+	"active_up": "ic2:block/electric/energy_storage/isu/south",
+	"active_west": "ic2:block/electric/energy_storage/isu/south",
+	"inactive_down": "ic2:block/electric/energy_storage/isu/south",
+	"inactive_east": "ic2:block/electric/energy_storage/isu/south",
+	"inactive_north": "ic2:block/electric/energy_storage/isu/south",
+	"inactive_south": "ic2:block/electric/transformer/iv/active_south",
+	"inactive_up": "ic2:block/electric/energy_storage/isu/south",
+	"inactive_west": "ic2:block/electric/energy_storage/isu/south"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["TST", "CIC", "TST"],
+  "key": {
+    "T": { "item": "ic2:tesla_coil" },
+    "S": { "item": "gravisuit:super_conductor" },
+    "C": { "item": "gravisuit:cooling_core" },
+    "I": { "item": "ic2:transformer_iv" }
+  },
+  "result": { "item": "gravisuit:gravitation_engine" }
+}

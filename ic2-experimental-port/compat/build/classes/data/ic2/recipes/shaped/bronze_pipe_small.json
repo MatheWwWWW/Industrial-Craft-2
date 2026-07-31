@@ -1,0 +1,5 @@
+{
+  "type":"ic2:shaped", "pattern":["C C","C C","C C"],
+  "key":{"C":{"item":"ic2:bronze_casing"}},
+  "result":{"item":"ic2:pipe","count":3,"nbt":{"type":0,"size":1}}
+}

@@ -1,0 +1,14 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["CHC", "AEA", "WaT"],
+  "key": {
+    "C": { "item": "ic2:carbon_plate" },
+    "H": { "item": "ic2:electric_hoe" },
+    "A": { "item": "ic2:alloy" },
+    "E": { "item": "ic2:energy_crystal" },
+    "W": { "item": "ic2:precision_wrench" },
+    "a": { "item": "ic2:advanced_circuit" },
+    "T": { "item": "ic2:electric_treetap" }
+  },
+  "result": { "item": "gravisuit:gravitool" }
+}

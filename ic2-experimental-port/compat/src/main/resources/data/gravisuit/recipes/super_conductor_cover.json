@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["AIA", "CCC", "AIA"],
+  "key": {
+    "A": { "item": "ic2:alloy" },
+    "I": { "item": "ic2:iridium" },
+    "C": { "item": "ic2:carbon_plate" }
+  },
+  "result": { "item": "gravisuit:super_conductor_cover", "count": 3 }
+}

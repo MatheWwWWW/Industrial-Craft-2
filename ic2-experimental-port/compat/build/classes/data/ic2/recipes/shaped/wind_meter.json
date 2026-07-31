@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": [" C ", "CAC", " CB"],
+  "key": {
+    "C": { "item": "ic2:tin_casing" },
+    "A": { "item": "ic2:bronze_casing" },
+    "B": { "item": "ic2:small_power_unit" }
+  },
+  "result": { "item": "ic2:wind_meter" }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/block", "ambientocclusion": false,
+  "textures": { "particle": "ic2:blocks/transport/pipe_side", "side": "ic2:blocks/transport/pipe_side" },
+  "elements": [{ "from": [5,5,5], "to": [11,11,11], "faces": {
+    "down":{"texture":"#side","tintindex":0}, "up":{"texture":"#side","tintindex":0},
+    "north":{"texture":"#side","tintindex":0}, "south":{"texture":"#side","tintindex":0},
+    "west":{"texture":"#side","tintindex":0}, "east":{"texture":"#side","tintindex":0}
+  }}]
+}

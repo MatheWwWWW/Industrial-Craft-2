@@ -1,0 +1,13 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["XYX", "CVC", "BNB"],
+  "key": {
+    "X": { "item": "ic2:complex_circuit" },
+    "Y": { "item": "ic2:advanced_field_expansion_pad_upgrade" },
+    "C": { "item": "ic2:iridium" },
+    "V": { "item": "ic2:diamond_drill" },
+    "B": { "item": "minecraft:ender_pearl" },
+    "N": { "item": "ic2:plasma_core" }
+  },
+  "result": { "item": "ic2:advanced_drill" }
+}

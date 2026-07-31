@@ -1,0 +1,7 @@
+{
+  "type": "ic2:shapeless",
+  "ingredients": [
+    { "item": "ic2:barrel" }
+  ],
+  "result": { "item": "ic2:barrel" }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "ic2:canner_enrich",
+  "input_ingredient": {
+    "fluid": "minecraft:water",
+    "amount": 1000
+  },
+  "additive_ingredient": {
+    "item": "ic2:milk_dust"
+  },
+  "result": {
+    "fluid": "forge:milk",
+    "amount": 1000
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["ICI", "IFI", "R R"],
+  "key": {
+    "I": { "item": "ic2:iron_casing" },
+    "C": { "item": "ic2:circuit" },
+    "F": { "item": "ic2:fluid_cell" },
+    "R": { "item": "minecraft:redstone" }
+  },
+  "result": { "item": "ic2:jetpack" },
+  "consuming": true
+}

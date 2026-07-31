@@ -1,0 +1,139 @@
+{
+  "block.ic2.trading_terminal": "Trading Terminal",
+  "item.ic2.trading_terminal": "Trading Terminal",
+  "block.ic2.item_buffer_2": "Compact Item Buffer",
+  "item.ic2.item_buffer_2": "Compact Item Buffer",
+  "item.ic2.iron_cutting_blade": "Iron Block Cutting Blade",
+  "item.ic2.diamond_cutting_blade": "Diamond Block Cutting Blade",
+  "item.ic2.steel_cutting_blade": "Steel Block Cutting Blade",
+  "item.ic2.tool_box": "Tool Box",
+  "item.ic2.meter": "EU-Reader",
+  "item.ic2.frequency_transmitter": "Frequency Transmitter",
+  "item.ic2.crowbar": "Crowbar",
+  "item.ic2.charging_re_battery": "Charging RE Battery",
+  "item.ic2.advanced_charging_re_battery": "Advanced Charging Battery",
+  "item.ic2.charging_energy_crystal": "Charging Energy Crystal",
+  "item.ic2.charging_lapotron_crystal": "Charging Lapotron Crystal",
+  "item.ic2.batpack": "BatPack",
+  "item.ic2.advanced_batpack": "Advanced BatPack",
+  "item.ic2.energy_pack": "Energy Pack",
+  "item.ic2.lappack": "Lappack",
+  "item.ic2.electric_hoe": "Electric Hoe",
+  "item.ic2.cropnalyzer": "Cropnalyzer",
+  "item.ic2.foam_sprayer": "CF Sprayer",
+  "item.ic2.jetpack_electric": "Electric Jetpack",
+  "item.ic2.weeding_trowel": "Weeding Trowel",
+  "item.ic2.solar_helmet": "Solar Helmet",
+  "item.ic2.static_boots": "Static Boots",
+  "item.ic2.iodine_tablet": "Iodine Tablet",
+  "item.ic2.upgrade_kit": "MFSU Upgrade Kit",
+  "item.ic2.upgrade_kit.info": "Upgrades an MFE or MFE Chargepad to an MFSU",
+  "item.ic2.containment_box": "Containment Box",
+  "item.ic2.fluid_cell": "Universal Fluid Cell",
+  "item.ic2.fluid_cell.empty": "Empty: 0 / 1000 mB",
+  "container.ic2.tool_box": "Tool Box",
+  "container.ic2.meter": "EU-Reader",
+  "block.ic2.dynamite": "Dynamite",
+  "item.ic2.dynamite": "Dynamite",
+  "item.ic2.dynamite_sticky": "Sticky Dynamite",
+  "item.ic2.remote": "Dynamite-O-Mote",
+  "tooltip.ic2.remote.linked": "Linked to %s dynamite",
+  "message.ic2.remote.not_linked": "This dynamite stick is not linked to this remote, cannot unlink.",
+  "block.ic2.luminator_flat": "Luminator",
+  "item.ic2.luminator_flat": "Luminator",
+  "block.ic2.refractory_bricks": "Refractory Bricks",
+  "item.ic2.refractory_bricks": "Refractory Bricks",
+  "item.ic2.coke": "Coal Coke",
+  "block.ic2.coke_kiln": "Coke Kiln",
+  "item.ic2.coke_kiln": "Coke Kiln",
+  "block.ic2.coke_kiln_hatch": "Coke Kiln Hatch",
+  "item.ic2.coke_kiln_hatch": "Coke Kiln Hatch",
+  "block.ic2.coke_kiln_grate": "Coke Kiln Grate",
+  "item.ic2.coke_kiln_grate": "Coke Kiln Grate",
+  "block.ic2.barrel": "Booze Barrel",
+  "item.ic2.barrel.empty": "Empty Booze Barrel",
+  "item.ic2.barrel.filled": "%sL Booze Barrel",
+  "item.ic2.booze_mug": "Booze Mug"
+, "block.ic2.fluid_pipe": "Fluid Pipe"
+, "item.ic2.pipe.bronze_pipe_tiny": "Tiny Bronze Fluid Pipe"
+, "item.ic2.pipe.bronze_pipe_small": "Small Bronze Fluid Pipe"
+, "item.ic2.pipe.bronze_pipe_medium": "Bronze Fluid Pipe"
+, "item.ic2.pipe.bronze_pipe_large": "Large Bronze Fluid Pipe"
+, "item.ic2.pipe.steel_pipe_tiny": "Tiny Steel Fluid Pipe"
+, "item.ic2.pipe.steel_pipe_small": "Small Steel Fluid Pipe"
+, "item.ic2.pipe.steel_pipe_medium": "Steel Fluid Pipe"
+, "item.ic2.pipe.steel_pipe_large": "Large Steel Fluid Pipe"
+, "item.ic2.cover.pump_lv": "Fluid Pump (LV)"
+, "item.ic2.cover.pump_mv": "Fluid Pump (MV)"
+, "item.ic2.ender_pearl_dust": "Ender Pearl Dust"
+, "item.ic2.ender_eye_dust": "Ender Eye Dust"
+, "item.ic2.milk_dust": "Milk Powder"
+, "item.ic2.emerald_dust": "Emerald Dust"
+, "item.ic2.small_emerald_dust": "Tiny Pile of Emerald Dust"
+, "item.ic2.small_diamond_dust": "Tiny Pile of Diamond Dust"
+, "item.ic2.milk_wart": "Milk Wart"
+, "item.ic2.oil_berry": "Oil Berry"
+, "item.ic2.bobs_yer_uncle_ranks_berry": "Bobs-Yer-Uncle-Ranks Berry"
+, "ic2.crop.blazereed": "Blazereed"
+, "ic2.crop.bobs_yer_uncle_ranks_berries": "Bobs-Yer-Uncle-Ranks Berries"
+, "ic2.crop.corium": "Corium"
+, "ic2.crop.corpse_plant": "Corpse Plant"
+, "ic2.crop.creeper_weed": "Creeper Weed"
+, "ic2.crop.diareed": "Diareed"
+, "ic2.crop.egg_plant": "Egg Plant"
+, "ic2.crop.ender_blossom": "Ender Blossom"
+, "ic2.crop.meat_rose": "Meat Rose"
+, "ic2.crop.milk_wart": "Milk Wart"
+, "ic2.crop.oil_berries": "Oil Berries"
+, "ic2.crop.slime_plant": "Slime Plant"
+, "ic2.crop.spidernip": "Spidernip"
+, "ic2.crop.tearstalks": "Tearstalks"
+, "ic2.crop.withereed": "Withereed"
+, "ic2.jetpackAttached": "Jetpack attached"
+, "item.ic2.nuclear_jetpack": "Nuclear Jetpack"
+, "item.ic2.compacted_electric_jetpack": "Compacted Electric Jetpack"
+, "item.ic2.compacted_nuclear_jetpack": "Compacted Nuclear Jetpack"
+, "block.ic2.solar_panel_mv": "MV Solar Panel"
+, "block.ic2.solar_panel_hv": "HV Solar Panel"
+, "block.ic2.bronze_cable": "Bronze Cable"
+, "block.ic2.bronze_cable_insulated": "Insulated Bronze Cable"
+, "block.ic2.bronze_cable_double_insulated": "2x Insulated Bronze Cable"
+, "item.ic2.bronze_cable_item": "Bronze Cable"
+, "item.ic2.bronze_insulated_cable_item": "Insulated Bronze Cable"
+, "item.ic2.bronze_double_insulated_cable_item": "2x Insulated Bronze Cable"
+, "item.ic2.advanced_solar_helmet": "Advanced Solar Helmet"
+, "block.ic2.transformer_iv": "IV Transformer"
+, "block.ic2.iridium_stone": "Iridium Reinforced Stone"
+, "block.ic2.plasmafier": "Plasmafier"
+, "item.ic2.cell_plasma": "Plasma Cell"
+, "item.ic2.plasma_core": "Plasma Core"
+, "item.ic2.pesd": "PESD"
+, "block.ic2.rare_earth_extractor": "Rare Earth Extractor"
+, "item.ic2.rare_earth_dust": "Rare Earth Dust"
+, "item.ic2.dust_aluminium": "Aluminium Dust"
+, "item.ic2.rare_earth_chunk": "Rare Earth Chunk"
+, "item.ic2.dead_magnet": "Uncharged Magnet"
+, "item.ic2.magnet": "Magnet"
+, "block.ic2.plasma_cable": "Plasma Cable"
+, "item.ic2.plasma_cable_item": "Plasma Cable"
+, "gui.ic2.friends": "Friends Settings"
+, "gui.ic2.friends.player_break_iridium": "Allows to Break Iridium"
+, "gui.ic2.friends.save": "save"
+, "key.ic2.toggle": "Toggle Key"
+, "item.ic2.glowtronic_crystal": "Glowtronic Crystal"
+, "item.ic2.quantum_pack": "Quantum Pack"
+, "item.ic2.memory_stick": "Memory Stick"
+, "item.ic2.portable_teleporter": "Portable Teleporter"
+, "item.ic2.precision_wrench": "Precision Wrench"
+, "item.ic2.advanced_drill": "Advanced Drill"
+, "item.ic2.advanced_chainsaw": "Advanced Chainsaw"
+, "item.ic2.upgrade_base": "Upgrade Base"
+, "item.ic2.pulsating_quartz": "Pulsating Quartz"
+, "item.ic2.complex_circuit": "Complex Circuit"
+, "item.ic2.advanced_field_expansion_pad_upgrade": "Advanced Field Expansion Upgrade"
+, "item.ic2.simple_import": "Simple Import Upgrade"
+, "item.ic2.efficiency_upgrade": "Efficiency Upgrade"
+, "item.ic2.basic_field_expansion_pad_upgrade": "Basic Field Expansion Upgrade"
+, "item.ic2.field_expansion_pad_upgrade": "Field Expansion Upgrade"
+, "item.ic2.wrench_new": "Wrench"
+}

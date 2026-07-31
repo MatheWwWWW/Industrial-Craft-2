@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["BCB", "BTB", "B B"],
+  "key": {
+    "B": { "item": "ic2:re_battery" },
+    "C": { "item": "ic2:circuit" },
+    "T": { "tag": "minecraft:planks" }
+  },
+  "result": { "item": "ic2:batpack" }
+}

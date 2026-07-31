@@ -1,0 +1,23 @@
+modLoader="javafml"
+loaderVersion="[39,)"
+license="All rights reserved"
+[[mods]]
+modId="ic2"
+version="2.9.162+ex119"
+displayName="IndustrialCraft 2"
+authors="Alblaka, Player, RichardG, Thunderdark, GregoriusT, alexthesax, Drashian, Elementalist, Feanturi, Lurch1985, SirusKing, tahu44, Aroma1997, estebes, Chocohead"
+description='''
+Industrial age themed expansion for Minecraft.
+'''
+[[dependencies.ic2]]
+    modId="forge"
+    mandatory=true
+    versionRange="[43.1.24,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.ic2]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2,1.20)"
+    ordering="NONE"
+    side="BOTH"

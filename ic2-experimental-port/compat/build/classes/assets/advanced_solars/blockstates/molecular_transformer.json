@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "active=false": { "model": "advanced_solars:block/molecular_transformer" },
+    "active=true": { "model": "advanced_solars:block/molecular_transformer" }
+  }
+}

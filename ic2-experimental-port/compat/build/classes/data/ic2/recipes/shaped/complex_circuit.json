@@ -1,0 +1,11 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["XYX", "CVC", "XYX"],
+  "key": {
+    "X": { "item": "ic2:double_insulated_gold_cable" },
+    "Y": { "item": "ic2:pulsating_quartz" },
+    "C": { "item": "ic2:magnet" },
+    "V": { "item": "ic2:advanced_circuit" }
+  },
+  "result": { "item": "ic2:complex_circuit" }
+}

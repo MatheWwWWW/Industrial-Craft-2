@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["XXX", "YCY", "XXX"],
+  "key": {
+    "X": { "item": "ic2:carbon_plate" },
+    "Y": { "tag": "forge:ingots/refined_iron" },
+    "C": { "item": "ic2:plasma_core" }
+  },
+  "result": { "item": "ic2:plasma_cable_item", "count": 4 }
+}

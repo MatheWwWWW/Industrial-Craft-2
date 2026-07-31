@@ -1,0 +1,12 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["SCS", "ETE", "E E"],
+  "key": {
+    "S": { "item": "ic2:foam_sprayer" },
+    "C": { "item": "ic2:circuit" },
+    "E": { "item": "ic2:fluid_cell" },
+    "T": { "item": "ic2:iron_casing" }
+  },
+  "result": { "item": "ic2:cf_pack" },
+  "consuming": true
+}

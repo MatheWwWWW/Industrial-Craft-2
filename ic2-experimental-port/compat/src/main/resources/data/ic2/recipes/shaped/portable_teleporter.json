@@ -1,0 +1,13 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["XYX", "CVC", "BNB"],
+  "key": {
+    "X": { "item": "ic2:iridium", "count": 2 },
+    "Y": { "item": "ic2:memory_stick" },
+    "C": { "item": "ic2:advanced_circuit", "count": 3 },
+    "V": { "item": "ic2:teleporter", "count": 2 },
+    "B": { "item": "ic2:plasma_core", "count": 8 },
+    "N": { "item": "ic2:pesd" }
+  },
+  "result": { "item": "ic2:portable_teleporter" }
+}

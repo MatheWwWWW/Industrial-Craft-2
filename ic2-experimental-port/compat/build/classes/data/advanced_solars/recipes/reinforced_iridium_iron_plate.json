@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["aca", "cic", "aca"],
+  "key": {
+    "a": { "item": "ic2:alloy" },
+    "c": { "item": "ic2:carbon_plate" },
+    "i": { "item": "advanced_solars:iridium_iron_plate" }
+  },
+  "result": { "item": "advanced_solars:reinforced_iridium_iron_plate" }
+}

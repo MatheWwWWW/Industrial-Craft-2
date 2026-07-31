@@ -1,0 +1,12 @@
+{
+  "type": "ic2:shaped",
+  "pattern": [" H ", "cqc", "ghg"],
+  "key": {
+    "H": { "item": "advanced_solars:hybrid_solar_panel" },
+    "c": { "item": "ic2:advanced_circuit" },
+    "q": { "item": "advanced_solars:advanced_solar_helmet" },
+    "g": { "item": "ic2:glass_fibre_cable" },
+    "h": { "item": "ic2:hv_transformer" }
+  },
+  "result": { "item": "advanced_solars:hybrid_solar_helmet" }
+}

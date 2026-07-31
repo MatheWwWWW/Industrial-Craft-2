@@ -1,0 +1,11 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["CAC", "HIH", "CAC"],
+  "key": {
+    "C": { "item": "ic2:sextuple_reactor_coolant_cell" },
+    "A": { "item": "ic2:advanced_heat_exchanger" },
+    "H": { "item": "ic2:reactor_heat_plating" },
+    "I": { "item": "ic2:iridium" }
+  },
+  "result": { "item": "gravisuit:cooling_core" }
+}

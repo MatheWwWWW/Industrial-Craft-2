@@ -1,0 +1,12 @@
+{
+  "type": "ic2:shapeless",
+  "ingredients": [
+    { "item": "ic2:electric_treetap" },
+    { "item": "minecraft:wooden_axe" },
+    { "item": "ic2:simple_import" }
+  ],
+  "result": {
+    "item": "ic2:electric_treetap",
+    "nbt": { "inv_import": true }
+  }
+}

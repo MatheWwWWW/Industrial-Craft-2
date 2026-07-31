@@ -1,0 +1,10 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["ECE", "COC", "ECE"],
+  "key": {
+    "E": { "item": "ic2:component_heat_exchanger" },
+    "C": { "item": "ic2:energy_crystal" },
+    "O": { "item": "ic2:advanced_charging_re_battery" }
+  },
+  "result": { "item": "ic2:charging_energy_crystal" }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "ic2:shaped",
+  "pattern": ["XYX", "CVC", "XYX"],
+  "key": {
+    "X": { "item": "ic2:basic_field_expansion_pad_upgrade" },
+    "Y": { "item": "ic2:efficiency_upgrade" },
+    "C": { "item": "ic2:splitter_cable" },
+    "V": { "item": "ic2:advanced_circuit" }
+  },
+  "result": { "item": "ic2:field_expansion_pad_upgrade" }
+}
