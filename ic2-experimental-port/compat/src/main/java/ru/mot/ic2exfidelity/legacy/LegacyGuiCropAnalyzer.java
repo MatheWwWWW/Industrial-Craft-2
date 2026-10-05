@@ -27,14 +27,14 @@ public final class LegacyGuiCropAnalyzer extends Ic2Gui<LegacyContainerCropAnaly
         drawXCenteredString(pose, 88, 11, Component.m_237115_("item.ic2.cropnalyzer"), 0x404040, false);
         int level = analyzer.getScannedLevel();
         if (level == 0) {
-            drawString(pose, 8, 37, "UNKNOWN", 0xFFFFFF, false);
+            drawString(pose, 8, 37, Component.m_237115_("gui.ic2.cropnalyzer.unknown").getString(), 0xFFFFFF, false);
         }
         if (level >= 1) {
             drawString(pose, 8, 37, analyzer.getSeedName(), 0xFFFFFF, false);
         }
         if (level >= 2) {
-            drawString(pose, 8, 50, "Tier: " + analyzer.getSeedTier(), 0xFFFFFF, false);
-            drawString(pose, 8, 73, "Discovered by:", 0xFFFFFF, false);
+            drawString(pose, 8, 50, Component.m_237110_("gui.ic2.cropnalyzer.tier", analyzer.getSeedTier()).getString(), 0xFFFFFF, false);
+            drawString(pose, 8, 73, Component.m_237115_("gui.ic2.cropnalyzer.discovered_by").getString(), 0xFFFFFF, false);
             drawString(pose, 8, 86, analyzer.getSeedDiscovered(), 0xFFFFFF, false);
         }
         if (level >= 3) {
@@ -42,11 +42,11 @@ public final class LegacyGuiCropAnalyzer extends Ic2Gui<LegacyContainerCropAnaly
             drawString(pose, 8, 122, analyzer.getSeedDesc(1), 0xFFFFFF, false);
         }
         if (level >= 4) {
-            drawString(pose, 118, 37, "Growth:", 0xADFF2F, false);
+            drawString(pose, 118, 37, Component.m_237115_("gui.ic2.cropnalyzer.growth").getString(), 0xADFF2F, false);
             drawString(pose, 118, 50, Integer.toString(analyzer.getSeedGrowth()), 0xADFF2F, false);
-            drawString(pose, 118, 73, "Gain:", 0xEEC900, false);
+            drawString(pose, 118, 73, Component.m_237115_("gui.ic2.cropnalyzer.gain").getString(), 0xEEC900, false);
             drawString(pose, 118, 86, Integer.toString(analyzer.getSeedGain()), 0xEEC900, false);
-            drawString(pose, 118, 109, "Resis.:", 0x00CED1, false);
+            drawString(pose, 118, 109, Component.m_237115_("gui.ic2.cropnalyzer.resistance").getString(), 0x00CED1, false);
             drawString(pose, 118, 122, Integer.toString(analyzer.getSeedResistance()), 0x00CED1, false);
         }
     }

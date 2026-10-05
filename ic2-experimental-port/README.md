@@ -14,6 +14,19 @@ The active files are:
 - `mods/industrialcraft-2-2.9.162+ex119-fidelity-1.19.2-forge.jar`;
 - `mods/IC2-Experimental-Fidelity-0.1.0.jar`.
 
+Russian localization covers all English keys in IC2, GraviSuite, Advanced
+Solar Panels and C.U.U. Matter, including restored screens, tooltips, crop
+traits and drink names. Local language files are applied after addon asset
+extraction and merged into the patched IC2 base so resource load order cannot
+discard the translations. `validate-translations.py` checks coverage, format
+arguments and the translations actually packaged in both built jars; use
+`--jar-dir` to check another installation.
+
+The build uses PowerShell 7. When building from a standalone checkout, pass
+`-DependencyRoot <Minecraft directory> -SkipInstall` to `compat/build.ps1` to
+read Java and libraries from that installation and leave the results under
+`compat/build`. Missing compile-time addon jars are read from `smoke-instance`.
+
 ## Restored Experimental behavior
 
 The port keeps the old recipes, quantities, energy values and machine rules.

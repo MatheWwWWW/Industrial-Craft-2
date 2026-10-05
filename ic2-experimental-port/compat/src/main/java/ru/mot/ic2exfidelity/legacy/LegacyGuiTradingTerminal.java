@@ -39,7 +39,7 @@ public final class LegacyGuiTradingTerminal extends Ic2Gui<LegacyContainerTradin
                 }
                 return true;
             }
-        }.withTooltip("Settings"));
+        }.withTooltip("gui.ic2.trading_terminal.settings"));
     }
 
     @Override
@@ -65,7 +65,7 @@ public final class LegacyGuiTradingTerminal extends Ic2Gui<LegacyContainerTradin
         @Override
         public void draw(
                 PoseStack pose, int x, int y, int width, int height, int mouseX, int mouseY) {
-            drawString(pose, x + 2, y + 1, "Trader " + item, 0xFFFFFF, false);
+            drawString(pose, x + 2, y + 1, Component.m_237110_("gui.ic2.trading_terminal.trader", item).getString(), 0xFFFFFF, false);
         }
 
         @Override

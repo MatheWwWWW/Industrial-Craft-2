@@ -21,13 +21,13 @@ import net.minecraftforge.registries.ForgeRegistries;
 public final class LegacyBoozeItem extends Item {
     private static final String VALUE_TAG = "BoozeValue";
     private static final String[] SOLID_NAMES = {
-            "Watery ", "Clear ", "Lite ", "", "Strong ", "Thick ", "Stodge ", "X"
+            "watery", "clear", "lite", "plain", "strong", "thick", "stodge", "invalid"
     };
     private static final String[] HOPS_NAMES = {
-            "Soup ", "Alcfree ", "White ", "", "Dark ", "Full ", "Black ", "X"
+            "soup", "alcfree", "white", "plain", "dark", "full", "black", "invalid"
     };
     private static final String[] TIME_NAMES = {
-            "Brew", "Youngster", "Beer", "Ale", "Dragonblood", "Black Stuff"
+            "brew", "youngster", "beer", "ale", "dragonblood", "black_stuff"
     };
     private static final int[] BASE_DURATION = {300, 600, 900, 1_200, 1_600, 2_000, 2_400};
     private static final float[] BASE_INTENSITY = {0.4F, 0.75F, 1.0F, 1.5F, 2.0F};
@@ -57,17 +57,17 @@ public final class LegacyBoozeItem extends Item {
         if (type == 1) {
             int time = Math.min(getTimeRatioOfBeerValue(value), TIME_NAMES.length - 1);
             if (time == TIME_NAMES.length - 1) {
-                return Component.m_237113_(TIME_NAMES[time]);
+                return Component.m_237115_("item.ic2.booze_mug.time." + TIME_NAMES[time]);
             }
-            return Component.m_237113_(
-                    SOLID_NAMES[getSolidRatioOfBeerValue(value)]
-                            + HOPS_NAMES[getHopsRatioOfBeerValue(value)]
-                            + TIME_NAMES[time]);
+            return Component.m_237110_("item.ic2.booze_mug.beer_name",
+                    Component.m_237115_("item.ic2.booze_mug.solid." + SOLID_NAMES[getSolidRatioOfBeerValue(value)]),
+                    Component.m_237115_("item.ic2.booze_mug.hops." + HOPS_NAMES[getHopsRatioOfBeerValue(value)]),
+                    Component.m_237115_("item.ic2.booze_mug.time." + TIME_NAMES[time]));
         }
         if (type == 2) {
-            return Component.m_237113_("Rum");
+            return Component.m_237115_("item.ic2.booze_mug.rum");
         }
-        return Component.m_237113_("Zero");
+        return Component.m_237115_("item.ic2.booze_mug.zero");
     }
 
     @Override

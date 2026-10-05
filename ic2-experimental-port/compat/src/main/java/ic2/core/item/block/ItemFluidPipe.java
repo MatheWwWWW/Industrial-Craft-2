@@ -119,9 +119,9 @@ public final class ItemFluidPipe extends Item {
         PipeType type = getPipeType(stack);
         PipeSize size = getPipeSize(stack);
         int capacity = (int) (type.transferRate * size.multiplier);
-        tooltip.add(Component.m_237113_("Transfer rate: " + capacity + " mB/sec"));
-        tooltip.add(Component.m_237113_("Inner capacity: " + capacity + " mB"));
-        tooltip.add(Component.m_237113_("Use a wrench to connect pipes").m_130940_(ChatFormatting.GOLD));
+        tooltip.add(Component.m_237110_("tooltip.ic2.fluid_pipe.transfer_rate", capacity));
+        tooltip.add(Component.m_237110_("tooltip.ic2.fluid_pipe.capacity", capacity));
+        tooltip.add(Component.m_237115_("tooltip.ic2.fluid_pipe.connect").m_130940_(ChatFormatting.GOLD));
     }
 
     @Override

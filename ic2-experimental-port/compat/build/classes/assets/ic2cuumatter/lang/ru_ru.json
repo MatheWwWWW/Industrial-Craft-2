@@ -1,0 +1,10 @@
+{
+  "translation.ic2cuumatter.amplifier": "Усилитель",
+  "translation.ic2cuumatter.energy": "Энергия",
+  "translation.ic2cuumatter.tier": "Уровень напряжения",
+  "translation.ic2cuumatter.tier.hv": "ВН",
+  "translation.ic2cuumatter.tier.ev": "СВН",
+  "translation.ic2cuumatter.ticks": "Такты",
+  "translation.ic2cuumatter.format1": "%s: ",
+  "translation.ic2cuumatter.format2": "%s: %s"
+}

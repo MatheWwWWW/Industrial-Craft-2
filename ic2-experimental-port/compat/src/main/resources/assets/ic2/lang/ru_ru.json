@@ -1,6 +1,6 @@
 {
-  "block.ic2.trading_terminal": "\u0422\u043e\u0440\u0433\u043e\u0432\u044b\u0439 \u0442\u0435\u0440\u043c\u0438\u043d\u0430\u043b",
-  "item.ic2.trading_terminal": "\u0422\u043e\u0440\u0433\u043e\u0432\u044b\u0439 \u0442\u0435\u0440\u043c\u0438\u043d\u0430\u043b",
+  "block.ic2.trading_terminal": "Торговый терминал",
+  "item.ic2.trading_terminal": "Торговый терминал",
   "block.ic2.item_buffer_2": "Компактный предметный буфер",
   "item.ic2.item_buffer_2": "Компактный предметный буфер",
   "item.ic2.iron_cutting_blade": "Железный режущий диск",
@@ -30,7 +30,7 @@
   "item.ic2.upgrade_kit.info": "Улучшает МФЭ или зарядную панель МФЭ до МФСУ",
   "item.ic2.containment_box": "Защитный контейнер",
   "item.ic2.fluid_cell": "Универсальная жидкостная капсула",
-  "item.ic2.fluid_cell.empty": "Пусто: 0 / 1000 mB",
+  "item.ic2.fluid_cell.empty": "Пусто: 0 / 1000 мВ",
   "container.ic2.tool_box": "Ящик для инструментов",
   "container.ic2.meter": "Ваттметр",
   "block.ic2.dynamite": "Динамит",
@@ -53,87 +53,215 @@
   "block.ic2.barrel": "Бочка для напитков",
   "item.ic2.barrel.empty": "Пустая бочка для напитков",
   "item.ic2.barrel.filled": "Бочка для напитков: %s л",
-  "item.ic2.booze_mug": "Кружка с напитком"
-, "block.ic2.fluid_pipe": "\u0416\u0438\u0434\u043a\u043e\u0441\u0442\u043d\u0430\u044f \u0442\u0440\u0443\u0431\u0430"
-, "item.ic2.pipe.bronze_pipe_tiny": "\u041a\u0440\u043e\u0448\u0435\u0447\u043d\u0430\u044f \u0431\u0440\u043e\u043d\u0437\u043e\u0432\u0430\u044f \u0436\u0438\u0434\u043a\u043e\u0441\u0442\u043d\u0430\u044f \u0442\u0440\u0443\u0431\u0430"
-, "item.ic2.pipe.bronze_pipe_small": "\u041c\u0430\u043b\u0430\u044f \u0431\u0440\u043e\u043d\u0437\u043e\u0432\u0430\u044f \u0436\u0438\u0434\u043a\u043e\u0441\u0442\u043d\u0430\u044f \u0442\u0440\u0443\u0431\u0430"
-, "item.ic2.pipe.bronze_pipe_medium": "\u0411\u0440\u043e\u043d\u0437\u043e\u0432\u0430\u044f \u0436\u0438\u0434\u043a\u043e\u0441\u0442\u043d\u0430\u044f \u0442\u0440\u0443\u0431\u0430"
-, "item.ic2.pipe.bronze_pipe_large": "\u0411\u043e\u043b\u044c\u0448\u0430\u044f \u0431\u0440\u043e\u043d\u0437\u043e\u0432\u0430\u044f \u0436\u0438\u0434\u043a\u043e\u0441\u0442\u043d\u0430\u044f \u0442\u0440\u0443\u0431\u0430"
-, "item.ic2.pipe.steel_pipe_tiny": "\u041a\u0440\u043e\u0448\u0435\u0447\u043d\u0430\u044f \u0441\u0442\u0430\u043b\u044c\u043d\u0430\u044f \u0436\u0438\u0434\u043a\u043e\u0441\u0442\u043d\u0430\u044f \u0442\u0440\u0443\u0431\u0430"
-, "item.ic2.pipe.steel_pipe_small": "\u041c\u0430\u043b\u0430\u044f \u0441\u0442\u0430\u043b\u044c\u043d\u0430\u044f \u0436\u0438\u0434\u043a\u043e\u0441\u0442\u043d\u0430\u044f \u0442\u0440\u0443\u0431\u0430"
-, "item.ic2.pipe.steel_pipe_medium": "\u0421\u0442\u0430\u043b\u044c\u043d\u0430\u044f \u0436\u0438\u0434\u043a\u043e\u0441\u0442\u043d\u0430\u044f \u0442\u0440\u0443\u0431\u0430"
-, "item.ic2.pipe.steel_pipe_large": "\u0411\u043e\u043b\u044c\u0448\u0430\u044f \u0441\u0442\u0430\u043b\u044c\u043d\u0430\u044f \u0436\u0438\u0434\u043a\u043e\u0441\u0442\u043d\u0430\u044f \u0442\u0440\u0443\u0431\u0430"
-, "item.ic2.cover.pump_lv": "\u0416\u0438\u0434\u043a\u043e\u0441\u0442\u043d\u0430\u044f \u043f\u043e\u043c\u043f\u0430 (\u041d\u041d)"
-, "item.ic2.cover.pump_mv": "\u0416\u0438\u0434\u043a\u043e\u0441\u0442\u043d\u0430\u044f \u043f\u043e\u043c\u043f\u0430 (\u0421\u041d)"
-, "item.ic2.ender_pearl_dust": "\u041f\u044b\u043b\u044c \u044d\u043d\u0434\u0435\u0440-\u0436\u0435\u043c\u0447\u0443\u0433\u0430"
-, "item.ic2.ender_eye_dust": "\u041f\u044b\u043b\u044c \u043e\u043a\u0430 \u042d\u043d\u0434\u0435\u0440\u0430"
-, "item.ic2.milk_dust": "\u0421\u0443\u0445\u043e\u0435 \u043c\u043e\u043b\u043e\u043a\u043e"
-, "item.ic2.emerald_dust": "\u0418\u0437\u0443\u043c\u0440\u0443\u0434\u043d\u0430\u044f \u043f\u044b\u043b\u044c"
-, "item.ic2.small_emerald_dust": "\u041c\u0430\u043b\u0430\u044f \u043a\u0443\u0447\u043a\u0430 \u0438\u0437\u0443\u043c\u0440\u0443\u0434\u043d\u043e\u0439 \u043f\u044b\u043b\u0438"
-, "item.ic2.small_diamond_dust": "\u041c\u0430\u043b\u0430\u044f \u043a\u0443\u0447\u043a\u0430 \u0430\u043b\u043c\u0430\u0437\u043d\u043e\u0439 \u043f\u044b\u043b\u0438"
-, "item.ic2.milk_wart": "\u041c\u043e\u043b\u043e\u0447\u043d\u044b\u0439 \u043d\u0430\u0440\u043e\u0441\u0442"
-, "item.ic2.oil_berry": "\u041c\u0430\u0441\u043b\u044f\u043d\u0430\u044f \u044f\u0433\u043e\u0434\u0430"
-, "item.ic2.bobs_yer_uncle_ranks_berry": "\u042f\u0433\u043e\u0434\u0430 \u0411\u043e\u0431\u0441-\u0419\u0435\u0440-\u0410\u043d\u043a\u043b-\u0420\u0430\u043d\u043a\u0441"
-, "ic2.crop.blazereed": "\u041e\u0433\u043d\u0435\u0442\u0440\u043e\u0441\u0442\u043d\u0438\u043a"
-, "ic2.crop.bobs_yer_uncle_ranks_berries": "\u042f\u0433\u043e\u0434\u044b \u0411\u043e\u0431\u0441-\u0419\u0435\u0440-\u0410\u043d\u043a\u043b-\u0420\u0430\u043d\u043a\u0441"
-, "ic2.crop.corium": "\u041a\u043e\u0440\u0438\u0443\u043c"
-, "ic2.crop.corpse_plant": "\u0422\u0440\u0443\u043f\u043d\u043e\u0435 \u0440\u0430\u0441\u0442\u0435\u043d\u0438\u0435"
-, "ic2.crop.creeper_weed": "\u041a\u0440\u0438\u043f\u0435\u0440\u043d\u044b\u0439 \u0441\u043e\u0440\u043d\u044f\u043a"
-, "ic2.crop.diareed": "\u0410\u043b\u043c\u0430\u0437\u043d\u044b\u0439 \u0442\u0440\u043e\u0441\u0442\u043d\u0438\u043a"
-, "ic2.crop.egg_plant": "\u042f\u0438\u0447\u043d\u043e\u0435 \u0440\u0430\u0441\u0442\u0435\u043d\u0438\u0435"
-, "ic2.crop.ender_blossom": "\u0426\u0432\u0435\u0442 \u042d\u043d\u0434\u0435\u0440\u0430"
-, "ic2.crop.meat_rose": "\u041c\u044f\u0441\u043d\u0430\u044f \u0440\u043e\u0437\u0430"
-, "ic2.crop.milk_wart": "\u041c\u043e\u043b\u043e\u0447\u043d\u044b\u0439 \u043d\u0430\u0440\u043e\u0441\u0442"
-, "ic2.crop.oil_berries": "\u041c\u0430\u0441\u043b\u044f\u043d\u044b\u0435 \u044f\u0433\u043e\u0434\u044b"
-, "ic2.crop.slime_plant": "\u0421\u043b\u0438\u0437\u043d\u0435\u0432\u043e\u0435 \u0440\u0430\u0441\u0442\u0435\u043d\u0438\u0435"
-, "ic2.crop.spidernip": "\u041f\u0430\u0443\u0447\u044c\u044f \u043c\u044f\u0442\u0430"
-, "ic2.crop.tearstalks": "\u0421\u0442\u0435\u0431\u043b\u0438 \u0441\u043b\u0451\u0437"
-, "ic2.crop.withereed": "\u0418\u0441\u0441\u0443\u0448\u0430\u044e\u0449\u0438\u0439 \u0442\u0440\u043e\u0441\u0442\u043d\u0438\u043a"
-, "ic2.jetpackAttached": "\u0420\u0435\u0430\u043a\u0442\u0438\u0432\u043d\u044b\u0439 \u0440\u0430\u043d\u0435\u0446 \u043f\u0440\u0438\u043a\u0440\u0435\u043f\u043b\u0451\u043d"
-, "item.ic2.nuclear_jetpack": "\u042f\u0434\u0435\u0440\u043d\u044b\u0439 \u0440\u0435\u0430\u043a\u0442\u0438\u0432\u043d\u044b\u0439 \u0440\u0430\u043d\u0435\u0446"
-, "item.ic2.compacted_electric_jetpack": "\u041a\u043e\u043c\u043f\u0430\u043a\u0442\u043d\u044b\u0439 \u044d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0440\u0435\u0430\u043a\u0442\u0438\u0432\u043d\u044b\u0439 \u0440\u0430\u043d\u0435\u0446"
-, "item.ic2.compacted_nuclear_jetpack": "\u041a\u043e\u043c\u043f\u0430\u043a\u0442\u043d\u044b\u0439 \u044f\u0434\u0435\u0440\u043d\u044b\u0439 \u0440\u0435\u0430\u043a\u0442\u0438\u0432\u043d\u044b\u0439 \u0440\u0430\u043d\u0435\u0446"
-, "block.ic2.solar_panel_mv": "\u0421\u043e\u043b\u043d\u0435\u0447\u043d\u0430\u044f \u043f\u0430\u043d\u0435\u043b\u044c \u0441\u0440\u0435\u0434\u043d\u0435\u0433\u043e \u043d\u0430\u043f\u0440\u044f\u0436\u0435\u043d\u0438\u044f"
-, "block.ic2.solar_panel_hv": "\u0421\u043e\u043b\u043d\u0435\u0447\u043d\u0430\u044f \u043f\u0430\u043d\u0435\u043b\u044c \u0432\u044b\u0441\u043e\u043a\u043e\u0433\u043e \u043d\u0430\u043f\u0440\u044f\u0436\u0435\u043d\u0438\u044f"
-, "block.ic2.bronze_cable": "\u0411\u0440\u043e\u043d\u0437\u043e\u0432\u044b\u0439 \u043a\u0430\u0431\u0435\u043b\u044c"
-, "block.ic2.bronze_cable_insulated": "\u0418\u0437\u043e\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0431\u0440\u043e\u043d\u0437\u043e\u0432\u044b\u0439 \u043a\u0430\u0431\u0435\u043b\u044c"
-, "block.ic2.bronze_cable_double_insulated": "\u0411\u0440\u043e\u043d\u0437\u043e\u0432\u044b\u0439 \u043a\u0430\u0431\u0435\u043b\u044c \u0441 \u0434\u0432\u043e\u0439\u043d\u043e\u0439 \u0438\u0437\u043e\u043b\u044f\u0446\u0438\u0435\u0439"
-, "item.ic2.bronze_cable_item": "\u0411\u0440\u043e\u043d\u0437\u043e\u0432\u044b\u0439 \u043a\u0430\u0431\u0435\u043b\u044c"
-, "item.ic2.bronze_insulated_cable_item": "\u0418\u0437\u043e\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0431\u0440\u043e\u043d\u0437\u043e\u0432\u044b\u0439 \u043a\u0430\u0431\u0435\u043b\u044c"
-, "item.ic2.bronze_double_insulated_cable_item": "\u0411\u0440\u043e\u043d\u0437\u043e\u0432\u044b\u0439 \u043a\u0430\u0431\u0435\u043b\u044c \u0441 \u0434\u0432\u043e\u0439\u043d\u043e\u0439 \u0438\u0437\u043e\u043b\u044f\u0446\u0438\u0435\u0439"
-, "item.ic2.advanced_solar_helmet": "\u0423\u043b\u0443\u0447\u0448\u0435\u043d\u043d\u044b\u0439 \u0441\u043e\u043b\u043d\u0435\u0447\u043d\u044b\u0439 \u0448\u043b\u0435\u043c"
-, "block.ic2.transformer_iv": "IV-\u0442\u0440\u0430\u043d\u0441\u0444\u043e\u0440\u043c\u0430\u0442\u043e\u0440"
-, "block.ic2.iridium_stone": "\u0418\u0440\u0438\u0434\u0438\u0435\u0432\u044b\u0439 \u0443\u043a\u0440\u0435\u043f\u043b\u0451\u043d\u043d\u044b\u0439 \u043a\u0430\u043c\u0435\u043d\u044c"
-, "block.ic2.plasmafier": "\u041f\u043b\u0430\u0437\u043c\u0430\u0442\u043e\u0440"
-, "item.ic2.cell_plasma": "\u041f\u043b\u0430\u0437\u043c\u0435\u043d\u043d\u0430\u044f \u043a\u0430\u043f\u0441\u0443\u043b\u0430"
-, "item.ic2.plasma_core": "\u041f\u043b\u0430\u0437\u043c\u0435\u043d\u043d\u043e\u0435 \u044f\u0434\u0440\u043e"
-, "item.ic2.pesd": "PESD"
-, "block.ic2.rare_earth_extractor": "\u042d\u043a\u0441\u0442\u0440\u0430\u043a\u0442\u043e\u0440 \u0440\u0435\u0434\u043a\u043e\u0437\u0435\u043c\u0435\u043b\u044c\u043d\u044b\u0445 \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u043e\u0432"
-, "item.ic2.rare_earth_dust": "\u0420\u0435\u0434\u043a\u043e\u0437\u0435\u043c\u0435\u043b\u044c\u043d\u0430\u044f \u043f\u044b\u043b\u044c"
-, "item.ic2.dust_aluminium": "\u0410\u043b\u044e\u043c\u0438\u043d\u0438\u0435\u0432\u0430\u044f \u043f\u044b\u043b\u044c"
-, "item.ic2.rare_earth_chunk": "\u041a\u0443\u0441\u043e\u043a \u0440\u0435\u0434\u043a\u043e\u0437\u0435\u043c\u0435\u043b\u044c\u043d\u043e\u0433\u043e \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u0430"
-, "item.ic2.dead_magnet": "\u041d\u0435\u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0439 \u043c\u0430\u0433\u043d\u0438\u0442"
-, "item.ic2.magnet": "\u041c\u0430\u0433\u043d\u0438\u0442"
-, "block.ic2.plasma_cable": "\u041f\u043b\u0430\u0437\u043c\u0435\u043d\u043d\u044b\u0439 \u043a\u0430\u0431\u0435\u043b\u044c"
-, "item.ic2.plasma_cable_item": "\u041f\u043b\u0430\u0437\u043c\u0435\u043d\u043d\u044b\u0439 \u043a\u0430\u0431\u0435\u043b\u044c"
-, "gui.ic2.friends": "\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438 \u0434\u0440\u0443\u0437\u0435\u0439"
-, "gui.ic2.friends.player_break_iridium": "\u041f\u043e\u0437\u0432\u043e\u043b\u044f\u0435\u0442 \u0441\u043b\u043e\u043c\u0430\u0442\u044c \u0418\u0440\u0438\u0434\u0438\u0439"
-, "gui.ic2.friends.save": "\u0441\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c"
-, "key.ic2.toggle": "\u041a\u043b\u0430\u0432\u0438\u0448\u0430 \u043f\u0435\u0440\u0435\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u044f"
-, "item.ic2.glowtronic_crystal": "\u0413\u043b\u043e\u0443\u0442\u0440\u043e\u043d\u043d\u044b\u0439 \u043a\u0440\u0438\u0441\u0442\u0430\u043b\u043b"
-, "item.ic2.quantum_pack": "\u041a\u0432\u0430\u043d\u0442\u043e\u0432\u044b\u0439 \u0440\u0430\u043d\u0435\u0446"
-, "item.ic2.memory_stick": "\u041a\u0430\u0440\u0442\u0430 \u043f\u0430\u043c\u044f\u0442\u0438"
-, "item.ic2.portable_teleporter": "\u041f\u043e\u0440\u0442\u0430\u0442\u0438\u0432\u043d\u044b\u0439 \u0442\u0435\u043b\u0435\u043f\u043e\u0440\u0442\u0435\u0440"
-, "item.ic2.precision_wrench": "\u0422\u043e\u0447\u043d\u044b\u0439 \u0433\u0430\u0435\u0447\u043d\u044b\u0439 \u043a\u043b\u044e\u0447"
-, "item.ic2.advanced_drill": "\u041f\u0440\u043e\u0434\u0432\u0438\u043d\u0443\u0442\u044b\u0439 \u0431\u0443\u0440"
-, "item.ic2.advanced_chainsaw": "\u041f\u0440\u043e\u0434\u0432\u0438\u043d\u0443\u0442\u0430\u044f \u0446\u0435\u043f\u043d\u0430\u044f \u043f\u0438\u043b\u0430"
-, "item.ic2.upgrade_base": "\u041e\u0441\u043d\u043e\u0432\u0430 \u0443\u043b\u0443\u0447\u0448\u0435\u043d\u0438\u044f"
-, "item.ic2.pulsating_quartz": "\u041f\u0443\u043b\u044c\u0441\u0438\u0440\u0443\u044e\u0449\u0438\u0439 \u043a\u0432\u0430\u0440\u0446"
-, "item.ic2.complex_circuit": "\u0421\u043b\u043e\u0436\u043d\u0430\u044f \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u0441\u0445\u0435\u043c\u0430"
-, "item.ic2.advanced_field_expansion_pad_upgrade": "\u041f\u0440\u043e\u0434\u0432\u0438\u043d\u0443\u0442\u043e\u0435 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043d\u0438\u0435 \u043f\u043e\u043b\u044f"
-, "item.ic2.simple_import": "\u041f\u0440\u043e\u0441\u0442\u043e\u0435 \u0443\u043b\u0443\u0447\u0448\u0435\u043d\u0438\u0435 \u0432\u0432\u043e\u0434\u0430"
-, "item.ic2.efficiency_upgrade": "\u0423\u043b\u0443\u0447\u0448\u0435\u043d\u0438\u0435 \u044d\u0444\u0444\u0435\u043a\u0442\u0438\u0432\u043d\u043e\u0441\u0442\u0438"
-, "item.ic2.basic_field_expansion_pad_upgrade": "\u0411\u0430\u0437\u043e\u0432\u043e\u0435 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043d\u0438\u0435 \u043f\u043e\u043b\u044f"
-, "item.ic2.field_expansion_pad_upgrade": "\u0420\u0430\u0441\u0448\u0438\u0440\u0435\u043d\u0438\u0435 \u043f\u043e\u043b\u044f"
-, "item.ic2.wrench_new": "\u0413\u0430\u0435\u0447\u043d\u044b\u0439 \u043a\u043b\u044e\u0447"
+  "item.ic2.booze_mug": "Кружка с напитком",
+  "block.ic2.fluid_pipe": "Жидкостная труба",
+  "item.ic2.pipe.bronze_pipe_tiny": "Крошечная бронзовая жидкостная труба",
+  "item.ic2.pipe.bronze_pipe_small": "Малая бронзовая жидкостная труба",
+  "item.ic2.pipe.bronze_pipe_medium": "Бронзовая жидкостная труба",
+  "item.ic2.pipe.bronze_pipe_large": "Большая бронзовая жидкостная труба",
+  "item.ic2.pipe.steel_pipe_tiny": "Крошечная стальная жидкостная труба",
+  "item.ic2.pipe.steel_pipe_small": "Малая стальная жидкостная труба",
+  "item.ic2.pipe.steel_pipe_medium": "Стальная жидкостная труба",
+  "item.ic2.pipe.steel_pipe_large": "Большая стальная жидкостная труба",
+  "item.ic2.cover.pump_lv": "Жидкостная помпа (НН)",
+  "item.ic2.cover.pump_mv": "Жидкостная помпа (СН)",
+  "item.ic2.ender_pearl_dust": "Пыль эндер-жемчуга",
+  "item.ic2.ender_eye_dust": "Пыль ока Эндера",
+  "item.ic2.milk_dust": "Сухое молоко",
+  "item.ic2.emerald_dust": "Изумрудная пыль",
+  "item.ic2.small_emerald_dust": "Малая кучка изумрудной пыли",
+  "item.ic2.small_diamond_dust": "Малая кучка алмазной пыли",
+  "item.ic2.milk_wart": "Молочный нарост",
+  "item.ic2.oil_berry": "Масляная ягода",
+  "item.ic2.bobs_yer_uncle_ranks_berry": "Ягода Бобс-Йер-Анкл-Ранкс",
+  "ic2.crop.blazereed": "Огнетростник",
+  "ic2.crop.bobs_yer_uncle_ranks_berries": "Ягоды Бобс-Йер-Анкл-Ранкс",
+  "ic2.crop.corium": "Кориум",
+  "ic2.crop.corpse_plant": "Трупное растение",
+  "ic2.crop.creeper_weed": "Криперный сорняк",
+  "ic2.crop.diareed": "Алмазный тростник",
+  "ic2.crop.egg_plant": "Яичное растение",
+  "ic2.crop.ender_blossom": "Цвет Эндера",
+  "ic2.crop.meat_rose": "Мясная роза",
+  "ic2.crop.milk_wart": "Молочный нарост",
+  "ic2.crop.oil_berries": "Масляные ягоды",
+  "ic2.crop.slime_plant": "Слизневое растение",
+  "ic2.crop.spidernip": "Паучья мята",
+  "ic2.crop.tearstalks": "Стебли слёз",
+  "ic2.crop.withereed": "Иссушающий тростник",
+  "ic2.jetpackAttached": "Реактивный ранец прикреплён",
+  "item.ic2.nuclear_jetpack": "Ядерный реактивный ранец",
+  "item.ic2.compacted_electric_jetpack": "Компактный электрический реактивный ранец",
+  "item.ic2.compacted_nuclear_jetpack": "Компактный ядерный реактивный ранец",
+  "block.ic2.solar_panel_mv": "Солнечная панель среднего напряжения",
+  "block.ic2.solar_panel_hv": "Солнечная панель высокого напряжения",
+  "block.ic2.bronze_cable": "Бронзовый кабель",
+  "block.ic2.bronze_cable_insulated": "Изолированный бронзовый кабель",
+  "block.ic2.bronze_cable_double_insulated": "Бронзовый кабель с двойной изоляцией",
+  "item.ic2.bronze_cable_item": "Бронзовый кабель",
+  "item.ic2.bronze_insulated_cable_item": "Изолированный бронзовый кабель",
+  "item.ic2.bronze_double_insulated_cable_item": "Бронзовый кабель с двойной изоляцией",
+  "item.ic2.advanced_solar_helmet": "Улучшенный солнечный шлем",
+  "block.ic2.transformer_iv": "IV-трансформатор",
+  "block.ic2.iridium_stone": "Иридиевый укреплённый камень",
+  "block.ic2.plasmafier": "Плазматор",
+  "item.ic2.cell_plasma": "Плазменная капсула",
+  "item.ic2.plasma_core": "Плазменное ядро",
+  "item.ic2.pesd": "PESD",
+  "block.ic2.rare_earth_extractor": "Экстрактор редкоземельных элементов",
+  "item.ic2.rare_earth_dust": "Редкоземельная пыль",
+  "item.ic2.dust_aluminium": "Алюминиевая пыль",
+  "item.ic2.rare_earth_chunk": "Кусок редкоземельного материала",
+  "item.ic2.dead_magnet": "Незаряженный магнит",
+  "item.ic2.magnet": "Магнит",
+  "block.ic2.plasma_cable": "Плазменный кабель",
+  "item.ic2.plasma_cable_item": "Плазменный кабель",
+  "gui.ic2.friends": "Настройки друзей",
+  "gui.ic2.friends.player_break_iridium": "Разрешить ломать иридиевый камень",
+  "gui.ic2.friends.save": "Сохранить",
+  "key.ic2.toggle": "Клавиша переключения",
+  "item.ic2.glowtronic_crystal": "Глоутронный кристалл",
+  "item.ic2.quantum_pack": "Квантовый ранец",
+  "item.ic2.memory_stick": "Карта памяти",
+  "item.ic2.portable_teleporter": "Портативный телепортер",
+  "item.ic2.precision_wrench": "Точный гаечный ключ",
+  "item.ic2.advanced_drill": "Продвинутый бур",
+  "item.ic2.advanced_chainsaw": "Продвинутая цепная пила",
+  "item.ic2.upgrade_base": "Основа улучшения",
+  "item.ic2.pulsating_quartz": "Пульсирующий кварц",
+  "item.ic2.complex_circuit": "Сложная электросхема",
+  "item.ic2.advanced_field_expansion_pad_upgrade": "Продвинутое расширение поля",
+  "item.ic2.simple_import": "Простое улучшение ввода",
+  "item.ic2.efficiency_upgrade": "Улучшение эффективности",
+  "item.ic2.basic_field_expansion_pad_upgrade": "Базовое расширение поля",
+  "item.ic2.field_expansion_pad_upgrade": "Расширение поля",
+  "item.ic2.wrench_new": "Гаечный ключ",
+  "block.ic2.pahoehoe_lava": "Базальтовая лава",
+  "block.ic2.coolant": "Хладагент",
+  "block.ic2.biomass": "Биомасса",
+  "block.ic2.biogas": "Биогаз",
+  "item.ic2.netherrack_dust": "Пыль незерака",
+  "ic2.tooltip.sound": "IC2: %s",
+  "item.ic2.remote_interface_upgrade": "Улучшение «Удалённый интерфейс»",
+  "ic2.tooltip.upgrade.remote_interface": "Увеличивает радиус удалённого доступа в 2^%1$s раз",
+  "tooltip.item.ic2.multi_mine.enable": "Добыча области включена",
+  "tooltip.item.ic2.multi_mine.disable": "Добыча области отключена",
+  "tooltip.item.ic2.electric_tree_tap.inv_import": "Собранные предметы поступают в инвентарь",
+  "tooltip.item.ic2.portable_teleporter.set_target": "Цель телепортации задана",
+  "tooltip.ic2.fluid_pipe.transfer_rate": "Скорость передачи: %s мВ/с",
+  "tooltip.ic2.fluid_pipe.capacity": "Внутренняя ёмкость: %s мВ",
+  "tooltip.ic2.fluid_pipe.connect": "Используйте гаечный ключ для соединения труб",
+  "message.ic2.cropnalyzer.name": "Агрокультура: %1$s (автор: %2$s)",
+  "message.ic2.cropnalyzer.size": "Стадия роста: %1$s/%2$s",
+  "message.ic2.cropnalyzer.nutrients": "Запас питательных веществ: %s/100",
+  "message.ic2.cropnalyzer.water": "Запас воды: %s/200",
+  "message.ic2.cropnalyzer.weed_ex": "Запас средства от сорняков: %s/100",
+  "message.ic2.cropnalyzer.growth": "Очки роста: %1$s/%2$s",
+  "gui.ic2.cropnalyzer.unknown": "НЕИЗВЕСТНО",
+  "gui.ic2.cropnalyzer.tier": "Уровень: %s",
+  "gui.ic2.cropnalyzer.discovered_by": "Автор:",
+  "gui.ic2.cropnalyzer.growth": "Рост:",
+  "gui.ic2.cropnalyzer.gain": "Урожай:",
+  "gui.ic2.cropnalyzer.resistance": "Стойк.:",
+  "gui.ic2.trading_terminal.settings": "Настройки",
+  "gui.ic2.trading_terminal.trader": "Торговец %s",
+  "gui.ic2.friends.iridium_allowed": "Иридий ✓",
+  "gui.ic2.friends.iridium_denied": "Иридий —",
+  "item.ic2.booze_mug.beer_name": "%1$s%2$s%3$s",
+  "item.ic2.booze_mug.rum": "Ром",
+  "item.ic2.booze_mug.zero": "Без напитка",
+  "item.ic2.booze_mug.solid.watery": "Водянистое ",
+  "item.ic2.booze_mug.solid.clear": "Прозрачное ",
+  "item.ic2.booze_mug.solid.lite": "Лёгкое ",
+  "item.ic2.booze_mug.solid.plain": "",
+  "item.ic2.booze_mug.solid.strong": "Крепкое ",
+  "item.ic2.booze_mug.solid.thick": "Густое ",
+  "item.ic2.booze_mug.solid.stodge": "Плотное ",
+  "item.ic2.booze_mug.solid.invalid": "X",
+  "item.ic2.booze_mug.hops.soup": "Супообразное ",
+  "item.ic2.booze_mug.hops.alcfree": "Безалкогольное ",
+  "item.ic2.booze_mug.hops.white": "Белое ",
+  "item.ic2.booze_mug.hops.plain": "",
+  "item.ic2.booze_mug.hops.dark": "Тёмное ",
+  "item.ic2.booze_mug.hops.full": "Насыщенное ",
+  "item.ic2.booze_mug.hops.black": "Чёрное ",
+  "item.ic2.booze_mug.hops.invalid": "X",
+  "item.ic2.booze_mug.time.brew": "Варево",
+  "item.ic2.booze_mug.time.youngster": "Молодое пиво",
+  "item.ic2.booze_mug.time.beer": "Пиво",
+  "item.ic2.booze_mug.time.ale": "Элевое пиво",
+  "item.ic2.booze_mug.time.dragonblood": "Драконье пиво",
+  "item.ic2.booze_mug.time.black_stuff": "Чёрное пойло",
+  "advancements.ic2.buildJetpack": "Я верю, что могу летать…",
+  "advancements.ic2.fallWithJetpack": "…Я верю, что могу упасть с небес.",
+  "advancements.ic2.killDragonMiningLaser": "Как настоящий босс",
+  "ic2.crop.attribute.addictive": "Вызывает привыкание",
+  "ic2.crop.attribute.aether": "Эфир",
+  "ic2.crop.attribute.bad": "Вредный",
+  "ic2.crop.attribute.beans": "Бобы",
+  "ic2.crop.attribute.beetroot": "Свёкла",
+  "ic2.crop.attribute.berylium": "Бериллий",
+  "ic2.crop.attribute.blaze": "Ифрит",
+  "ic2.crop.attribute.blue": "Синий",
+  "ic2.crop.attribute.bouncy": "Упругий",
+  "ic2.crop.attribute.brown": "Коричневый",
+  "ic2.crop.attribute.bush": "Куст",
+  "ic2.crop.attribute.carrots": "Морковь",
+  "ic2.crop.attribute.chicken": "Курица",
+  "ic2.crop.attribute.coal": "Уголь",
+  "ic2.crop.attribute.consumable": "Расходный",
+  "ic2.crop.attribute.cow": "Корова",
+  "ic2.crop.attribute.creeper": "Крипер",
+  "ic2.crop.attribute.crystal": "Кристалл",
+  "ic2.crop.attribute.dark": "Тёмный",
+  "ic2.crop.attribute.decoration": "Декоративный",
+  "ic2.crop.attribute.diamond": "Алмаз",
+  "ic2.crop.attribute.edible": "Съедобный",
+  "ic2.crop.attribute.egg": "Яйцо",
+  "ic2.crop.attribute.emerald": "Изумруд",
+  "ic2.crop.attribute.ender": "Эндер",
+  "ic2.crop.attribute.explosive": "Взрывчатый",
+  "ic2.crop.attribute.feather": "Перо",
+  "ic2.crop.attribute.fire": "Огонь",
+  "ic2.crop.attribute.flower": "Цветок",
+  "ic2.crop.attribute.food": "Еда",
+  "ic2.crop.attribute.ghast": "Гаст",
+  "ic2.crop.attribute.green": "Зелёный",
+  "ic2.crop.attribute.healing": "Лечебный",
+  "ic2.crop.attribute.ingredient": "Ингредиент",
+  "ic2.crop.attribute.leaves": "Листья",
+  "ic2.crop.attribute.milk": "Молоко",
+  "ic2.crop.attribute.mr._brain": "Мистер Мозг",
+  "ic2.crop.attribute.nether": "Незер",
+  "ic2.crop.attribute.oil": "Масло",
+  "ic2.crop.attribute.orange": "Оранжевый",
+  "ic2.crop.attribute.pig": "Свинья",
+  "ic2.crop.attribute.poison": "Яд",
+  "ic2.crop.attribute.potato": "Картофель",
+  "ic2.crop.attribute.purple": "Фиолетовый",
+  "ic2.crop.attribute.red": "Красный",
+  "ic2.crop.attribute.redstone": "Редстоун",
+  "ic2.crop.attribute.reed": "Тростник",
+  "ic2.crop.attribute.resin": "Смола",
+  "ic2.crop.attribute.rotten": "Гнилой",
+  "ic2.crop.attribute.saltpeter": "Селитра",
+  "ic2.crop.attribute.sapling": "Саженец",
+  "ic2.crop.attribute.sheep": "Овца",
+  "ic2.crop.attribute.shiny": "Блестящий",
+  "ic2.crop.attribute.silk": "Шёлк",
+  "ic2.crop.attribute.slime": "Слизь",
+  "ic2.crop.attribute.snow": "Снег",
+  "ic2.crop.attribute.soulsand": "Песок душ",
+  "ic2.crop.attribute.spider": "Паук",
+  "ic2.crop.attribute.stem": "Стебель",
+  "ic2.crop.attribute.sticky": "Липкий",
+  "ic2.crop.attribute.sulfur": "Сера",
+  "ic2.crop.attribute.toxic": "Токсичный",
+  "ic2.crop.attribute.tulip": "Тюльпан",
+  "ic2.crop.attribute.undead": "Нежить",
+  "ic2.crop.attribute.vine": "Лоза",
+  "ic2.crop.attribute.weed": "Сорняк",
+  "ic2.crop.attribute.wheat": "Пшеница",
+  "ic2.crop.attribute.wither": "Иссушитель",
+  "ic2.crop.attribute.yellow": "Жёлтый"
 }

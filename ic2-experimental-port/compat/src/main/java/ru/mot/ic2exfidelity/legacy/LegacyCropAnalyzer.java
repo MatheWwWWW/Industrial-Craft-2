@@ -53,14 +53,14 @@ public final class LegacyCropAnalyzer extends BaseElectricItem implements IHandH
         }
 
         var crop = cropTile.getCrop();
-        message(player, "Crop name: " + Component.m_237115_(crop.getUnlocalizedName()).getString()
-                + " (by " + crop.getDiscoveredBy() + ")");
-        message(player, "Crop size: " + cropTile.getCurrentAge() + "/" + crop.getMaxAge());
-        message(player, "Nutrient storage: " + cropTile.getStorageNutrients() + "/100");
-        message(player, "Water storage: " + cropTile.getStorageWater() + "/200");
-        message(player, "Weed-Ex storage: " + cropTile.getStorageWeedEX() + "/100");
-        message(player, "Growth points: " + cropTile.getGrowthPoints() + "/"
-                + crop.getGrowthDuration(cropTile));
+        message(player, "message.ic2.cropnalyzer.name",
+                Component.m_237115_(crop.getUnlocalizedName()), crop.getDiscoveredBy());
+        message(player, "message.ic2.cropnalyzer.size", cropTile.getCurrentAge(), crop.getMaxAge());
+        message(player, "message.ic2.cropnalyzer.nutrients", cropTile.getStorageNutrients());
+        message(player, "message.ic2.cropnalyzer.water", cropTile.getStorageWater());
+        message(player, "message.ic2.cropnalyzer.weed_ex", cropTile.getStorageWeedEX());
+        message(player, "message.ic2.cropnalyzer.growth", cropTile.getGrowthPoints(),
+                crop.getGrowthDuration(cropTile));
         return InteractionResult.SUCCESS;
     }
 
@@ -74,7 +74,7 @@ public final class LegacyCropAnalyzer extends BaseElectricItem implements IHandH
         return new LegacyHandHeldCropAnalyzer(player, hand, stack);
     }
 
-    private static void message(Player player, String text) {
-        player.m_5661_(Component.m_237113_(text), false);
+    private static void message(Player player, String key, Object... arguments) {
+        player.m_5661_(Component.m_237110_(key, arguments), false);
     }
 }

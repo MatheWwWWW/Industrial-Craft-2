@@ -181,8 +181,8 @@ public final class LegacyFriendsScreen extends Ic2Gui<LegacyFriendsMenu> {
         }
         if (actionButton != null) {
             actionButton.f_93623_ = selected != null;
-            actionButton.m_93666_(Component.m_237113_(
-                    selectedBreakPermission ? "Иридий ✓" : "Иридий —"));
+            actionButton.m_93666_(Component.m_237115_(selectedBreakPermission
+                    ? "gui.ic2.friends.iridium_allowed" : "gui.ic2.friends.iridium_denied"));
         }
         if (saveButton != null) {
             saveButton.f_93623_ = selected != null;

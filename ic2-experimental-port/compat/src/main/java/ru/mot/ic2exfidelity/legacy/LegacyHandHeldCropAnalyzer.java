@@ -130,7 +130,24 @@ public final class LegacyHandHeldCropAnalyzer extends HandHeldInventory {
 
     public String getSeedDesc(int index) {
         CropCard crop = crop();
-        return crop == null ? "" : crop.desc(index);
+        if (crop == null) {
+            return "";
+        }
+        // Attributes are also used for breeding. Translate only their display
+        // text, keeping the original crop API values and unknown addon traits.
+        String[] parts = crop.desc(index).split(",", -1);
+        for (int i = 0; i < parts.length; i++) {
+            String attribute = parts[i].trim();
+            if (attribute.isEmpty()) {
+                continue;
+            }
+            String key = "ic2.crop.attribute." + attribute.toLowerCase(Locale.ROOT).replace(' ', '_');
+            String translated = Component.m_237115_(key).getString();
+            if (!key.equals(translated)) {
+                parts[i] = parts[i].replace(attribute, translated);
+            }
+        }
+        return String.join(",", parts);
     }
 
     public int getSeedGrowth() {

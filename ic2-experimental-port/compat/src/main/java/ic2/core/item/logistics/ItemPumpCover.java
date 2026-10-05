@@ -132,7 +132,7 @@ public final class ItemPumpCover extends Item implements ICoverItem {
 
     @Override
     public void m_7373_(ItemStack stack, Level level, List<Component> tooltip, TooltipFlag flag) {
-        tooltip.add(Component.m_237113_("Transfer rate: " + getType(stack).transferRate + " mB/sec"));
+        tooltip.add(Component.m_237110_("tooltip.ic2.fluid_pipe.transfer_rate", getType(stack).transferRate));
     }
 
     @Override

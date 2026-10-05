@@ -1,9 +1,17 @@
+param(
+    [string]$DependencyRoot,
+    [switch]$SkipInstall
+)
+
 $ErrorActionPreference = "Stop"
 
 $projectRoot = $PSScriptRoot
 $portRoot = Split-Path -Parent $projectRoot
 $minecraftRoot = Split-Path -Parent $portRoot
-$javaBin = Join-Path $minecraftRoot "runtime\java-runtime-gamma\windows\java-runtime-gamma\bin"
+if (-not $DependencyRoot) {
+    $DependencyRoot = $minecraftRoot
+}
+$javaBin = Join-Path $DependencyRoot "runtime\java-runtime-gamma\windows\java-runtime-gamma\bin"
 $java = Join-Path $javaBin "java.exe"
 $javac = Join-Path $javaBin "javac.exe"
 $jar = Join-Path $javaBin "jar.exe"
@@ -19,6 +27,34 @@ $patchedIc2Jar = Join-Path $buildRoot "industrialcraft-2-2.9.162+ex119-fidelity-
 $installedUpstreamIc2Jar = Join-Path $minecraftRoot "mods\industrialcraft-2-2.9.162+ex119-1.19.2-forge.jar"
 $installedPatchedIc2Jar = Join-Path $minecraftRoot "mods\industrialcraft-2-2.9.162+ex119-fidelity-1.19.2-forge.jar"
 $baseQuarantine = Join-Path $portRoot "quarantine\unmodified-base-not-loaded"
+
+function Merge-SourceLanguages([string]$DestinationRoot, [string]$Namespace) {
+    $sourceAssets = Join-Path $projectRoot 'src\main\resources\assets'
+    $namespaceDirs = Get-ChildItem -LiteralPath $sourceAssets -Directory
+    foreach ($namespaceDir in $namespaceDirs) {
+        if ($Namespace -and $namespaceDir.Name -ne $Namespace) { continue }
+        $sourceLangDir = Join-Path $namespaceDir.FullName 'lang'
+        if (-not (Test-Path -LiteralPath $sourceLangDir)) { continue }
+        foreach ($sourceLang in (Get-ChildItem -LiteralPath $sourceLangDir -Filter '*.json' -File)) {
+            $targetDir = Join-Path $DestinationRoot "assets\$($namespaceDir.Name)\lang"
+            New-Item -ItemType Directory -Path $targetDir -Force | Out-Null
+            $target = Join-Path $targetDir $sourceLang.Name
+            $merged = [Collections.Specialized.OrderedDictionary]::new([StringComparer]::Ordinal)
+            if (Test-Path -LiteralPath $target) {
+                $original = Get-Content -Raw -Encoding UTF8 -LiteralPath $target | ConvertFrom-Json -AsHashtable
+                foreach ($property in $original.GetEnumerator()) {
+                    $merged[$property.Key] = $property.Value
+                }
+            }
+            $overlay = Get-Content -Raw -Encoding UTF8 -LiteralPath $sourceLang.FullName | ConvertFrom-Json -AsHashtable
+            foreach ($property in $overlay.GetEnumerator()) {
+                $merged[$property.Key] = $property.Value
+            }
+            [IO.File]::WriteAllText($target, ($merged | ConvertTo-Json -Depth 4) + "`n",
+                [Text.UTF8Encoding]::new($false))
+        }
+    }
+}
 
 $resolvedProject = [IO.Path]::GetFullPath($projectRoot)
 foreach ($path in @($buildRoot, $classesDir, $depsDir, $patchedStage, $patcherDir)) {
@@ -50,11 +86,19 @@ $sourceClasspathEntries = @(
     "libraries\io\netty\netty-buffer\4.1.77.Final\netty-buffer-4.1.77.Final.jar",
     "libraries\io\netty\netty-common\4.1.77.Final\netty-common-4.1.77.Final.jar",
     "libraries\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar",
-    "ic2-experimental-port\upstream\industrialcraft-2-2.9.162+ex119-1.19.2-forge.jar",
-    "ic2-experimental-port\upstream\industrialcraft-2-2.9.40+ex119-1.19.2-forge.jar",
     "mods\AdditionalEnchantedMiner-1.19.2-1192.4.65.jar",
     "mods\jei-1.19.2-forge-11.8.1.1034.jar"
-) | ForEach-Object { Join-Path $minecraftRoot $_ }
+) | ForEach-Object {
+    $dependency = Join-Path $DependencyRoot $_
+    if ($_ -like 'mods\*' -and -not (Test-Path -LiteralPath $dependency)) {
+        $dependency = Join-Path (Join-Path $portRoot 'smoke-instance') $_
+    }
+    $dependency
+}
+$sourceClasspathEntries += @(
+    $upstreamIc2Jar,
+    (Join-Path $portRoot 'upstream\industrialcraft-2-2.9.40+ex119-1.19.2-forge.jar')
+)
 
 $classpathEntries = foreach ($dependency in $sourceClasspathEntries) {
     if (-not (Test-Path -LiteralPath $dependency -PathType Leaf)) {
@@ -74,7 +118,7 @@ if ($LASTEXITCODE -ne 0) {
     throw "javac failed with exit code $LASTEXITCODE"
 }
 
-$legacyJar = Join-Path $minecraftRoot "ic2-experimental-port\upstream\industrialcraft-2-2.9.40+ex119-1.19.2-forge.jar"
+$legacyJar = Join-Path $portRoot "upstream\industrialcraft-2-2.9.40+ex119-1.19.2-forge.jar"
 $experimental112Jar = Join-Path $portRoot "quarantine\ic2-classic-only\industrialcraft-2-2.8.222-ex112.jar"
 $legacyEntries = @(
     "ic2/api/block/IIdProvider.class",
@@ -196,6 +240,8 @@ $patchedClassEntries = @(
     "ic2/core/recipe/AdvRecipe.class",
     "ic2/core/recipe/input/RecipeInputBase.class",
     "ic2/core/block/wiring/AbstractCableBlock`$Conductor.class",
+    "assets/ic2/lang/en_us.json",
+    "assets/ic2/lang/ru_ru.json",
     "assets/ic2/sounds.json"
 )
 Push-Location $patchedStage
@@ -269,7 +315,11 @@ foreach ($relativePath in $restoredDynamiteVisuals) {
     Copy-Item -LiteralPath $sourcePath -Destination $destinationPath -Force
 }
 
-$asmJar = Join-Path $minecraftRoot "libraries\org\ow2\asm\asm\9.6\asm-9.6.jar"
+# Keep all upstream IC2 strings and make the local translations independent
+# of which jar wins resource loading in the shared ic2 namespace.
+Merge-SourceLanguages $patchedStage 'ic2'
+
+$asmJar = Join-Path $DependencyRoot "libraries\org\ow2\asm\asm\9.6\asm-9.6.jar"
 $patcherSource = Join-Path $projectRoot "tools\PatchIc2LegacyFields.java"
 & $javac -proc:none -encoding UTF-8 -source 17 -target 17 -classpath $asmJar -d $patcherDir $patcherSource
 if ($LASTEXITCODE -ne 0) {
@@ -1277,6 +1327,10 @@ foreach ($entry in $legacyCropSizes.GetEnumerator()) {
         (Join-Path $cropBlockstateDir ($cropId + '_crop.json')), $blockstateText, $utf8NoBom)
 }
 
+# Imported addon assets include older language files. Apply local translations
+# last so extraction cannot overwrite them, preserving the other locales.
+Merge-SourceLanguages $classesDir
+
 $manifest = Join-Path $projectRoot "src\main\resources\META-INF\MANIFEST.MF"
 & $jar cfm $outputJar $manifest -C $classesDir .
 if ($LASTEXITCODE -ne 0) {
@@ -1288,14 +1342,16 @@ if ($splitPackageClasses) {
     throw "Companion jar contains forbidden IC2 classes: $($splitPackageClasses -join ', ')"
 }
 
-Copy-Item -LiteralPath $outputJar -Destination $installedJar -Force
-Copy-Item -LiteralPath $patchedIc2Jar -Destination $installedPatchedIc2Jar -Force
-if (Test-Path -LiteralPath $installedUpstreamIc2Jar -PathType Leaf) {
-    New-Item -ItemType Directory -Path $baseQuarantine -Force | Out-Null
-    Move-Item -LiteralPath $installedUpstreamIc2Jar -Destination (Join-Path $baseQuarantine (Split-Path -Leaf $installedUpstreamIc2Jar)) -Force
+if (-not $SkipInstall) {
+    Copy-Item -LiteralPath $outputJar -Destination $installedJar -Force
+    Copy-Item -LiteralPath $patchedIc2Jar -Destination $installedPatchedIc2Jar -Force
+    if (Test-Path -LiteralPath $installedUpstreamIc2Jar -PathType Leaf) {
+        New-Item -ItemType Directory -Path $baseQuarantine -Force | Out-Null
+        Move-Item -LiteralPath $installedUpstreamIc2Jar -Destination (Join-Path $baseQuarantine (Split-Path -Leaf $installedUpstreamIc2Jar)) -Force
+    }
+    Write-Output "Installed: $installedJar"
+    Write-Output "Installed patched IC2: $installedPatchedIc2Jar"
 }
 Remove-Item -LiteralPath $depsDir -Recurse -Force
 Write-Output "Built: $outputJar"
-Write-Output "Installed: $installedJar"
 Write-Output "Built patched IC2: $patchedIc2Jar"
-Write-Output "Installed patched IC2: $installedPatchedIc2Jar"

@@ -53,87 +53,212 @@
   "block.ic2.barrel": "Booze Barrel",
   "item.ic2.barrel.empty": "Empty Booze Barrel",
   "item.ic2.barrel.filled": "%sL Booze Barrel",
-  "item.ic2.booze_mug": "Booze Mug"
-, "block.ic2.fluid_pipe": "Fluid Pipe"
-, "item.ic2.pipe.bronze_pipe_tiny": "Tiny Bronze Fluid Pipe"
-, "item.ic2.pipe.bronze_pipe_small": "Small Bronze Fluid Pipe"
-, "item.ic2.pipe.bronze_pipe_medium": "Bronze Fluid Pipe"
-, "item.ic2.pipe.bronze_pipe_large": "Large Bronze Fluid Pipe"
-, "item.ic2.pipe.steel_pipe_tiny": "Tiny Steel Fluid Pipe"
-, "item.ic2.pipe.steel_pipe_small": "Small Steel Fluid Pipe"
-, "item.ic2.pipe.steel_pipe_medium": "Steel Fluid Pipe"
-, "item.ic2.pipe.steel_pipe_large": "Large Steel Fluid Pipe"
-, "item.ic2.cover.pump_lv": "Fluid Pump (LV)"
-, "item.ic2.cover.pump_mv": "Fluid Pump (MV)"
-, "item.ic2.ender_pearl_dust": "Ender Pearl Dust"
-, "item.ic2.ender_eye_dust": "Ender Eye Dust"
-, "item.ic2.milk_dust": "Milk Powder"
-, "item.ic2.emerald_dust": "Emerald Dust"
-, "item.ic2.small_emerald_dust": "Tiny Pile of Emerald Dust"
-, "item.ic2.small_diamond_dust": "Tiny Pile of Diamond Dust"
-, "item.ic2.milk_wart": "Milk Wart"
-, "item.ic2.oil_berry": "Oil Berry"
-, "item.ic2.bobs_yer_uncle_ranks_berry": "Bobs-Yer-Uncle-Ranks Berry"
-, "ic2.crop.blazereed": "Blazereed"
-, "ic2.crop.bobs_yer_uncle_ranks_berries": "Bobs-Yer-Uncle-Ranks Berries"
-, "ic2.crop.corium": "Corium"
-, "ic2.crop.corpse_plant": "Corpse Plant"
-, "ic2.crop.creeper_weed": "Creeper Weed"
-, "ic2.crop.diareed": "Diareed"
-, "ic2.crop.egg_plant": "Egg Plant"
-, "ic2.crop.ender_blossom": "Ender Blossom"
-, "ic2.crop.meat_rose": "Meat Rose"
-, "ic2.crop.milk_wart": "Milk Wart"
-, "ic2.crop.oil_berries": "Oil Berries"
-, "ic2.crop.slime_plant": "Slime Plant"
-, "ic2.crop.spidernip": "Spidernip"
-, "ic2.crop.tearstalks": "Tearstalks"
-, "ic2.crop.withereed": "Withereed"
-, "ic2.jetpackAttached": "Jetpack attached"
-, "item.ic2.nuclear_jetpack": "Nuclear Jetpack"
-, "item.ic2.compacted_electric_jetpack": "Compacted Electric Jetpack"
-, "item.ic2.compacted_nuclear_jetpack": "Compacted Nuclear Jetpack"
-, "block.ic2.solar_panel_mv": "MV Solar Panel"
-, "block.ic2.solar_panel_hv": "HV Solar Panel"
-, "block.ic2.bronze_cable": "Bronze Cable"
-, "block.ic2.bronze_cable_insulated": "Insulated Bronze Cable"
-, "block.ic2.bronze_cable_double_insulated": "2x Insulated Bronze Cable"
-, "item.ic2.bronze_cable_item": "Bronze Cable"
-, "item.ic2.bronze_insulated_cable_item": "Insulated Bronze Cable"
-, "item.ic2.bronze_double_insulated_cable_item": "2x Insulated Bronze Cable"
-, "item.ic2.advanced_solar_helmet": "Advanced Solar Helmet"
-, "block.ic2.transformer_iv": "IV Transformer"
-, "block.ic2.iridium_stone": "Iridium Reinforced Stone"
-, "block.ic2.plasmafier": "Plasmafier"
-, "item.ic2.cell_plasma": "Plasma Cell"
-, "item.ic2.plasma_core": "Plasma Core"
-, "item.ic2.pesd": "PESD"
-, "block.ic2.rare_earth_extractor": "Rare Earth Extractor"
-, "item.ic2.rare_earth_dust": "Rare Earth Dust"
-, "item.ic2.dust_aluminium": "Aluminium Dust"
-, "item.ic2.rare_earth_chunk": "Rare Earth Chunk"
-, "item.ic2.dead_magnet": "Uncharged Magnet"
-, "item.ic2.magnet": "Magnet"
-, "block.ic2.plasma_cable": "Plasma Cable"
-, "item.ic2.plasma_cable_item": "Plasma Cable"
-, "gui.ic2.friends": "Friends Settings"
-, "gui.ic2.friends.player_break_iridium": "Allows to Break Iridium"
-, "gui.ic2.friends.save": "save"
-, "key.ic2.toggle": "Toggle Key"
-, "item.ic2.glowtronic_crystal": "Glowtronic Crystal"
-, "item.ic2.quantum_pack": "Quantum Pack"
-, "item.ic2.memory_stick": "Memory Stick"
-, "item.ic2.portable_teleporter": "Portable Teleporter"
-, "item.ic2.precision_wrench": "Precision Wrench"
-, "item.ic2.advanced_drill": "Advanced Drill"
-, "item.ic2.advanced_chainsaw": "Advanced Chainsaw"
-, "item.ic2.upgrade_base": "Upgrade Base"
-, "item.ic2.pulsating_quartz": "Pulsating Quartz"
-, "item.ic2.complex_circuit": "Complex Circuit"
-, "item.ic2.advanced_field_expansion_pad_upgrade": "Advanced Field Expansion Upgrade"
-, "item.ic2.simple_import": "Simple Import Upgrade"
-, "item.ic2.efficiency_upgrade": "Efficiency Upgrade"
-, "item.ic2.basic_field_expansion_pad_upgrade": "Basic Field Expansion Upgrade"
-, "item.ic2.field_expansion_pad_upgrade": "Field Expansion Upgrade"
-, "item.ic2.wrench_new": "Wrench"
+  "item.ic2.booze_mug": "Booze Mug",
+  "block.ic2.fluid_pipe": "Fluid Pipe",
+  "item.ic2.pipe.bronze_pipe_tiny": "Tiny Bronze Fluid Pipe",
+  "item.ic2.pipe.bronze_pipe_small": "Small Bronze Fluid Pipe",
+  "item.ic2.pipe.bronze_pipe_medium": "Bronze Fluid Pipe",
+  "item.ic2.pipe.bronze_pipe_large": "Large Bronze Fluid Pipe",
+  "item.ic2.pipe.steel_pipe_tiny": "Tiny Steel Fluid Pipe",
+  "item.ic2.pipe.steel_pipe_small": "Small Steel Fluid Pipe",
+  "item.ic2.pipe.steel_pipe_medium": "Steel Fluid Pipe",
+  "item.ic2.pipe.steel_pipe_large": "Large Steel Fluid Pipe",
+  "item.ic2.cover.pump_lv": "Fluid Pump (LV)",
+  "item.ic2.cover.pump_mv": "Fluid Pump (MV)",
+  "item.ic2.ender_pearl_dust": "Ender Pearl Dust",
+  "item.ic2.ender_eye_dust": "Ender Eye Dust",
+  "item.ic2.milk_dust": "Milk Powder",
+  "item.ic2.emerald_dust": "Emerald Dust",
+  "item.ic2.small_emerald_dust": "Tiny Pile of Emerald Dust",
+  "item.ic2.small_diamond_dust": "Tiny Pile of Diamond Dust",
+  "item.ic2.milk_wart": "Milk Wart",
+  "item.ic2.oil_berry": "Oil Berry",
+  "item.ic2.bobs_yer_uncle_ranks_berry": "Bobs-Yer-Uncle-Ranks Berry",
+  "ic2.crop.blazereed": "Blazereed",
+  "ic2.crop.bobs_yer_uncle_ranks_berries": "Bobs-Yer-Uncle-Ranks Berries",
+  "ic2.crop.corium": "Corium",
+  "ic2.crop.corpse_plant": "Corpse Plant",
+  "ic2.crop.creeper_weed": "Creeper Weed",
+  "ic2.crop.diareed": "Diareed",
+  "ic2.crop.egg_plant": "Egg Plant",
+  "ic2.crop.ender_blossom": "Ender Blossom",
+  "ic2.crop.meat_rose": "Meat Rose",
+  "ic2.crop.milk_wart": "Milk Wart",
+  "ic2.crop.oil_berries": "Oil Berries",
+  "ic2.crop.slime_plant": "Slime Plant",
+  "ic2.crop.spidernip": "Spidernip",
+  "ic2.crop.tearstalks": "Tearstalks",
+  "ic2.crop.withereed": "Withereed",
+  "ic2.jetpackAttached": "Jetpack attached",
+  "item.ic2.nuclear_jetpack": "Nuclear Jetpack",
+  "item.ic2.compacted_electric_jetpack": "Compacted Electric Jetpack",
+  "item.ic2.compacted_nuclear_jetpack": "Compacted Nuclear Jetpack",
+  "block.ic2.solar_panel_mv": "MV Solar Panel",
+  "block.ic2.solar_panel_hv": "HV Solar Panel",
+  "block.ic2.bronze_cable": "Bronze Cable",
+  "block.ic2.bronze_cable_insulated": "Insulated Bronze Cable",
+  "block.ic2.bronze_cable_double_insulated": "2x Insulated Bronze Cable",
+  "item.ic2.bronze_cable_item": "Bronze Cable",
+  "item.ic2.bronze_insulated_cable_item": "Insulated Bronze Cable",
+  "item.ic2.bronze_double_insulated_cable_item": "2x Insulated Bronze Cable",
+  "item.ic2.advanced_solar_helmet": "Advanced Solar Helmet",
+  "block.ic2.transformer_iv": "IV Transformer",
+  "block.ic2.iridium_stone": "Iridium Reinforced Stone",
+  "block.ic2.plasmafier": "Plasmafier",
+  "item.ic2.cell_plasma": "Plasma Cell",
+  "item.ic2.plasma_core": "Plasma Core",
+  "item.ic2.pesd": "PESD",
+  "block.ic2.rare_earth_extractor": "Rare Earth Extractor",
+  "item.ic2.rare_earth_dust": "Rare Earth Dust",
+  "item.ic2.dust_aluminium": "Aluminium Dust",
+  "item.ic2.rare_earth_chunk": "Rare Earth Chunk",
+  "item.ic2.dead_magnet": "Uncharged Magnet",
+  "item.ic2.magnet": "Magnet",
+  "block.ic2.plasma_cable": "Plasma Cable",
+  "item.ic2.plasma_cable_item": "Plasma Cable",
+  "gui.ic2.friends": "Friends Settings",
+  "gui.ic2.friends.player_break_iridium": "Allows to Break Iridium",
+  "gui.ic2.friends.save": "save",
+  "key.ic2.toggle": "Toggle Key",
+  "item.ic2.glowtronic_crystal": "Glowtronic Crystal",
+  "item.ic2.quantum_pack": "Quantum Pack",
+  "item.ic2.memory_stick": "Memory Stick",
+  "item.ic2.portable_teleporter": "Portable Teleporter",
+  "item.ic2.precision_wrench": "Precision Wrench",
+  "item.ic2.advanced_drill": "Advanced Drill",
+  "item.ic2.advanced_chainsaw": "Advanced Chainsaw",
+  "item.ic2.upgrade_base": "Upgrade Base",
+  "item.ic2.pulsating_quartz": "Pulsating Quartz",
+  "item.ic2.complex_circuit": "Complex Circuit",
+  "item.ic2.advanced_field_expansion_pad_upgrade": "Advanced Field Expansion Upgrade",
+  "item.ic2.simple_import": "Simple Import Upgrade",
+  "item.ic2.efficiency_upgrade": "Efficiency Upgrade",
+  "item.ic2.basic_field_expansion_pad_upgrade": "Basic Field Expansion Upgrade",
+  "item.ic2.field_expansion_pad_upgrade": "Field Expansion Upgrade",
+  "item.ic2.wrench_new": "Wrench",
+  "block.ic2.pahoehoe_lava": "Pahoehoe Lava",
+  "block.ic2.coolant": "Coolant",
+  "block.ic2.biomass": "Biomass",
+  "block.ic2.biogas": "Biogas",
+  "item.ic2.netherrack_dust": "Netherrack Dust",
+  "ic2.tooltip.sound": "IC2: %s",
+  "item.ic2.remote_interface_upgrade": "Remote Interface Upgrade",
+  "ic2.tooltip.upgrade.remote_interface": "Increase the remote range by 2^%1$s",
+  "tooltip.item.ic2.multi_mine.enable": "Multi-Mining Enabled",
+  "tooltip.item.ic2.multi_mine.disable": "Multi-Mining Disabled",
+  "tooltip.item.ic2.electric_tree_tap.inv_import": "Adds Drops to Inventory",
+  "tooltip.item.ic2.portable_teleporter.set_target": "Target Set",
+  "tooltip.ic2.fluid_pipe.transfer_rate": "Transfer rate: %s mB/sec",
+  "tooltip.ic2.fluid_pipe.capacity": "Inner capacity: %s mB",
+  "tooltip.ic2.fluid_pipe.connect": "Use a wrench to connect pipes",
+  "message.ic2.cropnalyzer.name": "Crop name: %1$s (by %2$s)",
+  "message.ic2.cropnalyzer.size": "Crop size: %1$s/%2$s",
+  "message.ic2.cropnalyzer.nutrients": "Nutrient storage: %s/100",
+  "message.ic2.cropnalyzer.water": "Water storage: %s/200",
+  "message.ic2.cropnalyzer.weed_ex": "Weed-Ex storage: %s/100",
+  "message.ic2.cropnalyzer.growth": "Growth points: %1$s/%2$s",
+  "gui.ic2.cropnalyzer.unknown": "UNKNOWN",
+  "gui.ic2.cropnalyzer.tier": "Tier: %s",
+  "gui.ic2.cropnalyzer.discovered_by": "Discovered by:",
+  "gui.ic2.cropnalyzer.growth": "Growth:",
+  "gui.ic2.cropnalyzer.gain": "Gain:",
+  "gui.ic2.cropnalyzer.resistance": "Resis.:",
+  "gui.ic2.trading_terminal.settings": "Settings",
+  "gui.ic2.trading_terminal.trader": "Trader %s",
+  "gui.ic2.friends.iridium_allowed": "Iridium ✓",
+  "gui.ic2.friends.iridium_denied": "Iridium —",
+  "item.ic2.booze_mug.beer_name": "%1$s%2$s%3$s",
+  "item.ic2.booze_mug.rum": "Rum",
+  "item.ic2.booze_mug.zero": "Zero",
+  "item.ic2.booze_mug.solid.watery": "Watery ",
+  "item.ic2.booze_mug.solid.clear": "Clear ",
+  "item.ic2.booze_mug.solid.lite": "Lite ",
+  "item.ic2.booze_mug.solid.plain": "",
+  "item.ic2.booze_mug.solid.strong": "Strong ",
+  "item.ic2.booze_mug.solid.thick": "Thick ",
+  "item.ic2.booze_mug.solid.stodge": "Stodge ",
+  "item.ic2.booze_mug.solid.invalid": "X",
+  "item.ic2.booze_mug.hops.soup": "Soup ",
+  "item.ic2.booze_mug.hops.alcfree": "Alcfree ",
+  "item.ic2.booze_mug.hops.white": "White ",
+  "item.ic2.booze_mug.hops.plain": "",
+  "item.ic2.booze_mug.hops.dark": "Dark ",
+  "item.ic2.booze_mug.hops.full": "Full ",
+  "item.ic2.booze_mug.hops.black": "Black ",
+  "item.ic2.booze_mug.hops.invalid": "X",
+  "item.ic2.booze_mug.time.brew": "Brew",
+  "item.ic2.booze_mug.time.youngster": "Youngster",
+  "item.ic2.booze_mug.time.beer": "Beer",
+  "item.ic2.booze_mug.time.ale": "Ale",
+  "item.ic2.booze_mug.time.dragonblood": "Dragonblood",
+  "item.ic2.booze_mug.time.black_stuff": "Black Stuff",
+  "ic2.crop.attribute.addictive": "Addictive",
+  "ic2.crop.attribute.aether": "Aether",
+  "ic2.crop.attribute.bad": "Bad",
+  "ic2.crop.attribute.beans": "Beans",
+  "ic2.crop.attribute.beetroot": "Beetroot",
+  "ic2.crop.attribute.berylium": "Berylium",
+  "ic2.crop.attribute.blaze": "Blaze",
+  "ic2.crop.attribute.blue": "Blue",
+  "ic2.crop.attribute.bouncy": "Bouncy",
+  "ic2.crop.attribute.brown": "Brown",
+  "ic2.crop.attribute.bush": "Bush",
+  "ic2.crop.attribute.carrots": "Carrots",
+  "ic2.crop.attribute.chicken": "Chicken",
+  "ic2.crop.attribute.coal": "Coal",
+  "ic2.crop.attribute.consumable": "Consumable",
+  "ic2.crop.attribute.cow": "Cow",
+  "ic2.crop.attribute.creeper": "Creeper",
+  "ic2.crop.attribute.crystal": "Crystal",
+  "ic2.crop.attribute.dark": "Dark",
+  "ic2.crop.attribute.decoration": "Decoration",
+  "ic2.crop.attribute.diamond": "Diamond",
+  "ic2.crop.attribute.edible": "Edible",
+  "ic2.crop.attribute.egg": "Egg",
+  "ic2.crop.attribute.emerald": "Emerald",
+  "ic2.crop.attribute.ender": "Ender",
+  "ic2.crop.attribute.explosive": "Explosive",
+  "ic2.crop.attribute.feather": "Feather",
+  "ic2.crop.attribute.fire": "Fire",
+  "ic2.crop.attribute.flower": "Flower",
+  "ic2.crop.attribute.food": "Food",
+  "ic2.crop.attribute.ghast": "Ghast",
+  "ic2.crop.attribute.green": "Green",
+  "ic2.crop.attribute.healing": "Healing",
+  "ic2.crop.attribute.ingredient": "Ingredient",
+  "ic2.crop.attribute.leaves": "Leaves",
+  "ic2.crop.attribute.milk": "Milk",
+  "ic2.crop.attribute.mr._brain": "Mr. Brain",
+  "ic2.crop.attribute.nether": "Nether",
+  "ic2.crop.attribute.oil": "Oil",
+  "ic2.crop.attribute.orange": "Orange",
+  "ic2.crop.attribute.pig": "Pig",
+  "ic2.crop.attribute.poison": "Poison",
+  "ic2.crop.attribute.potato": "Potato",
+  "ic2.crop.attribute.purple": "Purple",
+  "ic2.crop.attribute.red": "Red",
+  "ic2.crop.attribute.redstone": "Redstone",
+  "ic2.crop.attribute.reed": "Reed",
+  "ic2.crop.attribute.resin": "Resin",
+  "ic2.crop.attribute.rotten": "Rotten",
+  "ic2.crop.attribute.saltpeter": "Saltpeter",
+  "ic2.crop.attribute.sapling": "Sapling",
+  "ic2.crop.attribute.sheep": "Sheep",
+  "ic2.crop.attribute.shiny": "Shiny",
+  "ic2.crop.attribute.silk": "Silk",
+  "ic2.crop.attribute.slime": "Slime",
+  "ic2.crop.attribute.snow": "Snow",
+  "ic2.crop.attribute.soulsand": "Soulsand",
+  "ic2.crop.attribute.spider": "Spider",
+  "ic2.crop.attribute.stem": "Stem",
+  "ic2.crop.attribute.sticky": "Sticky",
+  "ic2.crop.attribute.sulfur": "Sulfur",
+  "ic2.crop.attribute.toxic": "Toxic",
+  "ic2.crop.attribute.tulip": "Tulip",
+  "ic2.crop.attribute.undead": "Undead",
+  "ic2.crop.attribute.vine": "Vine",
+  "ic2.crop.attribute.weed": "Weed",
+  "ic2.crop.attribute.wheat": "Wheat",
+  "ic2.crop.attribute.wither": "Wither",
+  "ic2.crop.attribute.yellow": "Yellow"
 }
