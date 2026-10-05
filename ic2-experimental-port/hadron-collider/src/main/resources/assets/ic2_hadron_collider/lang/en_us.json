@@ -1,0 +1,14 @@
+{
+  "block.ic2_hadron_collider.hadron_collider": "Hadron Collider",
+  "container.ic2_hadron_collider.hadron_collider": "Hadron Collider",
+  "item.ic2_hadron_collider.accelerator_magnet": "Accelerator Magnet",
+  "item.ic2_hadron_collider.collision_chamber": "Collision Chamber",
+  "ic2_hadron_collider.gui.beam": "Beam: %s%%",
+  "ic2_hadron_collider.gui.synthesis": "Synthesis: %s%%",
+  "ic2_hadron_collider.gui.cost": "Cost: %s kEU/mB",
+  "ic2_hadron_collider.gui.amplifier": "Amplifier: %s",
+  "tooltip.ic2_hadron_collider.hadron_collider.tier": "Power tier: %s (IV)",
+  "tooltip.ic2_hadron_collider.hadron_collider.upkeep": "Confinement upkeep: %s EU/t",
+  "tooltip.ic2_hadron_collider.hadron_collider.cost": "UU-matter: %s kEU/mB cold, %s kEU/mB stable",
+  "tooltip.ic2_hadron_collider.hadron_collider.beam": "Beam stabilizes after %s s of continuous operation"
+}

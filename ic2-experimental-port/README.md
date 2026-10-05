@@ -103,6 +103,46 @@ the original mod and registry IDs.
 `industrialupgrade` has a separate mod ID and API and remains installed without
 being coupled to `ic2`.
 
+## Hadron Collider addon
+
+`hadron-collider/` is a standalone addon (`ic2_hadron_collider`,
+`IC2-Hadron-Collider-1.0.0.jar`) that depends only on `ic2`. Build it with
+`hadron-collider/build.ps1 [-MinecraftRoot <dir>]`; the jar is copied into
+`<MinecraftRoot>\mods` only when that folder already contains an IC2 jar.
+
+The Hadron Collider (`ic2_hadron_collider:hadron_collider`) produces liquid
+UU-matter like the Matter Fabricator (`ic2:matter_generator`) and fills cells
+and pipes the same way, but trades a high entry cost for efficiency:
+
+| | Matter Fabricator | Hadron Collider |
+|---|---|---|
+| Input tier | 3 (HV, 512 EU/t packets) | 5 (IV, 8192 EU/t packets) |
+| EU per mB | 1,000,000 x `uuEnergyFactor` | 100% cold beam, 40% stable beam |
+| Upkeep | none | 512 EU/t while running |
+| Warm-up | none | 50 s to a stable beam, collapses 4x faster |
+| Scrap amplifier | +5 EU of work per amplifier unit | same |
+| Tank | 8,000 mB | 16,000 mB |
+
+With a stable beam it makes 2.5x the UU-matter per EU, minus the 512 EU/t
+upkeep. That works out to about 2.3x at 8192 EU/t and 1.9x at 2048 EU/t. It
+stalls below 512 EU/t. Redstone, missing power or a full tank stop it and
+drain the beam. It accepts the same upgrade types as the fabricator
+(transformer, item/fluid ejector and pulling, redstone). A wrench keeps the block; a pickaxe returns an
+Advanced Machine Casing, matching IC2's own UU machines.
+
+Recipes (`ic2:shaped`):
+
+- Accelerator Magnet: 6 Coil, 2 Advanced Alloy, 1 Energy Crystal.
+- Collision Chamber: 4 Iridium Reinforced Plate, 4 Reinforced Glass, 1 Teleporter.
+- Hadron Collider: 4 Accelerator Magnet, 2 Matter Fabricator, 1 Collision
+  Chamber, 1 Lapotron Crystal, 1 EV Transformer.
+
+A disposable-world Forge run with the full pack loaded all three recipes and
+opened the GUI. Both machines got 8192 EU/t for 70 s from a cold start. The
+collider made 19 mB and the fabricator 11 mB. Beam stability reached 100%
+after 1000 ticks and fell to 60% after 100 unpowered ticks; scrap was consumed
+as an amplifier.
+
 ## Conflict and verification status
 
 `audit-mods.ps1` currently reports 71 active jars, 74 declared mod IDs and zero

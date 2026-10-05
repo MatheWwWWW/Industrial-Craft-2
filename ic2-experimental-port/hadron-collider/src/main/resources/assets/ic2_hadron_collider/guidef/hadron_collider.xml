@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gui width="176" height="176">
+	<text y="6" align="center">%name%</text>
+
+	<text x="8" y="17">{ic2_hadron_collider.gui.beam,%base.getBeamPercent()%}</text>
+	<text x="8" y="28">{ic2_hadron_collider.gui.synthesis,%base.getSynthesisPercent()%}</text>
+	<text x="8" y="39">{ic2_hadron_collider.gui.cost,%base.getCostKiloEu()%}</text>
+	<only if="amplified">
+		<text x="8" y="50">{ic2_hadron_collider.gui.amplifier,%base.getAmplifier()%}</text>
+	</only>
+
+	<slot name="scrap" x="8" y="62"/>
+	<slot name="discharge" x="26" y="62"/>
+	<energygauge x="50" y="64"/>
+
+	<fluidtank x="106" y="16" name="fluidTank"/>
+	<slot name="container" x="129" y="16"/>
+	<slot name="output" x="129" y="53"/>
+
+	<slotgrid name="upgrade" x="151" y="7" cols="1"/>
+
+	<playerInventory x="7" y="93"/>
+</gui>

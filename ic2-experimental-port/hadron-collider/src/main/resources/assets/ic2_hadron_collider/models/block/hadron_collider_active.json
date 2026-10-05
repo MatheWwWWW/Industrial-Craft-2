@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "ic2_hadron_collider:block/hadron_collider_front_active",
+    "north": "ic2_hadron_collider:block/hadron_collider_front_active",
+    "south": "ic2_hadron_collider:block/hadron_collider_side_active",
+    "east": "ic2_hadron_collider:block/hadron_collider_side_active",
+    "west": "ic2_hadron_collider:block/hadron_collider_side_active",
+    "up": "ic2_hadron_collider:block/hadron_collider_top_active",
+    "down": "ic2:blocks/machine/uu/matter_generator_bottom"
+  }
+}

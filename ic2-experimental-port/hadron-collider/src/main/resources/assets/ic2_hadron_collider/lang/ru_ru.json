@@ -1,0 +1,14 @@
+{
+  "block.ic2_hadron_collider.hadron_collider": "Адронный коллайдер",
+  "container.ic2_hadron_collider.hadron_collider": "Адронный коллайдер",
+  "item.ic2_hadron_collider.accelerator_magnet": "Магнит ускорителя",
+  "item.ic2_hadron_collider.collision_chamber": "Камера столкновений",
+  "ic2_hadron_collider.gui.beam": "Пучок: %s%%",
+  "ic2_hadron_collider.gui.synthesis": "Синтез: %s%%",
+  "ic2_hadron_collider.gui.cost": "Цена: %s кEU/mB",
+  "ic2_hadron_collider.gui.amplifier": "Усиление: %s",
+  "tooltip.ic2_hadron_collider.hadron_collider.tier": "Уровень энергии: %s (IV)",
+  "tooltip.ic2_hadron_collider.hadron_collider.upkeep": "Удержание пучка: %s EU/t",
+  "tooltip.ic2_hadron_collider.hadron_collider.cost": "Материя: %s кEU/mB холодный, %s кEU/mB стабильный",
+  "tooltip.ic2_hadron_collider.hadron_collider.beam": "Пучок стабилизируется за %s с непрерывной работы"
+}

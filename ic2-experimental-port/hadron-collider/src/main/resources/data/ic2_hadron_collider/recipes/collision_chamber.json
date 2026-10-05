@@ -1,0 +1,22 @@
+{
+  "type": "ic2:shaped",
+  "pattern": [
+    "IGI",
+    "GTG",
+    "IGI"
+  ],
+  "key": {
+    "I": {
+      "item": "ic2:iridium"
+    },
+    "G": {
+      "item": "ic2:reinforced_glass"
+    },
+    "T": {
+      "item": "ic2:teleporter"
+    }
+  },
+  "result": {
+    "item": "ic2_hadron_collider:collision_chamber"
+  }
+}
