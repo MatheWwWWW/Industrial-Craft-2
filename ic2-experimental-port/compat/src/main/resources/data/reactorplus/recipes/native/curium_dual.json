@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "BCB",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "ic2:iron_plate"
+    },
+    "B": {
+      "item": "reactorplus:reactorsplus/curium_pellet"
+    },
+    "C": {
+      "item": "ic2:advanced_circuit"
+    }
+  },
+  "result": {
+    "item": "reactorplus:reactorsplus/reactorcuriumdual",
+    "count": 1
+  }
+}

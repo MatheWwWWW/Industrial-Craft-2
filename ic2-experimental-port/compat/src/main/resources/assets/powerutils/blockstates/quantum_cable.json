@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "powerutils:block/quantum_cable"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "MCM",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "ic2:insulated_gold_cable"
+    },
+    "M": {
+      "item": "powerutils:module_qe"
+    },
+    "C": {
+      "item": "ic2:advanced_circuit"
+    }
+  },
+  "result": {
+    "item": "powerutils:quantum_cable",
+    "count": 8
+  }
+}

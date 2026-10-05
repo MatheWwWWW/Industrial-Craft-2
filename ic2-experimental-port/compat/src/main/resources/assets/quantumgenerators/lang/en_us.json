@@ -1,0 +1,14 @@
+{
+  "block.quantumgenerators.qg.phsp_gen": "Quantum generator (tier 9)",
+  "item.quantumgenerators.core_phsp_gen": "Quantum core (tier 9)",
+  "block.quantumgenerators.qg.nsp_gen": "Quantum generator (tier 10)",
+  "item.quantumgenerators.core_nsp_gen": "Quantum core (tier 10)",
+  "block.quantumgenerators.qg.bsp_gen": "Quantum generator (tier 11)",
+  "item.quantumgenerators.core_bsp_gen": "Quantum core (tier 11)",
+  "block.quantumgenerators.qg.adsp_gen": "Quantum generator (tier 12)",
+  "item.quantumgenerators.core_adsp_gen": "Quantum core (tier 12)",
+  "block.quantumgenerators.qg.grasp_gen": "Quantum generator (tier 13)",
+  "item.quantumgenerators.core_grasp_gen": "Quantum core (tier 13)",
+  "block.quantumgenerators.qg.kvsp_gen": "Quantum generator (tier 14)",
+  "item.quantumgenerators.core_kvsp_gen": "Quantum core (tier 14)"
+}

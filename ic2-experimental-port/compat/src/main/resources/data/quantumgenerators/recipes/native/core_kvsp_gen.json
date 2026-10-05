@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "UUU",
+    "UCU",
+    "UUU"
+  ],
+  "key": {
+    "U": {
+      "item": "ic2:uu_matter"
+    },
+    "C": {
+      "item": "quantumgenerators:core_grasp_gen"
+    }
+  },
+  "result": {
+    "item": "quantumgenerators:core_kvsp_gen",
+    "count": 1
+  }
+}

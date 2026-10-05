@@ -1,0 +1,8 @@
+{
+  "item.powerutils.module_ic": "Модуль преобразования IC",
+  "item.powerutils.module_fe": "Модуль преобразования FE",
+  "item.powerutils.module_qe": "Модуль преобразования QE",
+  "block.powerutils.converter.power_utilities_fe": "Конвертер EU/FE",
+  "block.powerutils.converter.power_utilities_qe": "Конвертер EU/QE",
+  "block.powerutils.quantum_cable": "Квантовый кабель"
+}

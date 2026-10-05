@@ -263,5 +263,12 @@
   "ic2.crop.attribute.weed": "Сорняк",
   "ic2.crop.attribute.wheat": "Пшеница",
   "ic2.crop.attribute.wither": "Иссушитель",
-  "ic2.crop.attribute.yellow": "Жёлтый"
+  "ic2.crop.attribute.yellow": "Жёлтый",
+  "iu_native.running": "Работает",
+  "iu_native.paused": "Пауза",
+  "iu_native.finished": "Завершено",
+  "iu_native.reset": "Заново",
+  "iu_native.watering.info": "%s / %s мБ воды; радиус %s",
+  "iu_native.filter.info": "Нажмите на блок для добавления в фильтр. Shift сбрасывает список.",
+  "iu_native.fuel.info": "%s EU/т; %s тепла за такт реактора"
 }

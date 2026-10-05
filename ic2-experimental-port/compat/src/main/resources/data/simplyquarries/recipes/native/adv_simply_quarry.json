@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ICI",
+    "DBD",
+    "ICI"
+  ],
+  "key": {
+    "I": {
+      "item": "ic2:steel_ingot"
+    },
+    "C": {
+      "item": "ic2:advanced_circuit"
+    },
+    "D": {
+      "item": "ic2:diamond_drill"
+    },
+    "B": {
+      "item": "simplyquarries:simplyquarries/simply_quarry"
+    }
+  },
+  "result": {
+    "item": "simplyquarries:simplyquarries/adv_simply_quarry",
+    "count": 1
+  }
+}

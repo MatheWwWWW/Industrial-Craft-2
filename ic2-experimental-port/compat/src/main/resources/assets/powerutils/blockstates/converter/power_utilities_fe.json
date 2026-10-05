@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "powerutils:block/power_utilities_fe"
+    }
+  }
+}

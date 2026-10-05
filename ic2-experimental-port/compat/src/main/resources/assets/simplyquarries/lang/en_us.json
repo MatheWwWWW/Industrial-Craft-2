@@ -1,0 +1,23 @@
+{
+  "block.simplyquarries.simplyquarries.simply_quarry": "Ore quarry (tier 1)",
+  "block.simplyquarries.simplyquarries.adv_simply_quarry": "Ore quarry (tier 2)",
+  "block.simplyquarries.simplyquarries.imp_simply_quarry": "Ore quarry (tier 3)",
+  "block.simplyquarries.simplyquarries.per_simply_quarry": "Ore quarry (tier 4)",
+  "block.simplyquarries.simplyquarries.pho_simply_quarry": "Ore quarry (tier 5)",
+  "item.simplyquarries.module_furnace": "Smelting module ",
+  "item.simplyquarries.module_speed_i": "Efficiency module I",
+  "item.simplyquarries.module_speed_ii": "Efficiency module II",
+  "item.simplyquarries.module_speed_iii": "Efficiency module III",
+  "item.simplyquarries.module_speed_iv": "Efficiency module IV",
+  "item.simplyquarries.module_speed_v": "Efficiency module V",
+  "item.simplyquarries.module_lucky_i": "Fortune module I",
+  "item.simplyquarries.module_lucky_ii": "Fortune module II",
+  "item.simplyquarries.module_lucky_iii": "Fortune module III",
+  "item.simplyquarries.module_depth_i": "Range module I",
+  "item.simplyquarries.module_depth_ii": "Range module II",
+  "item.simplyquarries.module_depth_iii": "Range module III",
+  "item.simplyquarries.module_blacklist": "Blacklist module ",
+  "item.simplyquarries.module_whitelist": "Whitelist module ",
+  "item.simplyquarries.module_macerator": "Macerating module ",
+  "item.simplyquarries.module_combmac": "Macerating and washing module "
+}

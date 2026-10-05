@@ -322,6 +322,10 @@ public final class Ic2ExperimentalFidelity {
             throw new IllegalStateException("Restored IC2 recipes failed to load: " + missing);
         }
         verifyFluidCellRecipes(event);
+        if (Boolean.getBoolean("ic2.fidelity.nativeIUTest")) {
+            ru.mot.ic2exfidelity.iu.NativeIUChecks.run(event.getServer().m_129783_());
+            return;
+        }
         SmokeFunctionalChecks.run(event.getServer().m_129783_(), event.getServer().m_129894_());
     }
 

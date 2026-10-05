@@ -96,7 +96,7 @@ public final class SmokeFunctionalChecks {
         if (!(requireItem("ic2:wrench_new") instanceof LegacyNewWrench)) {
             throw new IllegalStateException("Legacy hit-region wrench is absent");
         }
-        if (!ForgeRegistries.FLUIDS.containsKey(new ResourceLocation("forge", "milk"))) {
+        if (!ForgeRegistries.FLUIDS.containsKey(new ResourceLocation("minecraft", "milk"))) {
             throw new IllegalStateException("Forge milk fluid required by the legacy canner recipe is absent");
         }
         checkFluidCell(recipes);

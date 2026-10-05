@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RAR",
+    "BCB",
+    "RAR"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:diamond"
+    },
+    "A": {
+      "item": "ic2:advanced_circuit"
+    },
+    "B": {
+      "item": "simplyquarries:module_lucky_i"
+    },
+    "C": {
+      "item": "ic2:circuit"
+    }
+  },
+  "result": {
+    "item": "simplyquarries:module_lucky_ii",
+    "count": 1
+  }
+}

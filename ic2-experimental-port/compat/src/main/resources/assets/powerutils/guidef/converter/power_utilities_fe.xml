@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gui width="176" height="166">
+<text y="6" align="center">%name%</text>
+<text x="7" y="22">{%base.getEnergyText()%}</text>
+<text x="7" y="34">{%base.getForgeText()%}</text>
+<button x="7" y="48" width="125" height="20" event="0">{%base.getConversionText()%}</button>
+<slotgrid name="upgrade" x="136" y="22" rows="2" columns="2"/>
+<playerInventory x="7" y="83"/>
+</gui>

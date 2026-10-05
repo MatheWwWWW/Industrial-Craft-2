@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CMC",
+    "ABA",
+    "CMC"
+  ],
+  "key": {
+    "C": {
+      "item": "powerutils:module_ic"
+    },
+    "M": {
+      "item": "powerutils:module_fe"
+    },
+    "A": {
+      "item": "ic2:advanced_circuit"
+    },
+    "B": {
+      "item": "ic2:advanced_machine"
+    }
+  },
+  "result": {
+    "item": "powerutils:converter/power_utilities_fe",
+    "count": 1
+  }
+}

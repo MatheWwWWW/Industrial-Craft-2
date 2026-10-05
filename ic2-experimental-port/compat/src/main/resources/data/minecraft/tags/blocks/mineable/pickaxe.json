@@ -4,6 +4,21 @@
     "ic2:refractory_bricks",
     "ic2:coke_kiln",
     "ic2:coke_kiln_hatch",
-    "ic2:coke_kiln_grate"
+    "ic2:coke_kiln_grate",
+    "powerutils:converter/power_utilities_fe",
+    "powerutils:converter/power_utilities_qe",
+    "quantumgenerators:qg/phsp_gen",
+    "quantumgenerators:qg/nsp_gen",
+    "quantumgenerators:qg/bsp_gen",
+    "quantumgenerators:qg/adsp_gen",
+    "quantumgenerators:qg/grasp_gen",
+    "quantumgenerators:qg/kvsp_gen",
+    "simplyquarries:simplyquarries/simply_quarry",
+    "simplyquarries:simplyquarries/adv_simply_quarry",
+    "simplyquarries:simplyquarries/imp_simply_quarry",
+    "simplyquarries:simplyquarries/per_simply_quarry",
+    "simplyquarries:simplyquarries/pho_simply_quarry",
+    "diamondvein:diamond_deposits/deposits_diamond",
+    "powerutils:quantum_cable"
   ]
 }

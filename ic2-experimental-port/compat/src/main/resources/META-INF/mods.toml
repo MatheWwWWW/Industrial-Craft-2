@@ -165,3 +165,119 @@ mandatory=false
 versionRange="[11.8,)"
 ordering="AFTER"
 side="CLIENT"
+
+# BEGIN NATIVE IU ADAPTATIONS
+
+[[mods]]
+modId="diamondvein"
+version="1.2-ic2-native"
+displayName="diamondvein (IC2 adaptation)"
+authors="Original addon authors; IC2 adaptation by MatheWwWWW"
+description="Independent implementation using IC2 Experimental, with native IC2 recipes."
+[[dependencies.diamondvein]]
+modId="ic2"
+mandatory=true
+versionRange="[1.0,)"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.diamondvein]]
+modId="ic2_experimental_fidelity"
+mandatory=true
+versionRange="[0.1.0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[mods]]
+modId="powerutils"
+version="1.8-ic2-native"
+displayName="powerutils (IC2 adaptation)"
+authors="Original addon authors; IC2 adaptation by MatheWwWWW"
+description="Independent implementation using IC2 Experimental, with native IC2 recipes."
+[[dependencies.powerutils]]
+modId="ic2"
+mandatory=true
+versionRange="[1.0,)"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.powerutils]]
+modId="ic2_experimental_fidelity"
+mandatory=true
+versionRange="[0.1.0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[mods]]
+modId="quantumgenerators"
+version="1.8-ic2-native"
+displayName="quantumgenerators (IC2 adaptation)"
+authors="Original addon authors; IC2 adaptation by MatheWwWWW"
+description="Independent implementation using IC2 Experimental, with native IC2 recipes."
+[[dependencies.quantumgenerators]]
+modId="ic2"
+mandatory=true
+versionRange="[1.0,)"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.quantumgenerators]]
+modId="ic2_experimental_fidelity"
+mandatory=true
+versionRange="[0.1.0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[mods]]
+modId="reactorplus"
+version="1.1-ic2-native"
+displayName="reactorplus (IC2 adaptation)"
+authors="Original addon authors; IC2 adaptation by MatheWwWWW"
+description="Independent implementation using IC2 Experimental, with native IC2 recipes."
+[[dependencies.reactorplus]]
+modId="ic2"
+mandatory=true
+versionRange="[1.0,)"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.reactorplus]]
+modId="ic2_experimental_fidelity"
+mandatory=true
+versionRange="[0.1.0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[mods]]
+modId="simplyquarries"
+version="1.8-ic2-native"
+displayName="simplyquarries (IC2 adaptation)"
+authors="Original addon authors; IC2 adaptation by MatheWwWWW"
+description="Independent implementation using IC2 Experimental, with native IC2 recipes."
+[[dependencies.simplyquarries]]
+modId="ic2"
+mandatory=true
+versionRange="[1.0,)"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.simplyquarries]]
+modId="ic2_experimental_fidelity"
+mandatory=true
+versionRange="[0.1.0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[mods]]
+modId="wateringcan"
+version="1.0-ic2-native"
+displayName="wateringcan (IC2 adaptation)"
+authors="Original addon authors; IC2 adaptation by MatheWwWWW"
+description="Independent implementation using IC2 Experimental, with native IC2 recipes."
+[[dependencies.wateringcan]]
+modId="ic2"
+mandatory=true
+versionRange="[1.0,)"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.wateringcan]]
+modId="ic2_experimental_fidelity"
+mandatory=true
+versionRange="[0.1.0,)"
+ordering="AFTER"
+side="BOTH"

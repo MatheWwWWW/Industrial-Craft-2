@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gui width="176" height="166">
+<text y="6" align="center">%name%</text>
+<text x="7" y="22">{%base.getQuantumText()%}</text>
+<text x="7" y="34">{%base.getGenerationText()%}</text>
+<button x="7" y="51" width="100" height="20" event="0">{%base.getModeText()%}</button>
+<button x="111" y="51" event="1">−</button>
+<button x="134" y="51" event="2">+</button>
+<playerInventory x="7" y="83"/>
+</gui>

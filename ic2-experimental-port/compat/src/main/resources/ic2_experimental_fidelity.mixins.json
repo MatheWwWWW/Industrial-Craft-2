@@ -4,6 +4,7 @@
   "package": "ru.mot.ic2exfidelity.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "NativeIURecipeStateMixin",
     "Ic2ElectricWrenchPipeMixin",
     "Ic2LithiumCellMixin",
     "Ic2WrenchPipeMixin",

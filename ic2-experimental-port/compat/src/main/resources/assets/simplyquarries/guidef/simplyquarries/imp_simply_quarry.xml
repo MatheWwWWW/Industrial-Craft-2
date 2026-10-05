@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gui width="230" height="251">
+<text y="6" align="center">%name%</text>
+<text x="7" y="22">{%base.getEnergyText()%}</text>
+<text x="7" y="34">{%base.getQuantumText()%}</text>
+<text x="7" y="47">{%base.getRangeText()%}</text>
+<button x="7" y="61" width="90" height="20" event="0">{%base.getModeText()%}</button>
+<button x="99" y="61" width="70" height="20" event="1">iu_native.reset</button>
+<button x="174" y="21" event="2">+</button>
+<button x="195" y="21" event="3">−</button>
+<button x="174" y="43" event="4">+</button>
+<button x="195" y="43" event="5">−</button>
+<button x="174" y="68" width="42" height="20" event="6">XP</button>
+<text x="174" y="95">{%base.getExperienceText()%}</text>
+<slotgrid name="modules" x="7" y="86" rows="1" columns="4"/>
+<slotgrid name="output" x="7" y="109" rows="3" columns="8"/>
+<playerInventory x="7" y="168"/>
+</gui>

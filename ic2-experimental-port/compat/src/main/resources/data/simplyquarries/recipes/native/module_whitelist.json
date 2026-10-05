@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RAR",
+    "BCB",
+    "RAR"
+  ],
+  "key": {
+    "R": {
+      "item": "ic2:steel_ingot"
+    },
+    "A": {
+      "item": "ic2:advanced_circuit"
+    },
+    "B": {
+      "item": "minecraft:paper"
+    },
+    "C": {
+      "item": "ic2:circuit"
+    }
+  },
+  "result": {
+    "item": "simplyquarries:module_whitelist",
+    "count": 1
+  }
+}

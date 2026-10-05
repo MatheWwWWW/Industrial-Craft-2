@@ -1,7 +1,9 @@
+param([string]$DependencyRoot, [switch]$NativeIUTest, [switch]$KeepWorld)
 $ErrorActionPreference = "Stop"
 
 $portRoot = $PSScriptRoot
 $minecraftRoot = Split-Path -Parent $portRoot
+if ($DependencyRoot) { $minecraftRoot = [IO.Path]::GetFullPath($DependencyRoot) }
 $instanceRoot = Join-Path $portRoot "smoke-instance"
 $instanceMods = Join-Path $instanceRoot "mods"
 $versionRoot = Join-Path $minecraftRoot "versions\Forge 1.19.2"
@@ -13,7 +15,7 @@ $java = Join-Path $minecraftRoot "runtime\java-runtime-gamma\windows\java-runtim
 
 $resolvedMinecraft = [IO.Path]::GetFullPath($minecraftRoot)
 $resolvedInstance = [IO.Path]::GetFullPath($instanceRoot)
-if (-not $resolvedInstance.StartsWith($resolvedMinecraft, [StringComparison]::OrdinalIgnoreCase)) {
+if (-not $resolvedInstance.StartsWith([IO.Path]::GetFullPath($portRoot), [StringComparison]::OrdinalIgnoreCase)) {
     throw "Smoke instance escaped the Minecraft workspace"
 }
 
@@ -33,15 +35,18 @@ if ([string]::IsNullOrWhiteSpace($sourceSmokeWorld) -or
     throw "Missing source world for the integrated-server recipe test: $sourceSmokeWorld"
 }
 New-Item -ItemType Directory -Path $instanceSaves -Force | Out-Null
-if (Test-Path -LiteralPath $smokeWorld -PathType Container) {
+if (-not $KeepWorld -and (Test-Path -LiteralPath $smokeWorld -PathType Container)) {
     Remove-Item -LiteralPath $smokeWorld -Recurse -Force
 }
-Copy-Item -LiteralPath $sourceSmokeWorld -Destination $smokeWorld -Recurse -Force
+if (-not $KeepWorld -or -not (Test-Path -LiteralPath $smokeWorld)) { Copy-Item -LiteralPath $sourceSmokeWorld -Destination $smokeWorld -Recurse -Force }
 
 $smokeExcluded = @(
     'Turret_1.0.5.jar',
     'Turret-Hud-Patch-1.0.0.jar'
 )
+if ($NativeIUTest) {
+    $smokeExcluded += @('diamondvein-1.2.jar', 'powerutils-1.8.jar', 'quantumgenerators-1.8.jar', 'reactorplus-1.1.jar', 'simplyquarries-1.8.jar', 'wateringcan-1.0.jar', 'IndustrialUpgrade-1.19.2-3.4.0.9.jar')
+}
 $activeMods = @(Get-ChildItem -LiteralPath (Join-Path $minecraftRoot "mods") -File -Filter "*.jar")
 $activeNames = @($activeMods | Select-Object -ExpandProperty Name)
 foreach ($staleMod in Get-ChildItem -LiteralPath $instanceMods -File -Filter "*.jar") {
@@ -133,6 +138,14 @@ $jvmArgs = [Collections.Generic.List[string]]::new()
 $jvmArgs.Add('-Xms512M')
 $jvmArgs.Add('-Xmx4G')
 $jvmArgs.Add("-Dic2.fidelity.smokeWorld=$smokeWorldName")
+if ($NativeIUTest) {
+    $jvmArgs.Add('-Dic2.fidelity.nativeIUTest=true')
+    foreach ($builtName in @('IC2-Experimental-Fidelity-0.1.0.jar', 'industrialcraft-2-2.9.162+ex119-fidelity-1.19.2-forge.jar')) {
+        $target = Join-Path $instanceMods $builtName
+        if (Test-Path -LiteralPath $target) { Remove-Item -LiteralPath $target -Force }
+        Copy-Item -LiteralPath (Join-Path $portRoot "compat\build\$builtName") -Destination $target
+    }
+}
 foreach ($entry in $version.arguments.jvm) {
     if ($entry -is [string]) {
         $values = @($entry)
@@ -195,7 +208,7 @@ if ($pathKeys.Count -gt 1 -and $pathKeys -contains 'PATH') {
     # Start-Process rejects that duplicate even though Windows itself accepts it.
     [Environment]::SetEnvironmentVariable('PATH', $null, [EnvironmentVariableTarget]::Process)
 }
-$process = Start-Process -FilePath $java -ArgumentList $argumentLine -WorkingDirectory $minecraftRoot -WindowStyle Hidden -RedirectStandardOutput $stdout -RedirectStandardError $stderr -PassThru
+$process = Start-Process -FilePath $java -ArgumentList $argumentLine -WorkingDirectory $instanceRoot -WindowStyle Hidden -RedirectStandardOutput $stdout -RedirectStandardError $stderr -PassThru
 Set-Content -LiteralPath (Join-Path $instanceRoot 'smoke.pid') -Value $process.Id
 Write-Output "PID=$($process.Id)"
 Write-Output "LOG=$(Join-Path $instanceRoot 'logs\latest.log')"

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    "ACA",
+    "RRR"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "A": {
+      "item": "ic2:circuit"
+    },
+    "C": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "result": {
+    "item": "powerutils:module_fe",
+    "count": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ICI",
+    "DBD",
+    "ICI"
+  ],
+  "key": {
+    "I": {
+      "item": "ic2:iridium"
+    },
+    "C": {
+      "item": "ic2:advanced_circuit"
+    },
+    "D": {
+      "item": "ic2:diamond_drill"
+    },
+    "B": {
+      "item": "simplyquarries:simplyquarries/per_simply_quarry"
+    }
+  },
+  "result": {
+    "item": "simplyquarries:simplyquarries/pho_simply_quarry",
+    "count": 1
+  }
+}

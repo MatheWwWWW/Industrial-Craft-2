@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "UUU",
+    "UPU",
+    "UUU"
+  ],
+  "key": {
+    "U": {
+      "item": "ic2:uu_matter"
+    },
+    "P": {
+      "item": "reactorplus:reactorsplus/berkelium_pellet"
+    }
+  },
+  "result": {
+    "item": "reactorplus:reactorsplus/einsteinium_pellet",
+    "count": 1
+  }
+}

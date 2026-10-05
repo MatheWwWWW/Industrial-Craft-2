@@ -63,7 +63,7 @@ It does not replace missing ingredients with unrelated 1.19.2 items.
   excluding only the invalid white-to-white no-op rejected by the newer recipe
   manager.
 - The omitted milk-powder canner enrichment is restored against Forge's shared
-  `forge:milk` fluid, avoiding a duplicate IC2 milk registration while keeping
+  `minecraft:milk` fluid supplied by Forge, avoiding a duplicate IC2 milk registration while keeping
   the original 1000 mB water + milk-powder transformation.
 
 The old `TeBlock` registry audit has no unexplained content gaps. The remaining
@@ -100,8 +100,54 @@ the original mod and registry IDs.
 - Additional Enchanted Miner: its Classic bridge is replaced with an
   Experimental energy bridge while retaining the configured EU/FE ratio.
 
-`industrialupgrade` has a separate mod ID and API and remains installed without
-being coupled to `ic2`.
+The companion also includes independent IC2 adaptations of Diamond Vein,
+Power Utils, Quantum Generators, Reactor Plus, Simply Quarries and Watering Can.
+Their six standalone JARs and Industrial Upgrade must be absent when using
+these adaptations, since the companion owns their original mod IDs.
+
+The adaptations preserve the addon item/block IDs and author models while
+using 97 explicitly new IC2 crafting recipes. They do not emulate the entire
+Industrial Upgrade API, its advanced reactor, virtual mineral network or
+cooling/experience energy networks. Existing IU NBT is not a supported save
+migration; test an existing IU world on a copy before replacing its mods.
+
+- Power Utils has bidirectional EU/FE (1 EU = 4 FE) and EU/QE converters.
+  EU to QE costs 16 EU; QE to EU returns 10 EU. The initial buffers are
+  40,000 EU, 400,000 FE or 2,500 QE, with IC2 storage/transformer upgrades.
+- Six quantum generators retain tiers 9–14, the original production formula,
+  eight cores at +25% each and adjustable output. QE travels directly between
+  devices or through `powerutils:quantum_cable` in loaded chunks.
+- Five ore-only quarries scan 1/2/4/8/16 positions per tick, with the original
+  450/562.5/675/900/1125 EU costs per scanned position, 24 output slots and
+  1/2/3/4/4 module slots. Sixteen native modules provide range, efficiency,
+  fortune, smelting, maceration/washing and configurable filters. A full output
+  stops mining before changing a block; Forge break events can veto mining.
+  80 QE per mined ore gives the original 15/101 chance of an extra drop.
+  Experience is stored locally and withdrawn with the quarry's XP button.
+- Reactor Plus adds its 12 cooling parts and 30 enhanced fuel rods to IC2's
+  normal reactor. Fuel power/heat values follow the original table, with
+  IC2's 20,000-cycle lifetime, radiation and explicit depleted outputs.
+  Cooling parts use IC2 heat storage, venting and exchange mechanics rather
+  than the IU advanced-reactor percentage/damage model. Upgrading a used rod
+  preserves usage and cannot refill its lifetime.
+- Three water-only cans hold 10/20/40 buckets and cover radii 3/5/7. Sneak-use
+  adds 20% of a growing IC2 crop's current stage for 100 mB; use a water source
+  to refill. Upgrading a can preserves its water.
+- Diamond Vein adds finite underground diamond/emerald clusters, with a thin
+  surface marker, in newly generated Overworld chunks. The native generation
+  attempts a cluster once per 64 chunks; it is not retroactive IU vein data.
+
+Author asset archive hashes are recorded in
+`META-INF/ic2-native-iu-asset-sources.json`. No IU or original addon bytecode is
+packaged. The optional `compat/generate-iu-native-resources.py` reproduces the
+committed resources from the local archives in `upstream/mods`.
+Run `launch-smoke.ps1 -DependencyRoot <Minecraft dir> -NativeIUTest -KeepWorld`
+to use the built JARs in the disposable smoke instance. This excludes the old
+addons only from that instance and checks recipes, menus, conversions,
+persistence, wrench drops, full-buffer quarry behavior, crop growth and reactor
+fuel/cooling behavior. After building, run
+`install-native-iu.ps1 -MinecraftRoot <Minecraft dir>` to install both JARs and
+move the old standalone addons into a dated `ic2-native-iu-backups` folder.
 
 ## Hadron Collider addon
 
@@ -145,23 +191,22 @@ as an amplifier.
 
 ## Conflict and verification status
 
-`audit-mods.ps1` currently reports 71 active jars, 74 declared mod IDs and zero
-duplicate mod IDs. A duplicate GeckoLib jar was moved to recoverable
-quarantine. The patched IC2 and companion build cleanly; the eleven compiler
-warnings are pre-existing missing Fabric annotations/deprecation warnings.
+The installed IC2 and all six native addon IDs have one provider each; their
+old standalone JARs are saved in the dated installation backup. The patched
+IC2 and companion build cleanly with missing Fabric annotation/deprecation
+warnings.
 Static checks confirm the restored classes, resources, patched compatibility
 fields, 334-recipe manifests and zero registry-ID conflicts. Both active jars
-contain 880 unique recipe IDs in total. `validate-artifacts.py` confirms that
+contain 977 unique recipe IDs in total, including the 97 native IU adaptations.
+`validate-artifacts.py` confirms that
 all recipe/data/resource JSON parses, all 334 expected legacy recipe IDs are
 present, all 107 cross-JAR recipe overrides are intentional, and every internal
 model, blockstate, texture and sound reference resolves. `audit-linkage.ps1`
 also reports no missing binary class dependencies against the installed
 Minecraft, Forge, IC2, JEI and Additional Enchanted Miner classpath.
 
-The last permitted disposable-world run passed its then-current 281/281 recipe
-list and core/addon functional checks. The smoke suite has since been expanded
-for the final tranche (nuclear jetpacks, Relocator, FriendManager, lithium
-cell, Compact Item Buffer and Trading Terminal) and now expects all 334 IDs.
-A fresh Forge launch is still required before this port can be declared fully
-verified; the current Codex environment temporarily refuses that external
-launch, so no newer runtime result is claimed here.
+A disposable-world Forge run without Industrial Upgrade or its six standalone
+addons loaded all 334 expected legacy recipes and all 97 new native recipes.
+The native suite passed creation and GUI parsing for all 13 devices, FE/QE
+conversion, generator cores, NBT and wrench preservation, real quarry drops,
+full-buffer behavior, crop growth and reactor output/depletion/cooling.

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " M ",
+    "MCM",
+    " M "
+  ],
+  "key": {
+    "M": {
+      "item": "ic2:steel_ingot"
+    },
+    "C": {
+      "item": "wateringcan:adv_watering_can"
+    }
+  },
+  "result": {
+    "item": "wateringcan:imp_watering_can",
+    "count": 1
+  }
+}

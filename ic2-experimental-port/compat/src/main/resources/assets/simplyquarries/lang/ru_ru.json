@@ -1,0 +1,23 @@
+{
+  "block.simplyquarries.simplyquarries.simply_quarry": "Рудный карьер (уровень 1)",
+  "block.simplyquarries.simplyquarries.adv_simply_quarry": "Рудный карьер (уровень 2)",
+  "block.simplyquarries.simplyquarries.imp_simply_quarry": "Рудный карьер (уровень 3)",
+  "block.simplyquarries.simplyquarries.per_simply_quarry": "Рудный карьер (уровень 4)",
+  "block.simplyquarries.simplyquarries.pho_simply_quarry": "Рудный карьер (уровень 5)",
+  "item.simplyquarries.module_furnace": "Модуль «Плавка» ",
+  "item.simplyquarries.module_speed_i": "Модуль «Эффективность» I",
+  "item.simplyquarries.module_speed_ii": "Модуль «Эффективность» II",
+  "item.simplyquarries.module_speed_iii": "Модуль «Эффективность» III",
+  "item.simplyquarries.module_speed_iv": "Модуль «Эффективность» IV",
+  "item.simplyquarries.module_speed_v": "Модуль «Эффективность» V",
+  "item.simplyquarries.module_lucky_i": "Модуль «Удача» I",
+  "item.simplyquarries.module_lucky_ii": "Модуль «Удача» II",
+  "item.simplyquarries.module_lucky_iii": "Модуль «Удача» III",
+  "item.simplyquarries.module_depth_i": "Модуль «Область добычи» I",
+  "item.simplyquarries.module_depth_ii": "Модуль «Область добычи» II",
+  "item.simplyquarries.module_depth_iii": "Модуль «Область добычи» III",
+  "item.simplyquarries.module_blacklist": "Модуль «Чёрный список» ",
+  "item.simplyquarries.module_whitelist": "Модуль «Белый список» ",
+  "item.simplyquarries.module_macerator": "Модуль «Дробление» ",
+  "item.simplyquarries.module_combmac": "Модуль «Дробление и промывка» "
+}

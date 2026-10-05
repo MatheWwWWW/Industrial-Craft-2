@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PCP",
+    "ABA",
+    "PCP"
+  ],
+  "key": {
+    "P": {
+      "item": "ic2:iridium"
+    },
+    "C": {
+      "item": "ic2:advanced_circuit"
+    },
+    "A": {
+      "item": "ic2:steel_ingot"
+    },
+    "B": {
+      "item": "reactorplus:reactorsplus/adv_heat_exchange"
+    }
+  },
+  "result": {
+    "item": "reactorplus:reactorsplus/imp_heat_exchange",
+    "count": 1
+  }
+}

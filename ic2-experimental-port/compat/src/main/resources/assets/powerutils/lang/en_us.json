@@ -1,0 +1,8 @@
+{
+  "item.powerutils.module_ic": "IC conversion module",
+  "item.powerutils.module_fe": "FE conversion module",
+  "item.powerutils.module_qe": "QE conversion module",
+  "block.powerutils.converter.power_utilities_fe": "EU/FE converter",
+  "block.powerutils.converter.power_utilities_qe": "EU/QE converter",
+  "block.powerutils.quantum_cable": "Quantum cable"
+}

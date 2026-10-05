@@ -24,7 +24,7 @@ EMPTY_FRAGMENTS = {
 FORMAT = re.compile(r"%(?:(\d+)\$)?([sdif])|%%")
 KEY = re.compile(
     r'"((?:tooltip\.|tile_info\.|item_info\.|message\.|key\.|gui\.|'
-    r'container\.|translation\.|ic2\.tooltip\.|ic2\.crop\.|ic2\.jetpackAttached)'
+    r'container\.|translation\.|iu_native\.|ic2\.tooltip\.|ic2\.crop\.|ic2\.jetpackAttached)'
     r'[^"\s]*)"'
 )
 

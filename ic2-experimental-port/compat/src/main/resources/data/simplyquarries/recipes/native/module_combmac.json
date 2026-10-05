@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RAR",
+    "BCB",
+    "RAR"
+  ],
+  "key": {
+    "R": {
+      "item": "ic2:steel_ingot"
+    },
+    "A": {
+      "item": "ic2:advanced_circuit"
+    },
+    "B": {
+      "item": "ic2:ore_washing_plant"
+    },
+    "C": {
+      "item": "ic2:circuit"
+    }
+  },
+  "result": {
+    "item": "simplyquarries:module_combmac",
+    "count": 1
+  }
+}

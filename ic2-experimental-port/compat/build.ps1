@@ -319,6 +319,15 @@ foreach ($relativePath in $restoredDynamiteVisuals) {
 # of which jar wins resource loading in the shared ic2 namespace.
 Merge-SourceLanguages $patchedStage 'ic2'
 
+# GuiParser reads through the IC2 Java module, including companion block XML.
+$resourceRoot = Join-Path $projectRoot 'src\main\resources'
+foreach ($guiDefinition in (Get-ChildItem -LiteralPath (Join-Path $resourceRoot 'assets') -Filter '*.xml' -Recurse -File)) {
+    $relativeGui = [IO.Path]::GetRelativePath($resourceRoot, $guiDefinition.FullName)
+    $guiTarget = Join-Path $patchedStage $relativeGui
+    New-Item -ItemType Directory -Path (Split-Path -Parent $guiTarget) -Force | Out-Null
+    Copy-Item -LiteralPath $guiDefinition.FullName -Destination $guiTarget -Force
+}
+
 $asmJar = Join-Path $DependencyRoot "libraries\org\ow2\asm\asm\9.6\asm-9.6.jar"
 $patcherSource = Join-Path $projectRoot "tools\PatchIc2LegacyFields.java"
 & $javac -proc:none -encoding UTF-8 -source 17 -target 17 -classpath $asmJar -d $patcherDir $patcherSource

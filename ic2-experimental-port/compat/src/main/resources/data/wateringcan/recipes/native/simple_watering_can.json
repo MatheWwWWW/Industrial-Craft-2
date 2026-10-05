@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " M ",
+    "MCM",
+    " M "
+  ],
+  "key": {
+    "M": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:bucket"
+    }
+  },
+  "result": {
+    "item": "wateringcan:simple_watering_can",
+    "count": 1
+  }
+}

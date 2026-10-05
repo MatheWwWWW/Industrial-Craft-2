@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RAR",
+    "BCB",
+    "RAR"
+  ],
+  "key": {
+    "R": {
+      "item": "ic2:steel_ingot"
+    },
+    "A": {
+      "item": "ic2:advanced_circuit"
+    },
+    "B": {
+      "item": "ic2:overclocker_upgrade"
+    },
+    "C": {
+      "item": "ic2:circuit"
+    }
+  },
+  "result": {
+    "item": "simplyquarries:module_speed_i",
+    "count": 1
+  }
+}

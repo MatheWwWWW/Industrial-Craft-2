@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PCP",
+    "ABA",
+    "PCP"
+  ],
+  "key": {
+    "P": {
+      "item": "ic2:iron_plate"
+    },
+    "C": {
+      "item": "ic2:advanced_circuit"
+    },
+    "A": {
+      "item": "ic2:steel_ingot"
+    },
+    "B": {
+      "item": "ic2:component_heat_vent"
+    }
+  },
+  "result": {
+    "item": "reactorplus:reactorsplus/component_vent",
+    "count": 1
+  }
+}

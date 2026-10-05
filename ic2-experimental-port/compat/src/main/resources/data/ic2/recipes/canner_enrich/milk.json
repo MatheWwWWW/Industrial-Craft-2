@@ -8,7 +8,7 @@
     "item": "ic2:milk_dust"
   },
   "result": {
-    "fluid": "forge:milk",
+    "fluid": "minecraft:milk",
     "amount": 1000
   }
 }

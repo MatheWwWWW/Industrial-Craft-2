@@ -28,8 +28,8 @@ RECIPE_SOURCE = (
     / "Ic2ExperimentalFidelity.java"
 )
 SOURCE_ROOT = RECIPE_SOURCE.parents[3]
-EXPECTED_UNIQUE_RECIPE_IDS = 880
-OWN_NAMESPACES = {"ic2", "advanced_solars", "gravisuit", "ic2_experimental_fidelity"}
+EXPECTED_UNIQUE_RECIPE_IDS = 977
+OWN_NAMESPACES = {"ic2", "advanced_solars", "gravisuit", "ic2_experimental_fidelity", "diamondvein", "powerutils", "quantumgenerators", "reactorplus", "simplyquarries", "wateringcan"}
 
 
 def recipe_id(path: str) -> str:

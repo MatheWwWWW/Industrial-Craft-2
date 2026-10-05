@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "diamondvein:block/diamond_deposits/deposits_diamond"
+    }
+  }
+}

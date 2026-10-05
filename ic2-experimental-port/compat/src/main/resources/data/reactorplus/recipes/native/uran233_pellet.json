@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "UUU",
+    "UPU",
+    "UUU"
+  ],
+  "key": {
+    "U": {
+      "item": "ic2:uu_matter"
+    },
+    "P": {
+      "item": "ic2:uranium_235"
+    }
+  },
+  "result": {
+    "item": "reactorplus:reactorsplus/uran233_pellet",
+    "count": 1
+  }
+}

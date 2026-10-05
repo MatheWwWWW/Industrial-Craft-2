@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ICI",
+    "CMC",
+    "ICI"
+  ],
+  "key": {
+    "I": {
+      "item": "ic2:iridium"
+    },
+    "C": {
+      "item": "quantumgenerators:core_nsp_gen"
+    },
+    "M": {
+      "item": "quantumgenerators:qg/phsp_gen"
+    }
+  },
+  "result": {
+    "item": "quantumgenerators:qg/nsp_gen",
+    "count": 1
+  }
+}
